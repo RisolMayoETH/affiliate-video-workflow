@@ -1,0 +1,34 @@
+{
+  "concept_id": "ce-ad-ethics-and-beyond-generic-function",
+  "concept_name": "Etika Klaim Jujur dan Pembeda di Luar Fungsi Dasar yang Seragam",
+  "category": "creative_evaluation",
+  "explanation": "Etika periklanan melarang visual yang menyesatkan serta klaim superlatif kosong tanpa bukti ('paling bagus', 'paling enak', 'nomor satu'). Selain itu, ketika banyak kompetitor menawarkan fungsi dasar yang sama persis, sekadar mengulang deskripsi fungsi standar tidak lagi membedakan produk.",
+  "underlying_psychology": "Pembeli melihat produk sejenis dengan klaim fungsi generik sebagai barang yang sama persis sehingga hanya membandingkan harga termurah atau mengabaikan iklannya.",
+  "application_conditions": [
+    "Evaluasi klaim superlatif pada draf naskah affiliate dan pencarian sudut pembeda produk"
+  ],
+  "implementation": [
+    "Hapus klaim superlatif mutlak ('paling ampuh', 'terbaik sepanjang masa') yang melanggar etika iklan maupun integritas HCE.",
+    "Selain menyebut fungsi dasar, gali konteks pengalaman, rasa pakai, atau situasi khas yang membedakan produk bagi target pembelinya."
+  ],
+  "examples": [
+    "Semua jam tangan berfungsi menunjukkan waktu; pembedanya terletak pada konteks pemakaian dan perasaan yang ingin dibangun saat memakainya."
+  ],
+  "counterexamples": [
+    "Menulis copy kaos: 'Bahannya enak, adem, model bagus, paling terbaik sedunia' yang identik dengan ratusan kompetitor."
+  ],
+  "limitations": [
+    "Untuk produk utilitas mendesak (misalnya aki atau alat perbaikan rumah tangga), kejelasan fungsi dan kecocokan tipe tetap harus didahulukan sebelum nilai emosional."
+  ],
+  "related_concepts": [
+    "ce-integrity-gate",
+    "bp-attitude-and-emotional-differentiation"
+  ],
+  "source_id": "src_e9cda85c9057",
+  "source_timestamp": "00:00:00-00:04:05",
+  "extraction_confidence": 0.91,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

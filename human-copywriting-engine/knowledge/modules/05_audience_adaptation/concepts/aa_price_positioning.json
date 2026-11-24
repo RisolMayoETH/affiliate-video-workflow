@@ -1,0 +1,34 @@
+{
+  "concept_id": "aa-price-positioning",
+  "concept_name": "Penyesuaian Argumen Nilai Berdasarkan Posisi Harga",
+  "category": "audience_adaptation",
+  "explanation": "Produk harga terjangkau (< Rp100 ribu) membutuhkan penekanan kepraktisan, kemudahan penggunaan, dan nilai guna harian; produk menengah/lebih tinggi membutuhkan penjelasan material, fitur pembeda, daya tahan desain, serta jawaban keberatan yang lebih matang.",
+  "underlying_psychology": "Makin tinggi nominal pengeluaran relatif terhadap kategori barang, makin besar kebutuhan pembeli atas alasan rasional sebelum menekan tombol beli.",
+  "application_conditions": [
+    "Saat merancang value proposition dan pemilihan kedalaman spesifikasi produk"
+  ],
+  "implementation": [
+    "Untuk barang ekonomis harian: fokus pada kemudahan, hemat waktu/ruang, dan kecocokan rutinitas tanpa melebih-lebihkan kesan mewah.",
+    "Untuk barang menengah ke atas: jelaskan kualitas material terverifikasi, fitur kontrol/mode tambahan, dan penggunaan jangka panjang yang masuk akal."
+  ],
+  "examples": [
+    "Untuk tumbler vacuum insulated stainless: tekankan konstruksi stainless dan isolasi suhu untuk dibawa kerja/kuliah dibanding sekadar bilang 'murah meriah'."
+  ],
+  "counterexamples": [
+    "Menjual produk Rp35.000 dengan bahasa seolah-olah barang mewah kelas dunia."
+  ],
+  "limitations": [
+    "Jika harga tidak dicantumkan dalam data produk, fokus pada fungsi dan material tanpa menebak kisaran harga."
+  ],
+  "related_concepts": [
+    "bp-hesitation-risk-reduction",
+    "pw-feature-to-benefit"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:16",
+  "extraction_confidence": 0.91,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Value framing by price tier"}]
+}

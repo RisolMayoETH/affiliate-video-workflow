@@ -1,0 +1,36 @@
+{
+  "concept_id": "st-direct-vs-story",
+  "concept_name": "Kapan Penjelasan Langsung Lebih Efektif dari Storytelling",
+  "category": "storytelling",
+  "explanation": "Tidak semua produk cocok dipaksakan memakai cerita emosional. Produk fungsional sederhana atau produk dengan audiens yang sudah tahu kebutuhannya (solution-aware/product-aware) sering bekerja lebih baik lewat demo fungsi langsung dan penjelasan fitur-manfaat yang padat.",
+  "underlying_psychology": "Pembeli yang sudah mencari alat spesifik (misalnya chopper bumbu atau rak sudut tempel) menghargai kejelasan kerja alat dan efisiensi waktu daripada prolog cerita yang terasa mengulur-ulur.",
+  "application_conditions": [
+    "Produk dapur, perkakas rumah tangga, dan aksesori elektronik fungsional",
+    "Platform berorientasi pencarian/niat beli tinggi seperti Shopee Video"
+  ],
+  "implementation": [
+    "Evaluasi tingkat kesadaran audiens sebelum memilih strategi.",
+    "Jika fungsi produk langsung terlihat dalam 3 detik, pilih product_demonstration atau feature_benefit_explanation.",
+    "Gunakan jumlah adegan secukupnya (3-4 adegan padat) tanpa mengisi durasi dengan basa-basi."
+  ],
+  "examples": [
+    "Adegan 1: Masukkan bawang ke wadah 250 ml lalu tekan tombol -> Adegan 2: Tunjukkan 3 mata pisau dan hasil cacahan -> Adegan 3: Bilas wadah & tunjukkan port USB -> Adegan 4: CTA cek keranjang."
+  ],
+  "counterexamples": [
+    "Menceritakan kisah sedih 15 detik hanya untuk memperkenalkan chopper bumbu mini."
+  ],
+  "limitations": [
+    "Demo tetap harus menjaga alur visual yang rapi (masalah/kebutuhan -> kerja alat -> detail penting -> ajakan)."
+  ],
+  "related_concepts": [
+    "st-demo-pacing",
+    "aa-platform-pacing"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:12",
+  "extraction_confidence": 0.95,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Choosing direct explanation over forced story"}]
+}

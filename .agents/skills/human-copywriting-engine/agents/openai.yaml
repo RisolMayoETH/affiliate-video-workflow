@@ -1,0 +1,11 @@
+interface:
+  display_name: "Human Copywriting Engine"
+  short_description: "Intelijen pemasaran, psikologi pembeli, copywriting natural & evaluasi HCE"
+  brand_color: "#0F766E"
+  default_prompt: "Analisis produk dan audiens dengan Human Copywriting Engine, susun strategi pemasaran, hook, dialog Bahasa Indonesia natural, CTA, serta evaluasi integritas 7 dimensi."
+
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CHAT"
+    - "CODEX"

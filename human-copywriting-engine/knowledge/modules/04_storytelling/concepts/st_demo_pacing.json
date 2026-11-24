@@ -1,0 +1,34 @@
+{
+  "concept_id": "st-demo-pacing",
+  "concept_name": "Ritme Visual dan Durasi Adegan Fleksibel",
+  "category": "storytelling",
+  "explanation": "Setiap adegan memiliki fungsi berbeda—hook cepat 2-3 detik, demonstrasi inti 6-10 detik, bukti/penanganan keraguan 4-6 detik, dan penutup 3-4 detik. Jangan memaksa setiap adegan berdurasi sama rata atau jumlah adegan selalu seragam.",
+  "underlying_psychology": "Perubahan tempo visual dan panjang kalimat menjaga perhatian pemirsa tetap aktif dari awal hingga CTA tanpa terasa monoton.",
+  "application_conditions": [
+    "Penyusunan struktur adegan video pendek (15-45 detik)"
+  ],
+  "implementation": [
+    "Tetapkan tujuan naratif unik per adegan (misalnya hook, konteks masalah, demonstrasi fitur, jawab keraguan, penutup).",
+    "Berikan durasi lebih panjang hanya pada adegan pembuktian visual atau fitur pembeda."
+  ],
+  "examples": [
+    "Scene 1 (3s): Hook visual | Scene 2 (8s): Demo 3 mode pencahayaan & lipat | Scene 3 (6s): Detail pengisian daya & kejelasan ukuran | Scene 4 (4s): CTA tenang."
+  ],
+  "counterexamples": [
+    "Membagi 4 adegan kaku masing-masing tepat 5 detik meskipun adegan ke-2 butuh waktu peragaan lebih lama."
+  ],
+  "limitations": [
+    "Sesuaikan total durasi dengan kompleksitas produk agar tidak bertele-tele."
+  ],
+  "related_concepts": [
+    "st-direct-vs-story",
+    "aa-platform-pacing"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:13",
+  "extraction_confidence": 0.94,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Variable scene pacing principle"}]
+}

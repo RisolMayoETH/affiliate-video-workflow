@@ -1,0 +1,11 @@
+interface:
+  display_name: "Affiliate Video Prompts"
+  short_description: "Prompt video AI maks 10 dtk & paket publikasi"
+  brand_color: "#1D4ED8"
+  default_prompt: "Konversi storyboard yang disetujui menjadi video-plan.md, prompt video-NN.md maksimal 10 detik, dan publishing-package.md."
+
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CHAT"
+    - "CODEX"

@@ -1,0 +1,42 @@
+# Human Copywriting Engine (HCE) Default Configuration
+# Environment variables (e.g. HCE_WHISPER_MODEL, HCE_REASONING_ADAPTER) override these settings.
+
+[whisper]
+# Options: tiny, base, small, medium, large-v3
+# "base" is a conservative default for typical consumer CPUs; use "small" or "medium" with CUDA or stronger hardware.
+model_size = "base"
+# Options: auto, cpu, cuda
+device = "auto"
+# Options: auto, int8, int8_float16, float16, float32
+compute_type = "auto"
+# Language ISO code (e.g., "id", "en") or empty string for automatic language detection
+language = ""
+batch_size = 8
+beam_size = 5
+vad_filter = true
+
+[pipeline]
+# Split long videos/audio into independent chunks (seconds) for incremental processing & resume
+chunk_duration_seconds = 300
+# Options: json, markdown, both
+output_format = "both"
+supported_extensions = [".mp4", ".mov", ".mkv", ".avi", ".webm", ".mp3", ".wav", ".m4a"]
+min_topic_words = 120
+max_topic_words = 550
+
+[reasoning]
+# Options: none, file_exchange, command
+# "none" retains transcripts and queues learning tasks cleanly without pretending extraction finished.
+# "file_exchange" consumes custom-agent JSON extraction files placed in data/processed/results/<task_id>.json.
+# "command" pipes each learning task JSON via stdin to a local CLI command and reads ExtractionResult JSON on stdout.
+adapter = "file_exchange"
+command = []
+timeout_seconds = 120
+
+[storage]
+incoming_dir = "data/incoming"
+transcripts_dir = "data/transcripts"
+processed_dir = "data/processed"
+db_path = "data/db/hce.sqlite3"
+tmp_dir = "data/tmp"
+knowledge_dir = "knowledge"

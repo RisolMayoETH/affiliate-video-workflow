@@ -1,0 +1,37 @@
+{
+  "concept_id": "hl-spoken-indonesian-rhythm",
+  "concept_name": "Ritme Bahasa Indonesia Lisan yang Mengalir",
+  "category": "human_language",
+  "explanation": "Naskah video affiliate dibaca dan didengar secara lisan. Kalimat perlu disusun dengan ritme napas wajar, panjang kalimat bervariasi (pendek untuk penekanan, sedang untuk penjelasan), dan jeda alami seperti orang menjelaskan barang ke teman atau kenalan.",
+  "underlying_psychology": "Otak pendengar cepat mendeteksi pola kalimat yang terlalu simetris atau panjang tanpa jeda sebagai teks tertulis atau iklan robotik, sehingga langsung menurunkan perhatian dan kepercayaan.",
+  "application_conditions": [
+    "Semua skrip voice-over dan dialog kamera video pendek Indonesia",
+    "Saat mengubah poin spesifikasi produk menjadi narasi lisan"
+  ],
+  "implementation": [
+    "Baca naskah dengan suara keras; jika satu kalimat membuat napas habis atau terdengar seperti brosur resmi, pecah menjadi dua kalimat.",
+    "Gabungkan kalimat pendek 4-7 kata dengan kalimat penjelas 10-16 kata.",
+    "Gunakan kata sambung lisan wajar seperti 'jadi', 'nah', 'soalnya', 'makanya' secukupnya tanpa mengulang kata yang sama berturut-turut."
+  ],
+  "examples": [
+    "Kalau meja kerja sering berantakan kabel, lampu lipat ini cukup ngebantu. Kabelnya nggak perlu colok terus karena bisa dicharge ulang.",
+    "Ukurannya memang ringkas, cuma 250 ml. Tapi untuk bumbu harian satu porsi, ini justru pas dan cepat dicuci."
+  ],
+  "counterexamples": [
+    "Produk ini menghadirkan solusi pencahayaan inovatif dengan desain lipat ergonomis yang sangat direkomendasikan untuk menunjang produktivitas Anda secara optimal."
+  ],
+  "limitations": [
+    "Terlalu banyak kalimat patah-patah atau pengisi lisan ('nah', 'nih', 'tuh') membuat narasi terdengar bertele-tele."
+  ],
+  "related_concepts": [
+    "hl-avoid-ai-templates",
+    "hl-conversational-not-slang"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:01",
+  "extraction_confidence": 0.95,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Core Indonesian spoken language principle"}]
+}

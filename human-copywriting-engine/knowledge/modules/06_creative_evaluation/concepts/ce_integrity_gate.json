@@ -1,0 +1,34 @@
+{
+  "concept_id": "ce-integrity-gate",
+  "concept_name": "Gerbang Integritas: Akurasi Produk dan Autentisitas Tidak Bisa Dikompromikan",
+  "category": "creative_evaluation",
+  "explanation": "Dalam evaluasi HCE, dimensi akurasi produk dan autentisitas menjadi syarat mutlak (hard gate). Jika ada spesifikasi karangan, pengalaman pribadi palsu, diskon fiktif, atau testimoni rekaan, naskah wajib dinyatakan gagal meskipun hook dan CTAs-nya terdengar menarik.",
+  "underlying_psychology": "Sekali kreator ketahuan mengarang klaim atau memalsukan pengalaman, kepercayaan jangka panjang audiens rusak dan akun affiliate berisiko terkena pelanggaran atau penolakan produk.",
+  "application_conditions": [
+    "Tahap evaluasi otomatis maupun review manusia pada setiap output HCE"
+  ],
+  "implementation": [
+    "Bandingkan setiap angka, bahan, klaim manfaat, dan cerita pemakaian di skrip terhadap daftar verified_features, verified_specs, dan available_evidence.",
+    "Tandai sebagai pelanggaran jika ditemukan kata sifat tanpa bukti, kelangkaan buatan ('tinggal 3 lagi'), atau klaim pemakaian pribadi tanpa bukti."
+  ],
+  "examples": [
+    "Skrip mendapat skor Persuasi 8.5 namun menyebut 'aku sudah pakai 6 bulan' padahal tidak ada bukti pemakaian di profil produk -> status gagal (FAILED_INTEGRITY_GATE) sampai klaim tersebut dihapus."
+  ],
+  "counterexamples": [
+    "Meluluskan naskah dengan klaim diskon fiktif karena rata-rata skor tampak tinggi."
+  ],
+  "limitations": [
+    "Jika kreator memang memiliki pengalaman pribadi nyata, masukkan terlebih dahulu ke field available_evidence sebelum generasi skrip."
+  ],
+  "related_concepts": [
+    "bp-trust-authenticity",
+    "ce-seven-dimension-rubric"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:17",
+  "extraction_confidence": 0.99,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Mandatory accuracy & authenticity gate"}]
+}

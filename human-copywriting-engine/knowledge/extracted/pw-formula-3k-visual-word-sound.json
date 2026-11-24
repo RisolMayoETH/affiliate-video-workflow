@@ -1,0 +1,36 @@
+{
+  "concept_id": "pw-formula-3k-visual-word-sound",
+  "concept_name": "Formula 3K (Key Visual, Key Word, Key Sound) agar Pesan Produk Menempel",
+  "category": "persuasive_writing",
+  "explanation": "Mengutip praktisi periklanan Indonesia Subiakto Priosoedarsono, materi komunikasi produk yang mudah menempel di kepala audiens minimal memiliki satu atau kombinasi tiga jangkar: Key Visual (gambar/adegan/gestur yang mudah diingat), Key Word (dialog/headline/kalimat kunci khas produk), dan Key Sound (suara, intonasi, atau bunyi khas yang langsung mengasosiasikan produk).",
+  "underlying_psychology": "Memori manusia bekerja multi-indera (visual + verbal + auditori); jangkar konkret pada gambar, kata, dan suara memudahkan pengingatan ulang ketika kebutuhan muncul.",
+  "application_conditions": [
+    "Merancang skrip, arahan visual, teks layar, dan audio video pendek TikTok/Reels/Shopee"
+  ],
+  "implementation": [
+    "Tentukan 1 Key Visual paling jelas (mis. tes serap air sekali usap atau ukuran wadah 250 ml di genggaman).",
+    "Tentukan 1 Key Word singkat yang membawa manfaat utama produk tanpa klise AI.",
+    "Manfaatkan Key Sound wajar (mis. suara ASMR produk nyata seperti membuka tabung, bunyi klik, atau intonasi baca lisan yang jernih)."
+  ],
+  "examples": [
+    "Key Word terkenal dari karya Subiakto: 'Gantinya ngopi' (Kopiko), 'Nyamuk sini cuma takut Tiga Roda', 'Bersama kita bisa'."
+  ],
+  "counterexamples": [
+    "Video yang gambarnya datar, kalimatnya normatif tanpa kata kunci inti, dan audionya tenggelam oleh musik acak yang tidak nyambung."
+  ],
+  "limitations": [
+    "Mengulang CTA atau kata kunci berulang-ulang tanpa variasi seperti spam ('effectively annoying') dapat menurunkan rasa suka audiens meskipun sempat diingat."
+  ],
+  "related_concepts": [
+    "ce-message-clarity-over-production-budget",
+    "st-demo-pacing",
+    "hl-consumer-expression-and-3c-tagline"
+  ],
+  "source_id": "src_d04ee2812fc4",
+  "source_timestamp": "00:04:07-00:09:23",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

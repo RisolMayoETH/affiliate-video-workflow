@@ -1,0 +1,36 @@
+{
+  "concept_id": "aa-platform-pacing",
+  "concept_name": "Adaptasi Struktur Konten Lintas Platform Video Pendek",
+  "category": "audience_adaptation",
+  "explanation": "TikTok, Shopee Video, Instagram Reels, dan Facebook Reels memiliki konteks tonton yang berbeda. TikTok butuh penghenti scroll cepat dan terasa seperti cerita/temuan teman; Shopee Video lebih langsung ke fungsi, ukuran, dan kejelasan varian; IG Reels menyukai tampilan rapi dengan narasi ringkas; FB Reels lebih responsif terhadap kejelasan manfaat praktis dan kalimat yang tidak terlalu terburu-buru.",
+  "underlying_psychology": "Niat pengguna saat membuka aplikasi berbeda-beda: pengguna Shopee Video cenderung sudah siap belanja (high intent), sedangkan pengguna feed hiburan butuh alasan relevan terlebih dahulu sebelum mempertimbangkan produk.",
+  "application_conditions": [
+    "Pemilihan strategi kreatif, durasi hook, teks layar, dan format CTA untuk tiap platform"
+  ],
+  "implementation": [
+    "TikTok: Hook visual + masalah sehari-hari di 2 detik awal, nada kasual akrab, CTA keranjang kuning.",
+    "Shopee Video: Sorot fungsi utama, dimensi/kapasitas, dan cara pakai sejak awal; CTA keranjang oranye/tautan produk.",
+    "Instagram Reels: Visual bersih, kalimat padat, caption informatif singkat.",
+    "Facebook Reels: Tempo sedikit lebih jelas, bahasa Indonesia sehari-hari yang ramah dan minim jargon asing, ajakan cek komentar/tautan."
+  ],
+  "examples": [
+    "Pada Shopee Video untuk chopper mini: adegan 1 langsung perlihatkan kapasitas 250 ml dan 3 mata pisau bekerja daripada basa-basi situasi."
+  ],
+  "counterexamples": [
+    "Menyebut 'cek keranjang kuning di kiri bawah' di caption Instagram Reels atau Facebook Reels."
+  ],
+  "limitations": [
+    "Sesuaikan detail penempatan tautan dengan tata letak fitur affiliate terbaru di masing-masing platform."
+  ],
+  "related_concepts": [
+    "pw-natural-cta",
+    "st-direct-vs-story"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:15",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Platform adaptation for ID affiliate"}]
+}

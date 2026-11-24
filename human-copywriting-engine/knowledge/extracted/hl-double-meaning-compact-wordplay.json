@@ -1,0 +1,34 @@
+{
+  "concept_id": "hl-double-meaning-compact-wordplay",
+  "concept_name": "Permainan Kata Makna Ganda yang Terhubung ke Manfaat Produk",
+  "category": "human_language",
+  "explanation": "Menggunakan satu gabungan kata sederhana dengan dua arti yang sama-sama relevan—satu sebagai ekspresi percakapan wajar dan satu lagi menggambarkan manfaat langsung produk—sehingga kalimat sangat ringkas namun berlapis makna.",
+  "underlying_psychology": "Otak menikmati keterkaitan ganda yang cepat dimengerti (aha moment kecil), sehingga produk dan manfaat ketahanannya lebih melekat di ingatan.",
+  "application_conditions": [
+    "Hook pendek atau headline caption bila ada kata bahasa Indonesia yang memiliki arti ganda positif dan akurat terhadap fungsi produk"
+  ],
+  "implementation": [
+    "Cari kata sehari-hari yang terkait langsung dengan manfaat produk (mis. 'terang', 'ringan', 'hemat', 'rapat').",
+    "Uji apakah kedua maknanya langsung dipahami audiens tanpa penjelasan tambahan."
+  ],
+  "examples": [
+    "'Terus terang, Philips terang terus': hanya memakai dua kata dasar ('terus' dan 'terang') yang bermakna jujur sekaligus menyala awet dan hemat."
+  ],
+  "counterexamples": [
+    "Permainan kata ganda yang membingungkan atau justru mengaburkan fungsi nyata produk."
+  ],
+  "limitations": [
+    "Penilaian narasumber bahwa contoh ini adalah tagline Indonesia terbaik sepanjang masa merupakan opini subjektif; kecocokan gaya permainan kata tetap bergantung pada produk dan kejelasan konteks."
+  ],
+  "related_concepts": [
+    "hl-familiar-phrase-twist",
+    "ce-audience-comprehension-check"
+  ],
+  "source_id": "src_b75f288c5353",
+  "source_timestamp": "00:08:45-00:12:26",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

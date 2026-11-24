@@ -1,0 +1,35 @@
+{
+  "concept_id": "st-visual-proof-and-sensory-gesture",
+  "concept_name": "Gestur Sensorik dan Bukti Visual Spesifik atas Hasil Nyata Produk",
+  "category": "storytelling",
+  "explanation": "Daripada hanya mengklaim 'bersih' atau 'bagus', tunjukkan hasil konkret lewat gestur sensorik yang langsung bisa dirasakan penonton lewat layar—seperti menggesek piring dengan bunyi 'kesat' untuk membuktikan lemak terangkat, bukan sekadar tampak bersih.",
+  "underlying_psychology": "Indra penglihatan dan pendengaran memicu simulasi fisik di otak penonton (merasa seolah ikut menyentuh permukaan yang bersih/kesat), sehingga klaim manfaat terasa jauh lebih meyakinkan tanpa kata berlebihan.",
+  "application_conditions": [
+    "Semua video demo produk rumah tangga, dapur, otomotif, perawatan diri, dan elektronik"
+  ],
+  "implementation": [
+    "Tanyakan hasil paling spesifik yang diinginkan pembeli (bukan sekadar 'bersih', melainkan 'kesat bebas lemak', 'kering sekali usap', atau 'cahaya tidak silau').",
+    "Buat satu gestur tangan atau tes dekat kamera yang membuktikan hasil spesifik tersebut."
+  ],
+  "examples": [
+    "Sunlight menunjukkan jari mengusap piring dengan efek suara 'kesat' dan gestur centang untuk membuktikan lemak benar-benar terangkat."
+  ],
+  "counterexamples": [
+    "Hanya memegang produk di depan kamera sambil berkata 'ini bagus dan bersih banget' tanpa tes visual."
+  ],
+  "limitations": [
+    "Efek suara atau visual bukti harus mewakili kondisi nyata produk, tidak boleh direkayasa agar terlihat lebih hebat dari aslinya."
+  ],
+  "related_concepts": [
+    "bp-trust-authenticity",
+    "pw-formula-3k-visual-word-sound",
+    "pw-feature-to-benefit"
+  ],
+  "source_id": "src_ed50fb4efb98",
+  "source_timestamp": "00:07:53-00:10:57",
+  "extraction_confidence": 0.94,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

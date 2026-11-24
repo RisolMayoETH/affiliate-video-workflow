@@ -1,0 +1,34 @@
+{
+  "concept_id": "pw-objection-handling-honest",
+  "concept_name": "Penanganan Keberatan Secara Terbuka",
+  "category": "persuasive_writing",
+  "explanation": "Mengakui pertanyaan atau kekhawatiran wajar pembeli di tengah skrip—seperti cara pemasangan, ukuran ruang, atau kecocokan—lalu menjelaskan solusinya dengan tenang berdasarkan fakta produk.",
+  "underlying_psychology": "Saat audiens merasa keraguannya dimengerti tanpa ditutup-tutupi, resistensi terhadap ajakan beli turun drastis.",
+  "application_conditions": [
+    "Produk dengan potensi keberatan tinggi (barang tempel, skincare, alat elektronik murah, tas kerja/kuliah)"
+  ],
+  "implementation": [
+    "Identifikasi 1-2 keberatan utama calon pembeli pada tahap analisis audiens.",
+    "Sisipkan jawaban langsung lewat narasi dan visual di scene tengah sebelum CTA."
+  ],
+  "examples": [
+    "Banyak yang tanya rak tempel kuat nggak buat botol besar. Kuncinya bersihkan dan keringkan dinding keramik dulu sebelum pasang perekatnya, lalu tunggu sesuai petunjuk sebelum diisi penuh."
+  ],
+  "counterexamples": [
+    "Dijamin kuat nahan beban ratusan kilo seumur hidup di tembok apa saja!"
+  ],
+  "limitations": [
+    "Jangan menjanjikan ketahanan ekstrem bila pabrikan tidak mencantumkan angka beban uji."
+  ],
+  "related_concepts": [
+    "bp-hesitation-risk-reduction",
+    "bp-trust-authenticity"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:09",
+  "extraction_confidence": 0.92,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Grounded objection handling"}]
+}

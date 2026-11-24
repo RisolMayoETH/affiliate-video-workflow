@@ -1,0 +1,20 @@
+{
+  "product_id": "prod-household-rack",
+  "name": "Rak Sudut Kamar Mandi Stainless Tempel Tanpa Bor",
+  "category": "household",
+  "price_idr": 48000,
+  "description": "Rak sudut dinding kamar mandi berbahan stainless dengan perekat kuat tanpa perlu mengebor keramik.",
+  "verified_features": [
+    "Pemasangan tempel tanpa bor dengan bantalan perekat",
+    "Material stainless tahan karat untuk area lembap",
+    "Desain sudut menghemat ruang kamar mandi"
+  ],
+  "verified_specs": {
+    "bahan": "Stainless steel",
+    "pemasangan": "Tempel tanpa bor pada permukaan keramik halus"
+  },
+  "available_evidence": [
+    "Petunjuk pemasangan: bersihkan dan keringkan permukaan keramik sebelum menempelkan perekat"
+  ],
+  "target_platform": "tiktok"
+}

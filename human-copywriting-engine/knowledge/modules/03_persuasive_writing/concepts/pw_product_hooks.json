@@ -1,0 +1,36 @@
+{
+  "concept_id": "pw-product-grounded-hooks",
+  "concept_name": "Hook Kuat yang Terhubung Langsung ke Produk",
+  "category": "persuasive_writing",
+  "explanation": "Hook pada 2-3 detik pertama bertugas menghentikan scroll dengan menyajikan masalah relevan, demonstrasi visual langsung, atau kejelasan fungsi produk—bukan umpan klik palsu yang tidak nyambung dengan isi video.",
+  "underlying_psychology": "Rasa ingin tahu hanya berubah menjadi minat beli jika sesuai harapan awal. Hook clickbait memang menaikkan view sesaat, tetapi merusak retensi tengah video dan niat klik keranjang.",
+  "application_conditions": [
+    "Scene 1 di TikTok, Shopee Video, Instagram Reels, dan Facebook Reels"
+  ],
+  "implementation": [
+    "Tunjukkan produk atau kondisi masalahnya di detik pertama.",
+    "Beri kalimat pendek maksimal 12 kata yang langsung menyebut inti manfaat atau pertanyaan relevan.",
+    "Siapkan alternatif hook berdasarkan sudut pandang berbeda (masalah, demo langsung, atau keraguan umum)."
+  ],
+  "examples": [
+    "Dinding kamar mandi nggak boleh dibor? Rak sudut tempel ini solusinya.",
+    "Cuma buat ngalusin bumbu harian, nggak perlu keluarin blender besar."
+  ],
+  "counterexamples": [
+    "Rahasia bikin tetangga iri yang disembunyikan toko bangunan!"
+  ],
+  "limitations": [
+    "Hindari membuka setiap video dengan pertanyaan identik terus-menerus."
+  ],
+  "related_concepts": [
+    "pw-feature-to-benefit",
+    "hl-avoid-ai-templates"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:07",
+  "extraction_confidence": 0.95,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Anti-clickbait hook engineering"}]
+}

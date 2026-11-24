@@ -1,0 +1,25 @@
+# User campaigns and local photos (kept private/local, never uploaded)
+campaigns/
+Foto/
+
+# Python caches and virtual environments
+**/__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# HCE local runtime data (preserve .gitkeep placeholders)
+human-copywriting-engine/data/db/*
+!human-copywriting-engine/data/db/.gitkeep
+human-copywriting-engine/data/incoming/*
+!human-copywriting-engine/data/incoming/.gitkeep
+human-copywriting-engine/data/transcripts/*
+!human-copywriting-engine/data/transcripts/.gitkeep
+human-copywriting-engine/data/processed/*
+human-copywriting-engine/data/tmp/*
+!human-copywriting-engine/data/tmp/.gitkeep

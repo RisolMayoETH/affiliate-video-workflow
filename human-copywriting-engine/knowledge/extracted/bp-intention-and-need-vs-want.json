@@ -1,0 +1,35 @@
+{
+  "concept_id": "bp-intention-and-need-vs-want",
+  "concept_name": "Keputusan Beli Berbasis Niat & Kebutuhan Nyata (Needs vs Wants)",
+  "category": "buyer_psychology",
+  "explanation": "Pembeli yang cerdas menimbang tiga hal sebelum checkout: apakah barang itu benar-benar dibutuhkan (need vs want), apakah dibutuhkan sekarang, dan nilai guna apa yang didapat. Copywriting yang menghormati kesadaran ini membangun kepercayaan lebih kuat daripada pemicu impulsif semata.",
+  "underlying_psychology": "Pembeli yang membeli hanya karena dorongan emosi atau kompetisi sesaat sering membatalkan pesanan atau menyesal; pembeli yang yakin atas nilai guna barang lebih mantap menyelesaikan pembelian.",
+  "application_conditions": [
+    "Menulis rekomendasi produk harian, perkakas, dan barang kebutuhan menengah ke atas"
+  ],
+  "implementation": [
+    "Bantu audiens menilai kecocokan produk dengan kebutuhan nyatanya (sebutkan untuk siapa produk cocok dan skenario pemakaiannya).",
+    "Hindari mendorong pembelian impulsif dengan memanipulasi FOMO."
+  ],
+  "examples": [
+    "Alih-alih mendesak beli sekarang, jelaskan: 'Pas buat bumbu porsi kecil harian; kalau masak porsi besar lebih cocok pakai blender.'"
+  ],
+  "counterexamples": [
+    "Mendorong audiens membeli barang yang jelas tidak mereka butuhkan hanya karena 'mumpung promo'."
+  ],
+  "limitations": [
+    "Pembelian produk gaya hidup tetap punya porsi keinginan (want), sehingga alasan emosional yang wajar tetap relevan selama tidak manipulatif."
+  ],
+  "related_concepts": [
+    "bp-hesitation-risk-reduction",
+    "bp-practical-emotional-triggers",
+    "bp-scarcity-and-bandwagon-limits"
+  ],
+  "source_id": "src_77cff3367065",
+  "source_timestamp": "00:06:20-00:09:46",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

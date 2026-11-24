@@ -1,0 +1,35 @@
+{
+  "concept_id": "bp-scarcity-and-bandwagon-limits",
+  "concept_name": "Mekanisme Bandwagon Effect, Scarcity Bias, dan Risiko Erosi Kepercayaan",
+  "category": "buyer_psychology",
+  "explanation": "Penjualan berbatas waktu bekerja lewat dua pemicu psikologis: Bandwagon Effect (terdorong membeli karena melihat banyak orang ikut berburu) dan Scarcity Bias (menganggap barang bernilai lebih tinggi saat jumlahnya terasa sedikit). Namun jika dipakai terlalu sering atau terasa dimanipulasi, strategi ini justru menarik pemburu diskon non-loyal, membuat pembeli asli lelah, dan merusak sentimen kepercayaan.",
+  "underlying_psychology": "Manusia cenderung menilai barang yang langka atau dikejar banyak orang sebagai lebih berharga, tetapi begitu merasa dipermainkan oleh kelangkaan buatan, skeptisisme jangka panjang langsung muncul.",
+  "application_conditions": [
+    "Evaluasi etika dan efektivitas jangka panjang kalimat urgensi pada copywriting affiliate"
+  ],
+  "implementation": [
+    "Jangan membuat urgensi atau kelangkaan buatan ('sold out sebentar lagi', 'stok tinggal 3') ketika stok sebenarnya melimpah atau tidak terverifikasi.",
+    "Bangun nilai jangka panjang dengan menjelaskan guna nyata produk bagi pembeli yang benar-benar membutuhkan."
+  ],
+  "examples": [
+    "Klaim sold out dalam 5 menit yang sering diulang justru membuat konsumen asli curiga akan adanya manipulasi."
+  ],
+  "counterexamples": [
+    "Memakai urgensi palsu di setiap skrip affiliate harian hingga audiens merasa dibohongi."
+  ],
+  "limitations": [
+    "Kelangkaan hanya boleh disebut bila merupakan fakta nyata yang dapat diverifikasi, bukan rekayasa copy."
+  ],
+  "related_concepts": [
+    "bp-trust-authenticity",
+    "ce-integrity-gate",
+    "pw-natural-cta"
+  ],
+  "source_id": "src_77cff3367065",
+  "source_timestamp": "00:02:20-00:06:20",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

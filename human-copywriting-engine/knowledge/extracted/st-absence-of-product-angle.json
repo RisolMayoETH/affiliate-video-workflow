@@ -1,0 +1,35 @@
+{
+  "concept_id": "st-absence-of-product-angle",
+  "concept_name": "Sudut Kreatif 'Absence of Product': Tunjukkan Akibat Jika Produk Tidak Ada",
+  "category": "storytelling",
+  "explanation": "Selain format standar (masalah -> produk muncul sebagai solusi -> demo produk), sudut kreatif lain yang efektif adalah menggambarkan situasi tidak nyaman yang terjadi ketika produk tidak tersedia ('the absence of product'), sehingga penonton langsung menyadari pentingnya fungsi produk.",
+  "underlying_psychology": "Membayangkan kerepotan akibat ketiadaan solusi sering terasa lebih nyata dan lucu/akrab daripada langsung memamerkan barangnya sejak detik pertama.",
+  "application_conditions": [
+    "Produk yang fungsinya sudah cukup dikenal audiens (product-aware/solution-aware) atau pembuatan konten variasi angle kedua"
+  ],
+  "implementation": [
+    "Gambarkan kondisi repot yang dialami seseorang ketika tidak memiliki alat bantu tersebut (mis. tidur terganggu, meja berantakan, atau motor susah distarter di pagi hari).",
+    "Pastikan di akhir video produk tetap terlihat jelas beserta manfaat nyatanya agar penonton baru tidak bingung."
+  ],
+  "examples": [
+    "Iklan Baygon jadul tidak langsung menampilkan demo semprot, melainkan suami yang tidak nyaman tidur di luar rumah karena tidak ada Baygon."
+  ],
+  "counterexamples": [
+    "Memakai sudut ketiadaan produk untuk barang yang benar-benar baru dan asing sehingga penonton tidak paham produk apa yang dibahas."
+  ],
+  "limitations": [
+    "Seperti dicatat narasumber di segmen berikutnya, konsep tersirat yang menunda kemunculan produk paling efektif bila kategori produknya sudah dikenal audiens."
+  ],
+  "related_concepts": [
+    "st-relatable-everyday-moment",
+    "st-wah-gue-banget-conflict",
+    "pw-dilemma-insight-solution-framing"
+  ],
+  "source_id": "src_a14695bb7593",
+  "source_timestamp": "00:04:32-00:09:19",
+  "extraction_confidence": 0.91,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

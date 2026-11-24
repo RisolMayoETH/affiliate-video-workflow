@@ -1,0 +1,36 @@
+{
+  "concept_id": "hl-avoid-ai-templates",
+  "concept_name": "Menghindari Frasa AI Generik dan Hype Palsu",
+  "category": "human_language",
+  "explanation": "Hindari kalimat pembuka klise, terjemahan kaku gaya bahasa Inggris ('di era modern ini', 'apakah Anda pernah'), serta kata-kata hype berulang seperti 'wajib banget', 'auto tertarik', 'worth it parah', atau 'jangan sampai ketinggalan' sebagai pola bawaan.",
+  "underlying_psychology": "Pembeli Indonesia sudah jenuh dengan ratusan video affiliate berskrip serupa. Begitu frasa klise terdengar di 2 detik pertama, audiens langsung mengkategorikan video sebagai iklan keras dan menggulir layar.",
+  "application_conditions": [
+    "Review semua hook, isi skrip, CTA, dan caption sebelum dipublikasikan",
+    "Berlaku pada semua platform short video dan semua segmen audiens"
+  ],
+  "implementation": [
+    "Ganti pembuka generik ('Apakah kalian sering kesusahan...') dengan observasi konkret dari masalah atau fitur produk.",
+    "Hapus kata sifat berlebih ('super duper canggih maksimal') dan ganti dengan keterangan faktual yang bisa dibuktikan.",
+    "Uji seluruh konteks kalimat saat merevisi; jangan hanya menukar satu kata tanpa merapikan struktur kalimatnya."
+  ],
+  "examples": [
+    "Alih-alih 'Guys! Kalian wajib banget punya rak ini, worth it parah!', gunakan: 'Kalau pojok kamar mandi sering penuh botol sabun di lantai, rak tempel ini bikin area lantai lebih lega tanpa harus ngebor keramik.'"
+  ],
+  "counterexamples": [
+    "Halo guys! Jangan sampai ketinggalan produk viral yang satu ini, dijamin auto tertarik dan bikin hidup kamu berubah total!"
+  ],
+  "limitations": [
+    "Ekspresi santai seperti 'guys' sesekali boleh muncul bila memang gaya wajar pembawaan kreator tertentu, tetapi tidak pernah boleh dijadikan template default."
+  ],
+  "related_concepts": [
+    "hl-spoken-indonesian-rhythm",
+    "ce-integrity-gate"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:02",
+  "extraction_confidence": 0.96,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Anti-template natural language constraint"}]
+}

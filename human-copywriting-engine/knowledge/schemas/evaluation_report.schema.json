@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hce.local/schemas/evaluation_report.schema.json",
+  "title": "HCE Evaluation Report",
+  "type": "object",
+  "required": ["dimensions", "overall_score", "passed", "gate_status", "improvement_suggestions"],
+  "properties": {
+    "dimensions": {
+      "type": "object",
+      "required": [
+        "naturalness",
+        "buyer_psychology",
+        "persuasiveness",
+        "storytelling",
+        "audience_adaptation",
+        "product_accuracy",
+        "authenticity"
+      ]
+    },
+    "overall_score": { "type": "number", "minimum": 1.0, "maximum": 10.0 },
+    "passed": { "type": "boolean" },
+    "gate_status": { "type": "string" },
+    "integrity_violations": { "type": "array", "items": { "type": "string" } },
+    "improvement_suggestions": { "type": "array", "items": { "type": "string" } }
+  }
+}

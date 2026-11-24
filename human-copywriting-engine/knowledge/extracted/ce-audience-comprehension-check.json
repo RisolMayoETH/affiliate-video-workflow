@@ -1,0 +1,36 @@
+{
+  "concept_id": "ce-audience-comprehension-check",
+  "concept_name": "Posisikan Diri sebagai Audiens: Uji Pemahaman dan Nada Tidak Menggurui",
+  "category": "creative_evaluation",
+  "explanation": "Setelah menulis copy, baca ulang dari sudut pandang pembeli ('always put yourself in audience's shoes'): pastikan orang langsung mengerti, leluconnya cukup universal, dan gaya bahasa pintar/witty tidak terasa menggurui.",
+  "underlying_psychology": "Copy yang terasa terlalu pintar, berjarak, atau memakai humor sempit membuat audiens merasa asing atau digurui sehingga empati dan minat beli turun.",
+  "application_conditions": [
+    "Evaluasi semua draf sebelum perekaman atau penerbitan",
+    "Terutama saat mencoba gaya bahasa jenaka, permainan kata, atau subteks budaya"
+  ],
+  "implementation": [
+    "Uji draf dengan 3 pertanyaan: apakah pembaca awam langsung paham, apakah referensinya universal bagi target pembeli, dan apakah nadanya terdengar setara bukan menggurui?",
+    "Jika ada permainan kata atau humor sensitif/kasar yang berisiko disalahpahami atau melanggar aturan platform (seperti contoh wordplay yang berisiko kena teguran platform), ganti dengan ungkapan bersih yang aman."
+  ],
+  "examples": [
+    "Iklan Ricola memakai konteks batuk sebagai simbol sesuatu yang janggal/disembunyikan karena dipahami secara universal."
+  ],
+  "counterexamples": [
+    "Memakai wordplay kasar atau istilah bahasa Inggris berlapis hanya agar terdengar cerdas padahal target pembeli tidak menangkap maksudnya."
+  ],
+  "limitations": [
+    "Penilaian apakah suatu lelucon terasa menggurui atau pas sering membutuhkan tinjauan pembaca manusia dari segmen target yang sama."
+  ],
+  "related_concepts": [
+    "ce-seven-dimension-rubric",
+    "aa-register-calibration",
+    "hl-conversational-not-slang"
+  ],
+  "source_id": "src_2357ba69c5b1",
+  "source_timestamp": "00:08:50-00:11:46",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

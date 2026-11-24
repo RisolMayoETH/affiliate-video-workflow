@@ -1,0 +1,34 @@
+{
+  "concept_id": "ce-atm-principle-over-copy-paste",
+  "concept_name": "Metode ATM: Meniru Prinsip dan Pemikiran di Baliknya, Bukan Copy-Paste Mentah",
+  "category": "creative_evaluation",
+  "explanation": "Dalam metode ATM (Amati, Tiru, Modifikasi), membedakan inspirasi yang kuat dari sekadar menjiplak terletak pada apa yang diambil: pelajari alasan dan prinsip di balik keberhasilan referensi lalu modifikasi sesuai tujuan serta konteks produk sendiri—bukan meniru mentah-mentah kalimat atau tampilan luarnya.",
+  "underlying_psychology": "Meniru mentah-mentah gaya kreator atau iklan lain tanpa memahami alasan psikologis di baliknya membuat pesan terasa palsu, klise, dan tidak pas dengan produk.",
+  "application_conditions": [
+    "Menggunakan referensi iklan viral atau contoh hook dari knowledge base HCE untuk produk baru"
+  ],
+  "implementation": [
+    "Amati struktur mengapa sebuah hook atau demo berhasil (mis. kontras masalah vs bukti visual).",
+    "Tiru pola pemikirannya, lalu modifikasi kata, situasi, dan nadanya agar 100% sesuai karakter produk dan target pembelimu."
+  ],
+  "examples": [
+    "Apple mengadaptasi filosofi desain fungsionalisme Dieter Rams ke produk yang berbeda bentuknya, alih-alih menjiplak mentah tampilan luar seperti copy-paste."
+  ],
+  "counterexamples": [
+    "Mengambil skrip viral produk skincare lalu mengganti nama barangnya saja untuk produk perkakas atau elektronik."
+  ],
+  "limitations": [
+    "Membutuhkan pemahaman konteks produk dan audiens sebelum memodifikasi referensi."
+  ],
+  "related_concepts": [
+    "hl-avoid-ai-templates",
+    "pw-big-idea-before-copy"
+  ],
+  "source_id": "src_e6b9f813ebe4",
+  "source_timestamp": "00:10:26-00:11:44",
+  "extraction_confidence": 0.92,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

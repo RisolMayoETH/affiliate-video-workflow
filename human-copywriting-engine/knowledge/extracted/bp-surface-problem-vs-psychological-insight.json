@@ -1,0 +1,35 @@
+{
+  "concept_id": "bp-surface-problem-vs-psychological-insight",
+  "concept_name": "Menggali Masalah Psikologis di Balik Masalah Fisik Permukaan",
+  "category": "buyer_psychology",
+  "explanation": "Komunikasi produk sering berhenti di masalah permukaan yang generik (misalnya 'rambut lembut bebas ketombe'). Insight yang tajam menembus kekhawatiran psikologis atau sosial di baliknya—seperti rasa malu ketombe menempel di baju hitam—sehingga produk hadir menjawab masalah fisik sekaligus ketakutan sosial pembelinya.",
+  "underlying_psychology": "Banyak pembeli menunda atau terdorong membeli bukan semata karena gejala fisik, melainkan karena dampak sosial dan rasa percaya diri saat beraktivitas di depan orang lain.",
+  "application_conditions": [
+    "Mencari hook dan angle pembeda pada produk perawatan diri, fashion, rumah tangga, maupun kebersihan"
+  ],
+  "implementation": [
+    "Tanyakan 'lalu apa akibat sosial atau rasa tidak nyamannya?' di balik masalah fisik utama produk.",
+    "Uji kejelasan insight dengan memadukan gambar/objek pengingat (seperti baju hitam untuk sampo anti ketombe atau tangki motor hitam untuk kanebo)."
+  ],
+  "examples": [
+    "Clear bergeser dari pesan generik 'rambut indah bebas ketombe' menjadi insight psikologis rasa malu ketombe di baju hitam: 'Pakai hitam, siapa takut?'"
+  ],
+  "counterexamples": [
+    "Menyebut manfaat generik yang bisa diklaim semua merek kompetitor tanpa menyentuh ketakutan nyata pembeli."
+  ],
+  "limitations": [
+    "Hindari mengeksploitasi rasa malu secara merendahkan atau menakut-nakuti audiens; posisikan produk sebagai pendamping rasa nyaman dan percaya diri."
+  ],
+  "related_concepts": [
+    "bp-consumer-insight-vs-market-research",
+    "pw-dilemma-insight-solution-framing",
+    "bp-practical-emotional-triggers"
+  ],
+  "source_id": "src_2f13553ba568",
+  "source_timestamp": "00:05:00-00:10:29",
+  "extraction_confidence": 0.94,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

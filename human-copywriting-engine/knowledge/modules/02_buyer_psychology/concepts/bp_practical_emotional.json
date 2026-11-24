@@ -1,0 +1,35 @@
+{
+  "concept_id": "bp-practical-emotional-triggers",
+  "concept_name": "Keseimbangan Pemicu Rasional dan Emosional",
+  "category": "buyer_psychology",
+  "explanation": "Keputusan beli muncul dari gabungan perasaan tidak nyaman atau keinginan praktis (emosional/situasional) yang disahkan oleh alasan masuk akal (fitur, bahan, harga, kemudahan pakai).",
+  "underlying_psychology": "Audiens tertarik secara cepat lewat situasi yang terasa akrab, lalu membutuhkan justifikasi rasional agar merasa keputusan belinya cerdas dan tidak boros.",
+  "application_conditions": [
+    "Produk harian dan fungsional (rumah tangga, dapur, elektronik ringan)",
+    "Produk gaya hidup maupun perawatan diri dengan pertimbangan harga"
+  ],
+  "implementation": [
+    "Awali dengan situasi akrab (meja penuh barang, malas mengulek bumbu setiap pagi, kamar mandi sempit) tanpa dramatisasi berlebihan.",
+    "Sematkan alasan rasional segera setelahnya: bahan, kapasitas, efisiensi ruang, atau kemudahan perawatan."
+  ],
+  "examples": [
+    "Kos-kosan nggak boleh bor tembok, padahal botol sabun numpuk di lantai. Rak sudut tempel stainless ini cukup ditempel di keramik bersih tanpa merusak dinding."
+  ],
+  "counterexamples": [
+    "Hidup kamu pasti menderita kalau kamar mandi masih berantakan, beli sekarang juga!"
+  ],
+  "limitations": [
+    "Hindari klaim emosional yang menakut-nakuti atau menyudutkan pembeli."
+  ],
+  "related_concepts": [
+    "pw-feature-to-benefit",
+    "st-relatable-everyday-moment"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:05",
+  "extraction_confidence": 0.92,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Balanced rational & emotional framing"}]
+}

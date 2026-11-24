@@ -1,0 +1,35 @@
+{
+  "concept_id": "aa-brand-persona-channel-and-involvement",
+  "concept_name": "Batas Gaya Bahasa Nyentrik: Kecocokan Platform, Tingkat Risiko Produk, dan Karakter Asli",
+  "category": "audience_adaptation",
+  "explanation": "Gaya komunikasi provokatif atau penuh budaya internet hanya bisa diterima bila tiga syarat terpenuhi: produk termasuk kategori risiko rendah (low involvement), disampaikan di platform yang akrab dengan kultur tersebut kepada audiens yang tepat, dan memang merupakan karakter asli sejak awal—karena meniru bahasa gaul padahal karakternya formal justru terasa cringe dan memaksakan.",
+  "underlying_psychology": "Pada produk berisiko tinggi (perawatan kulit, kesehatan, otomotif, elektronik mahal), pembeli mengharapkan rasa aman dan keseriusan; nada bercanda berlebihan atau dipaksakan justru menurunkan kepercayaan.",
+  "application_conditions": [
+    "Memilih seberapa kasual atau playful register bahasa saat menyusun naskah untuk berbagai kategori produk dan generasi pembeli"
+  ],
+  "implementation": [
+    "Gunakan gaya lebih serius, jelas, dan menghormati keraguan pembeli untuk produk high-involvement (skincare, elektronik, otomotif/aki, barang keluarga).",
+    "Jangan memaksakan slang internet ke produk atau audiens dewasa/lintas generasi—lebih baik memakai bahasa Indonesia sehari-hari yang bersih dan akrab."
+  ],
+  "examples": [
+    "Aksesori skin HP berisiko rendah bisa diterima oleh audiens Twitter/Gen Z dengan gaya jenaka ekstrem, sedangkan brand mapan yang memaksakan bahasa gaul justru terasa canggung."
+  ],
+  "counterexamples": [
+    "Memakai gaya roasting atau slang ekstrem untuk menjual produk kebutuhan keluarga di Facebook Reels."
+  ],
+  "limitations": [
+    "Narasumber secara tegas menekankan gaya ekstrem seperti Dbrand sebaiknya tidak ditiru mentah-mentah oleh brand atau penjual umum karena risikonya sangat tinggi."
+  ],
+  "related_concepts": [
+    "hl-conversational-not-slang",
+    "aa-register-calibration",
+    "ce-persona-consistency-and-engaging-cta"
+  ],
+  "source_id": "src_7eee72a98f3b",
+  "source_timestamp": "00:08:45-00:12:36",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

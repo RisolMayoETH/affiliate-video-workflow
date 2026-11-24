@@ -1,0 +1,35 @@
+{
+  "concept_id": "ce-message-clarity-over-production-budget",
+  "concept_name": "Kejelasan Pesan dan Asosiasi Produk Lebih Penting dari Estetika Mahal",
+  "category": "creative_evaluation",
+  "explanation": "Iklan yang tampak mahal memang didukung production value, big idea, dan emotional value, namun estetika hanyalah alat bantu—bukan tujuan akhir. Tujuan utama materi promosi adalah menyampaikan pesan yang menempel dan membangun asosiasi jelas antara kebutuhan dan produk di benak audiens.",
+  "underlying_psychology": "Penonton sering menikmati visual estetik tanpa mengingat produknya jika pesan inti kabur; sebaliknya, visual sederhana dengan asosiasi masalah-solusi yang jelas langsung menghubungkan produk ke ingatan pembeli.",
+  "application_conditions": [
+    "Pembuatan video affiliate kreator mandiri dengan perlengkapan rekaman sederhana (HP/pencahayaan rumah)",
+    "Evaluasi naskah dan arahan visual agar tidak tergelincir menjadi konten estetik tanpa pesan jual yang jelas"
+  ],
+  "implementation": [
+    "Pastikan setiap adegan menjaga kejelasan asosiasi antara masalah pembeli dan produk, bukan sekadar angle kamera cantik.",
+    "Jangan minder jika produksi sederhana; fokuskan tenaga pada kejelasan pesan, visual yang membuktikan fungsi, dan kalimat yang mudah diingat."
+  ],
+  "examples": [
+    "Demonstrasi produk langsung di rumah (misalnya mengeringkan tangki motor dengan kanebo atau menempel rak sudut kamar mandi) lebih efektif membangun asosiasi guna dibanding B-roll sinematik yang tidak menjelaskan cara kerja barang."
+  ],
+  "counterexamples": [
+    "Video estetik penuh transisi sinematik 20 detik di mana penonton selesai menonton tanpa mengerti apa fungsi barangnya."
+  ],
+  "limitations": [
+    "Untuk produk gaya hidup atau fashion tertentu, visual yang rapi tetap membantu rasa percaya selama kejelasan fungsi produk tidak hilang."
+  ],
+  "related_concepts": [
+    "pw-big-idea-before-copy",
+    "st-direct-vs-story"
+  ],
+  "source_id": "src_d04ee2812fc4",
+  "source_timestamp": "00:00:00-00:04:07",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

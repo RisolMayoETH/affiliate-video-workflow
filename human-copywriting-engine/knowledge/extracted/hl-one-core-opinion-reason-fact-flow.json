@@ -1,0 +1,44 @@
+{
+  "concept_id": "hl-one-core-opinion-reason-fact-flow",
+  "concept_name": "Alur Bicara Tiga Unsur: Satu Opini Utama, Penjelasan, dan Data/Fakta Pendukung",
+  "category": "human_language",
+  "explanation": "Pembicara merumuskan tiga komponen agar obrolan atau penyampaian gagasan jelas sejak kalimat pertama: (1) satu opini utama—syarat wajibnya hanya boleh satu inti sikap per segmen bicara agar tidak terdengar ragu-ragu atau bercabang, (2) penjelasan atau alasan di balik opini tersebut, dan (3) data atau fakta pendukung untuk membuktikannya.",
+  "underlying_psychology": "Kalimat pertama yang tegas pada satu poin membantu pendengar langsung mengunci topik di kepalanya; sebaliknya terlalu banyak opini sekaligus memicu kebingungan dan kesan pembicara tidak yakin pada ucapannya sendiri.",
+  "application_conditions": [
+    "Menyusun narasi rekomendasi produk affiliate agar terdengar mantap dan natural",
+    "Menjawab keberatan umum calon pembeli dalam satu paragraf lisan yang ringkas"
+  ],
+  "implementation": [
+    "Pilih tepat satu inti kesimpulan/sikap di awal atau akhir segmen (misalnya fokus pada kepraktisan atau kecocokan untuk situasi tertentu, bukan semua kelebihan sekaligus).",
+    "Ikuti dengan alasan logis memakai kata sambung lisan seperti 'soalnya...' atau 'karena...' tanpa nada menggurui.",
+    "Tutup atau perkuat dengan satu fakta/spesifikasi produk yang terverifikasi."
+  ],
+  "examples": [
+    "Kalau buat meja kerja sempit, lampu klip ini lebih masuk akal daripada lampu berdiri biasa. Soalnya posisinya tinggal dijepit di pinggir meja, jadi nggak makan tempat sama sekali. Panjang tangkainya juga fleksibel buat diarahkan langsung ke keyboard."
+  ],
+  "counterexamples": [
+    "Sebenarnya lampu ini bagus sih buat belajar, tapi model berdiri juga oke, terus ini juga hemat listrik, bahannya bagus, dan bisa dipakai tidur juga sih menurutku."
+  ],
+  "limitations": [
+    "Opini yang dipilih tetap harus berupa penilaian wajar berbasis fitur faktual produk, bukan klaim pribadi palsu."
+  ],
+  "related_concepts": [
+    "pw-single-core-message-focus",
+    "hl-spoken-indonesian-rhythm",
+    "pw-feature-to-benefit"
+  ],
+  "source_id": "src_c42718f5b378",
+  "source_timestamp": "00:08:38-00:12:55",
+  "extraction_confidence": 0.9,
+  "validation_status": "pending",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": [
+    {
+      "source_id": "src_c42718f5b378",
+      "source_timestamp": "00:08:38-00:12:55",
+      "topic_id": "src_c42718f5b378_topic_002",
+      "note": "Kerangka 3 alur bicara: 1 Opini Utama + Penjelasan + Data/Fakta Pendukung (00:08:38-00:10:45)."
+    }
+  ]
+}

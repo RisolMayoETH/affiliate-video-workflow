@@ -1,0 +1,43 @@
+{
+  "concept_id": "hl-accurate-everyday-vocabulary-palette",
+  "concept_name": "Kosakata sebagai Palet Warna Pikiran: Pilih Kata Harian yang Tepat dan Spesifik",
+  "category": "human_language",
+  "explanation": "Lewat analogi melukis gurun pasir (butuh warna cat kuning/pasir yang tepat, bukan cuma cat putih), pembicara menjelaskan bahwa semakin banyak kata yang dipahami artinya dan maknanya dikuasai, semakin akurat dan detail kita melukiskan isi pikiran agar langsung dipahami lawan bicara—termasuk lewat kebiasaan membaca minimal 10 halaman sehari. Untuk penulisan skrip, kaya kosakata berarti memilih kata lisan sehari-hari yang paling tepat menggambarkan sensasi nyata produk, bukan menjejalkan kata baku kamus.",
+  "underlying_psychology": "Kata kamus yang terlalu abstrak atau jarang diucapkan sehari-hari ('ergonomis', 'optimal', 'efisiensi', 'menunjang') memaksa pendengar menerjemahkan maksudnya dulu; kata obrolan yang spesifik langsung memicu bayangan visual di kepala pendengar.",
+  "application_conditions": [
+    "Memilih diksi pengganti istilah teknis/kamus dalam naskah video pendek",
+    "Menjelaskan ukuran, tekstur, suara, dan kemudahan penggunaan barang secara lisan"
+  ],
+  "implementation": [
+    "Ganti kata benda/sifat abstrak ala buku dengan kata harian yang persis menggambarkan apa yang dilihat dan dirasakan ('nggak gampang selip', 'pas digenggam satu tangan', 'tutupnya rapat nggak gampang bocor').",
+    "Hindari pengulangan kata generik ('bagus', 'canggih', 'keren') dengan memakai kata konkret sesuai fungsi barang.",
+    "Gunakan kata hubung percakapan biasa ('makanya', 'jadinya', 'soalnya', 'nah kalau ini') alih-alih kata hubung naskah resmi ('oleh karena itu', 'dengan demikian', 'namun demikian')."
+  ],
+  "examples": [
+    "Pegangan gagangnya bertekstur kesat, jadi pas tangan agak basah nggak gampang selip."
+  ],
+  "counterexamples": [
+    "Pegangan gagang dirancang secara ergonomis guna menunjang efektivitas penggunaan Anda dalam berbagai macam kondisi."
+  ],
+  "limitations": [
+    "Menyederhanakan kata menjadi kosakata harian tetap harus menjaga ketepatan makna istilah wajib bila menyangkut keamanan, takaran, atau spesifikasi teknis penting (misalnya voltase, kapasitas mAh, bahan pangan)."
+  ],
+  "related_concepts": [
+    "hl-conversational-not-slang",
+    "hl-spoken-indonesian-rhythm"
+  ],
+  "source_id": "src_c42718f5b378",
+  "source_timestamp": "00:12:55-00:16:47",
+  "extraction_confidence": 0.9,
+  "validation_status": "pending",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": [
+    {
+      "source_id": "src_c42718f5b378",
+      "source_timestamp": "00:12:55-00:16:47",
+      "topic_id": "src_c42718f5b378_topic_003",
+      "note": "Analogi melukis gurun pasir dengan palet warna cat/kosakata yang pas dan latihan baca 10 halaman."
+    }
+  ]
+}

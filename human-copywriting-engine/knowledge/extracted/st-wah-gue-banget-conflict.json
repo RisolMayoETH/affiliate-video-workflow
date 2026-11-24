@@ -1,0 +1,35 @@
+{
+  "concept_id": "st-wah-gue-banget-conflict",
+  "concept_name": "Konflik Sederhana yang Memicu Reaksi 'Wah, Gue Banget Nih!'",
+  "category": "storytelling",
+  "explanation": "Detail kecil dan konflik sederhana yang benar-benar dekat dengan keseharian target pembeli (bukan drama buatan) memicu koneksi instan—membuat penonton merasa 'wah, gue banget nih!' sebelum produk masuk sebagai penolong situasi.",
+  "underlying_psychology": "Identifikasi diri yang cepat ('itu kejadian yang sering aku alami') membuka perhatian emosional tanpa penonton merasa sedang dijuali secara paksa.",
+  "application_conditions": [
+    "Hook awal dan adegan konteks untuk TikTok dan Reels"
+  ],
+  "implementation": [
+    "Pilih situasi spesifik yang sesuai latar belakang target pembeli (misalnya kamar mandi kos tidak boleh dibor, starter berat saat sudah telat pagi-pagi, atau bumbu sedikit malas keluarin blender).",
+    "Gunakan nada akting atau voice-over yang alami, bukan nada iklan berlebihan."
+  ],
+  "examples": [
+    "Konflik sederhana suami pulang malam tidak dibukakan pintu dan harus tidur di luar menjadi jembatan lucu menuju kebutuhan anti-nyamuk."
+  ],
+  "counterexamples": [
+    "Konflik berlebihan yang terasa jauh dari kehidupan nyata pembeli produk tersebut."
+  ],
+  "limitations": [
+    "Situasi konflik harus tetap mengarah langsung ke fungsi produk agar tidak membuang durasi."
+  ],
+  "related_concepts": [
+    "st-relatable-everyday-moment",
+    "st-absence-of-product-angle",
+    "bp-consumer-insight-vs-market-research"
+  ],
+  "source_id": "src_a14695bb7593",
+  "source_timestamp": "00:09:19-00:10:29",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

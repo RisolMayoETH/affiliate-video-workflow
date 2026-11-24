@@ -1,0 +1,35 @@
+{
+  "concept_id": "st-relatable-everyday-moment",
+  "concept_name": "Cerita Mikro Berbasis Momen Sehari-hari",
+  "category": "storytelling",
+  "explanation": "Alih-alih membangun drama panjang, storytelling affiliate video pendek paling efektif memakai satu situasi spesifik yang sering dialami pembeli Indonesia—seperti terburu-buru di pagi hari, ruang kerja sempit, atau masak cepat—lalu memperlihatkan bagaimana produk membantu situasi tersebut.",
+  "underlying_psychology": "Pembeli memproses cerita singkat sebagai simulasi mental ('kalau aku di posisi itu, barang ini kepakai'). Efek identifikasi ini terjadi lebih kuat pada situasi wajar dibanding skenario yang dibuat-buat.",
+  "application_conditions": [
+    "Produk gaya hidup, fashion, perawatan diri, atau perlengkapan harian dengan konteks pemakaian jelas"
+  ],
+  "implementation": [
+    "Mulai dari detail situasi konkret (misalnya hujan gerimis saat berangkat naik motor atau komuter).",
+    "Masuk ke fungsi produk di detik ke-3 sampai ke-5 tanpa intro panjang.",
+    "Tutup dengan hasil logis sesuai spesifikasi."
+  ],
+  "examples": [
+    "Pas lagi buru-buru ke kampus terus gerimis tipis, paling repot kalau isi tas ikut lembap. Tas kanvas dengan lapisan anti percikan air ini bantu barang di dalam tetap aman selama perjalanan singkat."
+  ],
+  "counterexamples": [
+    "Suatu hari yang cerah di tahun ini, aku memutuskan mengubah seluruh hidupku dimulai dari sebuah tas..."
+  ],
+  "limitations": [
+    "Jangan mengarang kisah pengalaman pribadi fiktif seolah-olah kreator sudah mengalami peristiwa tersebut."
+  ],
+  "related_concepts": [
+    "st-direct-vs-story",
+    "bp-practical-emotional-triggers"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:11",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Relatable micro-narrative"}]
+}

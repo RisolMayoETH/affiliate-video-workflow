@@ -1,0 +1,37 @@
+{
+  "concept_id": "hl-conversational-not-slang",
+  "concept_name": "Natural Bukan Berarti Penuh Slang",
+  "category": "human_language",
+  "explanation": "Bahasa Indonesia yang natural berarti jelas, akrab, dan sesuai konteks pembicara serta calon pembeli—bukan memaksakan bahasa gaul atau singkatan ekstrem ke semua produk.",
+  "underlying_psychology": "Ketidakcocokan antara register bahasa dan produk (misalnya produk kesehatan keluarga atau peralatan rumah tangga memakai slang remaja berlebihan) memicu rasa canggung dan menurunkan kredibilitas pembicara.",
+  "application_conditions": [
+    "Penentuan register bahasa saat menganalisis audiens dan kategori produk",
+    "Produk dengan audiens dewasa, keluarga, profesional, atau harga menengah ke atas"
+  ],
+  "implementation": [
+    "Gunakan bahasa Indonesia sehari-hari yang rapi ('nggak', 'lebih praktis', 'cocok buat', 'aman dipakai') untuk produk umum dan rumah tangga.",
+    "Sesuaikan kata sapaan secara netral bila audiens beragam, atau spesifik bila target audiens jelas.",
+    "Utamakan kejelasan makna dibanding pamer istilah tren yang cepat basi."
+  ],
+  "examples": [
+    "Bahannya stainless, jadi lebih aman kena air kamar mandi dibanding rak besi biasa yang gampang karatan.",
+    "Teksturnya ringan, cepat meresap, dan nyaman dipakai sebelum keluar rumah."
+  ],
+  "counterexamples": [
+    "Gokil parah bestie, sunscreen ini literally slay banget bikin muka auto glowing anti boncos!"
+  ],
+  "limitations": [
+    "Bahasa yang terlalu kaku seperti surat dinas juga terasa berjarak; carilah titik tengah yang santai namun tetap jernih."
+  ],
+  "related_concepts": [
+    "aa-register-calibration",
+    "hl-spoken-indonesian-rhythm"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:03",
+  "extraction_confidence": 0.94,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Natural register distinction"}]
+}

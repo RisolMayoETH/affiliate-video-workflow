@@ -1,0 +1,35 @@
+{
+  "concept_id": "pw-natural-cta",
+  "concept_name": "Call-to-Action yang Sopan, Jelas, dan Tidak Memaksa",
+  "category": "persuasive_writing",
+  "explanation": "CTA menutup video dengan arahan praktis ke langkah berikutnya (cek detail varian, ukuran, atau keranjang kuning/tautan) tanpa mengancam kehilangan promo fiktif atau memaksa checkout.",
+  "underlying_psychology": "Pembeli yang sudah cocok dengan penjelasan produk cukup diberi petunjuk jalan yang jelas; tekanan berlebihan justru memicu penolakan di detik akhir.",
+  "application_conditions": [
+    "Penutup video affiliate TikTok, Shopee Video, Instagram Reels, dan Facebook Reels"
+  ],
+  "implementation": [
+    "Ajak audiens mengecek detail produk, pilihan warna/ukuran, atau harga terbaru di tautan resmi/keranjang platform.",
+    "Sesuaikan penyebutan lokasi tautan dengan platform (misalnya keranjang kuning di TikTok, keranjang oranye/tautan produk di Shopee Video, link di bio/komentar/caption di Reels)."
+  ],
+  "examples": [
+    "Kalau lagi cari ukuran yang pas buat meja kerja kecil, cek detail dimensi dan pilihan warnanya di keranjang sebelah kiri.",
+    "Untuk lihat varian dan detail lengkapnya, silakan cek tautan produk yang sudah ditautkan."
+  ],
+  "counterexamples": [
+    "Klik keranjang kuning SEKARANG JUGA sebelum stok habis 5 menit lagi dan harganya naik 3x lipat!"
+  ],
+  "limitations": [
+    "Jangan menyebut diskon, flash sale, atau batas stok kecuali data terverifikasi memang disediakan pengguna."
+  ],
+  "related_concepts": [
+    "aa-platform-pacing",
+    "hl-avoid-ai-templates"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:10",
+  "extraction_confidence": 0.95,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Non-pushy Indonesian CTA"}]
+}

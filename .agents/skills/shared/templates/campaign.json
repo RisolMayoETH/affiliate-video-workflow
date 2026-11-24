@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "slug": "",
+  "product_name": "",
+  "category": "",
+  "language": "id",
+  "aspect_ratio": "9:16",
+  "platforms": [
+    "tiktok",
+    "facebook-reels",
+    "instagram-reels"
+  ],
+  "created": "",
+  "updated": "",
+  "key_facts": [],
+  "stages": {
+    "review": {
+      "status": "not-started",
+      "files": [],
+      "recommended_duration": null,
+      "estimated_panels": null
+    },
+    "storyboard": {
+      "status": "not-started",
+      "files": [],
+      "scenes": [],
+      "total_duration": 0,
+      "image": null,
+      "images": []
+    },
+    "video": {
+      "status": "not-started",
+      "max_clip_duration": 10.0,
+      "generator_supports_extended_clip": false,
+      "generations": []
+    },
+    "publishing": {
+      "status": "not-started",
+      "files": []
+    }
+  },
+  "assets": [],
+  "decisions": [],
+  "collaboration": {
+    "enabled": true,
+    "partner_skill": "human-copywriting-engine",
+    "status": "not-started",
+    "iterations": 0,
+    "max_iterations": 3,
+    "converged": false,
+    "hce_score": null,
+    "avd_score": null,
+    "retrieved_knowledge_ids": [],
+    "artifacts_dir": "_collaboration",
+    "version_history": []
+  }
+}

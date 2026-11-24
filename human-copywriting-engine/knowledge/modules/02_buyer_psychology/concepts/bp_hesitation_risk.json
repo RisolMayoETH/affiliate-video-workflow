@@ -1,0 +1,36 @@
+{
+  "concept_id": "bp-hesitation-risk-reduction",
+  "concept_name": "Mengurangi Keraguan Pembelian dengan Informasi Konkret",
+  "category": "buyer_psychology",
+  "explanation": "Calon pembeli online sering menunda checkout bukan karena tidak butuh, tetapi karena ragu: apakah ukurannya sesuai, apakah pemasangannya ribet, apakah bahannya cepat rusak, atau apakah cocok dengan kebutuhan mereka.",
+  "underlying_psychology": "Dalam belanja online, pembeli menanggung risiko ketidaksesuaian fisik sebelum barang datang. Menjawab keraguan spesifik secara jujur menurunkan persepsi risiko lebih efektif daripada memaksa urgensi palsu.",
+  "application_conditions": [
+    "Produk yang sering menimbulkan pertanyaan teknis (ukuran, kapasitas, pemasangan, bahan, kecocokan tipe kulit)",
+    "Konten untuk audiens yang sudah tertarik tetapi masih menimbang"
+  ],
+  "implementation": [
+    "Sebutkan detail faktual yang langsung menjawab pertanyaan paling sering muncul (misalnya kapasitas ml, cara tempel tanpa bor, cara isi ulang baterai).",
+    "Jika ada keterbatasan produk (misalnya untuk porsi kecil bukan keluarga besar), sampaikan secara wajar agar pembeli tepat merasa makin yakin.",
+    "Tunjukkan visual bagian produk yang membuktikan klaim."
+  ],
+  "examples": [
+    "Kapasitasnya 250 ml, memang bukan untuk giling daging sekilo sekaligus, tapi pas untuk bumbu harian atau porsi kecil."
+  ],
+  "counterexamples": [
+    "Bisa untuk semua jenis masakan sepuasnya tanpa batas, buruan beli sebelum kehabisan!"
+  ],
+  "limitations": [
+    "Jangan mengarang jawaban atas spesifikasi atau hasil uji yang tidak tersedia di data produk."
+  ],
+  "related_concepts": [
+    "pw-objection-handling-honest",
+    "bp-trust-authenticity"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:04",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Risk reduction in Indonesian e-commerce"}]
+}

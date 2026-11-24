@@ -1,0 +1,35 @@
+{
+  "concept_id": "pw-experience-beyond-raw-specs",
+  "concept_name": "Pengalaman Pakai Nyata Melampaui Daftar Spesifikasi di Atas Kertas",
+  "category": "persuasive_writing",
+  "explanation": "Angka spesifikasi hanyalah sebagian kecil dari pengalaman pengguna secara keseluruhan (user experience). Selain itu, janji 'produk luar biasa dengan harga jujur' akan kehilangan kepercayaan bila pada kenyataannya stok sulit didapat atau pengalaman pakainya tidak sesuai skenario pembeli.",
+  "underlying_psychology": "Pembeli membeli hasil pengalaman saat barang dipakai sehari-hari; fokus berlebihan pada angka mentah tanpa konteks pemakaian membuat pembeli sulit membayangkan kecocokannya.",
+  "application_conditions": [
+    "Menerjemahkan produk elektronik, gadget, atau perlengkapan teknis ke naskah video pendek"
+  ],
+  "implementation": [
+    "Selalu hubungkan spesifikasi teknis dengan skenario pemakaian nyata pembeli (kapan kepakai, siapa yang terbantu, dan kapan tidak cocok).",
+    "Pastikan produk yang direkomendasikan benar-benar tersedia dan jangan mengulang hype peluncuran kosong."
+  ],
+  "examples": [
+    "Spesifikasi tinggi di atas kertas belum tentu cocok untuk semua skenario pemakaian bila kenyamanan harian atau pengalaman perangkat lunaknya berbeda."
+  ],
+  "counterexamples": [
+    "Membacakan seluruh lembar spesifikasi teknis tanpa pernah menerjemahkan bagaimana rasanya dipakai dalam rutinitas pembeli."
+  ],
+  "limitations": [
+    "Tetap dilarang mengarang pengalaman penggunaan pribadi bila kreator tidak benar-benar mengujinya."
+  ],
+  "related_concepts": [
+    "pw-feature-to-benefit",
+    "aa-honest-price-tradeoff-framing",
+    "ce-ad-ethics-and-beyond-generic-function"
+  ],
+  "source_id": "src_35d969679ef5",
+  "source_timestamp": "00:08:53-00:11:47",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

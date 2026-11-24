@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.env
+
+# Local media files (never commit user videos/audio)
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.mp3
+*.wav
+*.m4a
+
+# Local transcripts, incoming media, jobs, temp files, and SQLite DB
+data/incoming/*
+data/transcripts/*
+data/processed/*
+data/db/*
+data/tmp/*
+!data/**/.gitkeep
+
+# Optional local logs
+*.log

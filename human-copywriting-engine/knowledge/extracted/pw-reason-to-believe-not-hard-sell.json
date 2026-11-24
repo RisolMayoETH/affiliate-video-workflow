@@ -1,0 +1,35 @@
+{
+  "concept_id": "pw-reason-to-believe-not-hard-sell",
+  "concept_name": "Komunikasi Persuasif Memberi 'Reason to Believe', Bukan Memaksa Beli",
+  "category": "persuasive_writing",
+  "explanation": "Narasumber membedakan jualan memaksa (hard selling) dari komunikasi iklan yang efektif: konsumen membutuhkan 'reason to believe' yang masuk akal untuk membeli. Jangan menawari dengan paksaan ('beli produk kami yang nomor satu'), melainkan tunjukkan kelebihannya lewat konteks kehidupan, keseharian, dan bahasa audiens sendiri.",
+  "underlying_psychology": "Tekanan jualan langsung memicu perlawanan mental pembeli; bukti manfaat yang dikemas sesuai realitas harian audiens membiarkan mereka menyimpulkan sendiri mengapa produk itu layak dipilih.",
+  "application_conditions": [
+    "Semua naskah affiliate agar terasa manusiawi dan persuasif tanpa terasa memaksa"
+  ],
+  "implementation": [
+    "Berikan alasan logis yang bisa dilihat atau dibuktikan (reason to believe) di tengah video sebelum mengarahkan CTA.",
+    "Pakai konteks masalah harian dan bahasa alami target audiens alih-alih perintah beli yang agresif."
+  ],
+  "examples": [
+    "Daripada berteriak 'Kabel terbaik nomor satu, beli sekarang!', tunjukkan masalah nyata di situasi keseharian lalu perlihatkan cara produk mengatasinya."
+  ],
+  "counterexamples": [
+    "Kalimat jualan langsung bergaya brosur atau SPG agresif: 'Produk kami paling bagus, wajib beli hari ini!'."
+  ],
+  "limitations": [
+    "Untuk audiens high-intent di Shopee Video, alasan percaya tetap perlu langsung ke fungsi nyata tanpa berputar-putar terlalu lama."
+  ],
+  "related_concepts": [
+    "pw-natural-cta",
+    "bp-trust-authenticity",
+    "st-absence-of-product-angle"
+  ],
+  "source_id": "src_a14695bb7593",
+  "source_timestamp": "00:00:00-00:04:32",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

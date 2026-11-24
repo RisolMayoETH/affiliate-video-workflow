@@ -1,0 +1,35 @@
+{
+  "concept_id": "st-authentic-story-sourcing",
+  "concept_name": "Sumber Cerita Nyata untuk Storytelling Tanpa Mengarang Pengalaman",
+  "category": "storytelling",
+  "explanation": "Storytelling yang kuat paling baik berangkat dari pengalaman nyata sendiri yang relevan dan bernilai bagi audiens—atau kisah nyata orang lain yang dipetik pelajarannya (dengan tetap menerapkan struktur 5K).",
+  "underlying_psychology": "Detail pengalaman yang otentik terasa lebih kredibel secara emosional dibanding skenario generik yang terdengar dibuat-buat.",
+  "application_conditions": [
+    "Konten Reels, video pendek berdurasi sedang, atau personal branding affiliate"
+  ],
+  "implementation": [
+    "Gali pengalaman nyata atau momen kegagalan/keberhasilan yang paling relevan dengan nilai produk bagi audiens.",
+    "Jika tidak memiliki pengalaman pribadi dengan suatu produk, gunakan studi kasus nyata yang terverifikasi atau situasi hipotetis yang jelas ('bayangkan kalau...')—jangan mengaku pernah memakai produk secara pribadi."
+  ],
+  "examples": [
+    "Menceritakan pengalaman nyata hampir berhenti di awal karier atau pernah pindah bidang sebelum menemukan nilai yang ingin dibagikan ke audiens."
+  ],
+  "counterexamples": [
+    "Mengaku 'aku sudah pakai produk ini bertahun-tahun' padahal kreator baru memegang produknya untuk keperluan syuting."
+  ],
+  "limitations": [
+    "Sesuai aturan autentisitas HCE, mengambil inspirasi cerita orang lain tidak boleh disajikan seolah-olah itu pengalaman pribadi kreator."
+  ],
+  "related_concepts": [
+    "bp-trust-authenticity",
+    "st-framework-5k-storytelling",
+    "ce-integrity-gate"
+  ],
+  "source_id": "src_a86b30bf13f4",
+  "source_timestamp": "00:03:34-00:08:33",
+  "extraction_confidence": 0.89,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

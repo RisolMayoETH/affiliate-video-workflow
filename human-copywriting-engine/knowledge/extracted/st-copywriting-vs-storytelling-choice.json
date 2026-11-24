@@ -1,0 +1,36 @@
+{
+  "concept_id": "st-copywriting-vs-storytelling-choice",
+  "concept_name": "Memilih Copywriting Langsung vs Storytelling Berdasarkan Ruang dan Rentang Perhatian",
+  "category": "storytelling",
+  "explanation": "Copywriting bersifat langsung, ringkas, dan to the point untuk mempersuasi di ruang atau rentang perhatian terbatas; sedangkan storytelling lebih panjang, naratif, dan berstruktur (seperti 5K) untuk membangun keterikatan emosi saat tersedia durasi yang memadai.",
+  "underlying_psychology": "Ketika perhatian audiens sempit (misalnya baru pertama melihat profil atau hook 2-3 detik), kejelasan langsung lebih cepat diproses; ketika audiens mau menyimak lebih lama, alur cerita menumbuhkan kedekatan emosional.",
+  "application_conditions": [
+    "Memilih strategi kreatif antara penjelasan langsung/fitur-manfaat vs storytelling naratif"
+  ],
+  "implementation": [
+    "Gunakan prinsip copywriting langsung ketika ruang terbatas atau perhatian audiens pendek (caption singkat, bio, pembuka cepat, atau iklan langsung).",
+    "Gunakan prinsip storytelling ketika durasi video memberi ruang untuk karakter, konflik, dan resolusi tanpa mengorbankan kejelasan produk."
+  ],
+  "examples": [
+    "Menjual sepatu dengan copywriting: langsung jelaskan karakteristik sepatu, kegunaan, untuk siapa, dan keunggulannya.",
+    "Menjual sepatu yang sama dengan storytelling: mengisahkan seseorang yang malas olahraga sampai akhirnya rutin lari memakai sepatu tersebut."
+  ],
+  "counterexamples": [
+    "Memaksakan cerita panjang saat ruang/durasi video sangat sempit sehingga pesan produk tidak sempat tersampaikan."
+  ],
+  "limitations": [
+    "Merupakan perbedaan penekanan fungsi dari sudut pandang praktisi; dalam video affiliate modern keduanya sering dipadukan (hook copywriting langsung di awal, lalu alur cerita singkat di tengah)."
+  ],
+  "related_concepts": [
+    "st-direct-vs-story",
+    "st-framework-5k-storytelling",
+    "aa-platform-pacing"
+  ],
+  "source_id": "src_a86b30bf13f4",
+  "source_timestamp": "00:00:00-00:03:34",
+  "extraction_confidence": 0.91,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

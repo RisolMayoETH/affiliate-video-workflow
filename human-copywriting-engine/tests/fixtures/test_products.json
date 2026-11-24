@@ -1,0 +1,127 @@
+{
+  "products": [
+    {
+      "product_id": "prod-household-rack",
+      "name": "Rak Sudut Kamar Mandi Stainless Tempel Tanpa Bor",
+      "category": "household",
+      "price_idr": 48000,
+      "description": "Rak sudut dinding kamar mandi berbahan stainless dengan perekat kuat tanpa perlu mengebor keramik.",
+      "verified_features": [
+        "Pemasangan tempel tanpa bor dengan bantalan perekat",
+        "Material stainless tahan karat untuk area lembap",
+        "Desain sudut menghemat ruang kamar mandi"
+      ],
+      "verified_specs": {
+        "bahan": "Stainless steel",
+        "pemasangan": "Tempel tanpa bor pada permukaan keramik halus"
+      },
+      "available_evidence": [
+        "Petunjuk pemasangan: bersihkan dan keringkan permukaan keramik sebelum menempelkan perekat"
+      ],
+      "target_platform": "tiktok"
+    },
+    {
+      "product_id": "prod-kitchen-chopper",
+      "name": "Chopper Mini Elektrik USB 250ml 3 Mata Pisau Stainless",
+      "category": "kitchen",
+      "price_idr": 65000,
+      "description": "Alat pencacah bumbu dapur ringkas kapasitas 250 ml dengan 3 mata pisau stainless dan pengisian daya USB.",
+      "verified_features": [
+        "Kapasitas wadah 250 ml pas untuk bumbu harian porsi kecil",
+        "3 mata pisau stainless untuk mencacah bawang dan cabai",
+        "Pengisian daya lewat kabel USB tanpa kabel listrik tetap"
+      ],
+      "verified_specs": {
+        "kapasitas": "250 ml",
+        "pisau": "3 mata pisau stainless",
+        "daya": "USB rechargeable"
+      },
+      "available_evidence": [
+        "Spesifikasi wadah transparan memudahkan cek kehalusan bumbu saat ditekan"
+      ],
+      "target_platform": "shopee_video"
+    },
+    {
+      "product_id": "prod-beauty-sunscreen",
+      "name": "Sunscreen Gel SPF 50 PA++++ Ringan 30ml",
+      "category": "beauty_personal_care",
+      "price_idr": 79000,
+      "description": "Tabir surya harian bertekstur gel ringan dengan perlindungan SPF 50 PA++++ dalam kemasan 30 ml.",
+      "verified_features": [
+        "Perlindungan SPF 50 PA++++ tertera pada label kemasan",
+        "Tekstur gel ringan yang nyaman untuk pemakaian harian",
+        "Kemasan ringkas 30 ml mudah dibawa di tas"
+      ],
+      "verified_specs": {
+        "perlindungan": "SPF 50 PA++++",
+        "isi": "30 ml",
+        "tekstur": "Gel ringan"
+      },
+      "available_evidence": [
+        "Informasi kemasan resmi mencantumkan SPF 50 PA++++ dan tekstur gel"
+      ],
+      "target_platform": "instagram_reels"
+    },
+    {
+      "product_id": "prod-fashion-slingbag",
+      "name": "Tas Selempang Kanvas Kasual Anti Percikan Air",
+      "category": "fashion",
+      "price_idr": 115000,
+      "description": "Tas selempang harian berbahan kanvas dengan lapisan anti percikan air untuk membawa barang penting saat bepergian.",
+      "verified_features": [
+        "Bahan kanvas dengan lapisan anti percikan air untuk gerimis ringan",
+        "Kompartemen utama dan saku depan untuk merapikan ponsel dan dompet",
+        "Tali selempang dapat disesuaikan panjangnya"
+      ],
+      "verified_specs": {
+        "material": "Kanvas water-repellent ringan",
+        "model": "Tas selempang kasual"
+      },
+      "available_evidence": [
+        "Foto detail memperlihatkan jahitan rapi dan resleting tertutup"
+      ],
+      "target_platform": "tiktok"
+    },
+    {
+      "product_id": "prod-electronics-lamp",
+      "name": "Lampu Meja Belajar LED Lipat Rechargeable 3 Mode Cahaya",
+      "category": "electronics",
+      "price_idr": 95000,
+      "description": "Lampu meja LED lipat yang dapat diisi ulang dengan 3 mode warna cahaya untuk belajar dan bekerja.",
+      "verified_features": [
+        "3 mode cahaya yang dapat dipilih sesuai kebutuhan belajar atau kerja",
+        "Desain lipat ringkas sehingga mudah disimpan di meja kecil",
+        "Baterai rechargeable mengurangi kabel berantakan di meja"
+      ],
+      "verified_specs": {
+        "mode_cahaya": "3 mode cahaya LED",
+        "desain": "Lipat portable",
+        "daya": "Rechargeable"
+      },
+      "available_evidence": [
+        "Tombol sentuh pada dudukan mengganti 3 mode cahaya secara berurutan"
+      ],
+      "target_platform": "facebook_reels"
+    },
+    {
+      "product_id": "prod-everyday-tumbler",
+      "name": "Tumbler Vacuum Insulated Stainless 500ml",
+      "category": "everyday_consumer",
+      "price_idr": 135000,
+      "description": "Botol minum stainless 500 ml dengan konstruksi vacuum insulated untuk menjaga kestabilan suhu minuman harian.",
+      "verified_features": [
+        "Konstruksi vacuum insulated stainless membantu menjaga suhu minuman",
+        "Kapasitas 500 ml pas dibawa kerja atau kuliah",
+        "Tutup ulir rapat dengan karet seal pencegah rembes"
+      ],
+      "verified_specs": {
+        "kapasitas": "500 ml",
+        "material": "Stainless vacuum insulated"
+      },
+      "available_evidence": [
+        "Detail tutup menunjukkan ring karet seal di bagian dalam tutup"
+      ],
+      "target_platform": "tiktok"
+    }
+  ]
+}

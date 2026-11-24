@@ -1,0 +1,36 @@
+{
+  "concept_id": "hl-familiar-phrase-twist",
+  "concept_name": "Memelintir Referensi Kalimat Populer Sesuai Konteks Produk",
+  "category": "human_language",
+  "explanation": "Mengambil ungkapan, peribahasa, atau frasa populer yang sudah akrab di telinga audiens lalu memelintir satu bagiannya agar relevan dengan keunggulan produk.",
+  "underlying_psychology": "Pola kalimat yang sudah dikenal otak menurunkan usaha memahami pesan dan memberi rasa kejutan kecil ketika maknanya berbelok ke konteks produk.",
+  "application_conditions": [
+    "Hook pendek atau headline caption untuk audiens yang familiar dengan ungkapan dasarnya"
+  ],
+  "implementation": [
+    "Kumpulkan ungkapan populer sehari-hari di Indonesia yang relevan dengan situasi produk.",
+    "Ubah satu kata kunci atau separuh kalimatnya agar langsung merujuk ke manfaat produk.",
+    "Pastikan audiens tetap langsung paham maksudnya tanpa harus berpikir keras."
+  ],
+  "examples": [
+    "MacBook Air M1 memelintir 'love is in the air' menjadi 'power is in the air'.",
+    "Contoh lokal dari narasumber untuk iklan KPR: 'Cinta boleh sepanjang zaman, cicilan KPR ya jangan.'"
+  ],
+  "counterexamples": [
+    "Memelintir referensi asing yang tidak dipahami target pembeli lokal sehingga pesan utama produk justru kabur."
+  ],
+  "limitations": [
+    "Jangan memaksakan pelintiran kata kalau kalimat lugas justru lebih cepat dimengerti di 2 detik awal."
+  ],
+  "related_concepts": [
+    "hl-spoken-indonesian-rhythm",
+    "ce-audience-comprehension-check"
+  ],
+  "source_id": "src_2357ba69c5b1",
+  "source_timestamp": "00:03:27-00:07:29",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

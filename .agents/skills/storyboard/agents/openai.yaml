@@ -1,0 +1,11 @@
+interface:
+  display_name: "Affiliate Storyboard"
+  short_description: "Audit aset, storyboard 9:16 & timing dialog VO"
+  brand_color: "#1D4ED8"
+  default_prompt: "Audit aset gambar kampanye ini terhadap referensi asli lalu susun storyboard.md, tabel timing dialog, dan storyboard 9:16."
+
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CHAT"
+    - "CODEX"

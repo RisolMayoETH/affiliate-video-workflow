@@ -1,0 +1,35 @@
+{
+  "concept_id": "bp-relationship-personal-touch",
+  "concept_name": "Relationship Marketing dan Pendekatan Personal di Luar Transaksi",
+  "category": "buyer_psychology",
+  "explanation": "Komunikasi yang membangun hubungan personal dengan pembeli—seperti kartu sapaan personal di dalam kemasan atau merespons pertanyaan dan keluhan pembeli secara langsung dengan nada manusiawi—menggeser interaksi dari sekadar jual-beli satu kali menjadi kedekatan dan loyalitas.",
+  "underlying_psychology": "Pembeli merasa dihargai sebagai manusia, bukan sekadar angka transaksi, sehingga lebih bersedia mendengar rekomendasi berikutnya maupun memberi masukan dengan niat baik.",
+  "application_conditions": [
+    "Nada bicara kreator affiliate saat menanggapi keraguan di skrip, caption, maupun kolom komentar",
+    "Memilih strategi komunikasi antara product-centric (menjelaskan terobosan fungsi) vs customer-centric (fokus ke kebutuhan spesifik segmen)"
+  ],
+  "implementation": [
+    "Tulis narasi dengan sikap layaknya orang yang memang siap membantu calon pembeli memilih barang yang tepat, bukan sekadar melempar tautan.",
+    "Saat menghadapi produk berorientasi kebutuhan segmen (customer-centric), fokus jelaskan untuk kondisi pembeli mana produk ini dibuat."
+  ],
+  "examples": [
+    "Menyisipkan kartu ucapan personal di dalam kotak dan merespons langsung pertanyaan/keluhan pengguna di media sosial."
+  ],
+  "counterexamples": [
+    "Memakai nada jualan dingin seperti robot yang mengabaikan pertanyaan keraguan calon pembeli."
+  ],
+  "limitations": [
+    "Sentuhan personal tanpa kejelasan kualitas dan ketersediaan barang nyata tidak cukup menahan kekecewaan pembeli."
+  ],
+  "related_concepts": [
+    "bp-trust-authenticity",
+    "ce-audience-comprehension-check"
+  ],
+  "source_id": "src_35d969679ef5",
+  "source_timestamp": "00:01:59-00:06:28",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

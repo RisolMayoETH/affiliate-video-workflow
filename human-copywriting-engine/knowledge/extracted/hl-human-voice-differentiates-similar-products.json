@@ -1,0 +1,43 @@
+{
+  "concept_id": "hl-human-voice-differentiates-similar-products",
+  "concept_name": "Cara Bicara Manusiawi sebagai Pembeda Utama Produk yang Fisiknya Serupa",
+  "category": "human_language",
+  "explanation": "Pembicara menegaskan bahwa produk fisik yang sama tidak bisa berbicara sendiri ('mobil Avanza nggak bisa ngomong, Alphard nggak bisa ngomong'); ketika banyak kompetitor menawarkan barang serupa, pembeda yang membuat orang percaya dan kembali memilih layanan tertentu (seperti contoh kepercayaan pada layanan taksi Bluebird dulu) adalah cara manusianya berkomunikasi.",
+  "underlying_psychology": "Di marketplace affiliate, puluhan kreator mempromosikan barang identik dengan spesifikasi sama persis; suara manusia yang jujur, santai, dan terasa berbicara ke satu orang menciptakan diferensiasi kepercayaan yang tidak bisa ditiru template tulisan.",
+  "application_conditions": [
+    "Produk komoditas atau barang marketplace yang dijual banyak toko sekaligus",
+    "Video voice-over maupun talking-head affiliate"
+  ],
+  "implementation": [
+    "Hindari membacakan poin deskripsi toko secara kaku karena semua penjual juga menulis hal yang sama.",
+    "Terjemahkan spesifikasi menjadi bahasa obrolan normal tentang apa yang bikin barang itu terasa beda saat dipakai sehari-hari.",
+    "Pertahankan intonasi manusiawi dengan kalimat yang mudah diucapkan satu tarikan napas."
+  ],
+  "examples": [
+    "Bentuk luarnya memang mirip sama model lain, bedanya wadah ini tutupnya pakai pengunci di empat sisi—jadi kalau kebawa miring di tas, kuahnya nggak gampang rembes."
+  ],
+  "counterexamples": [
+    "Kotak makan ini merupakan pilihan yang tepat karena memiliki sistem penguncian empat sisi berstandar tinggi untuk menjaga keamanan makanan Anda."
+  ],
+  "limitations": [
+    "Komunikasi yang bagus tetap tidak boleh melebih-lebihkan fungsi fisik barang di luar data faktual."
+  ],
+  "related_concepts": [
+    "hl-avoid-ai-templates",
+    "bp-attitude-and-emotional-differentiation"
+  ],
+  "source_id": "src_93a488fe42d3",
+  "source_timestamp": "00:07:55-00:08:57",
+  "extraction_confidence": 0.82,
+  "validation_status": "pending",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": [
+    {
+      "source_id": "src_93a488fe42d3",
+      "source_timestamp": "00:07:55-00:08:57",
+      "topic_id": "src_93a488fe42d3_topic_002",
+      "note": "Bagian 00:07:55-00:08:25 ('Avanza nggak bisa ngomong, Alphard nggak bisa ngomong'); mengabaikan loop repetisi Whisper di akhir."
+    }
+  ]
+}

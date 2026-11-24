@@ -1,0 +1,35 @@
+{
+  "concept_id": "pw-crafting-and-category-reframe",
+  "concept_name": "Proses Crafting dan Menggeser Posisi Kategori Produk",
+  "category": "persuasive_writing",
+  "explanation": "Setelah Big Idea ditemukan, copywriter perlu melakukan proses crafting untuk mengubah gagasan mentah yang terlalu harfiah menjadi kalimat tajam yang mengajak audiens melihat produk melampaui kategori biasanya.",
+  "underlying_psychology": "Klaim langsung seperti 'tablet paling kuat' terasa biasa dan mudah diabaikan; membandingkan produk ke kategori pembanding yang lebih tinggi memicu rasa penasaran dan menaikkan persepsi nilai tanpa harus berteriak.",
+  "application_conditions": [
+    "Produk serbaguna atau produk yang menggantikan fungsi alat yang biasanya lebih mahal/besar"
+  ],
+  "implementation": [
+    "Tulis beberapa draf mentah dari Big Idea terlebih dahulu, jangan berhenti di kalimat pertama.",
+    "Sederhanakan dan tajamkan kalimat agar menyentuh peran produk bagi audiens (misalnya dari 'alat cacah mini' menjadi 'pengganti blender besar untuk bumbu harian').",
+    "Jaga agar perbandingan tetap jujur terhadap kapasitas dan batas fisik produk."
+  ],
+  "examples": [
+    "Dari draf mentah 'iPad is a computer' melalui proses crafting menjadi 'Your next computer is not a computer' dan membandingkan kecepatannya terhadap laptop."
+  ],
+  "counterexamples": [
+    "Menggunakan klaim generik seperti 'Tablet paling canggih yang pernah ada' yang tidak menunjukkan konteks penggunaan."
+  ],
+  "limitations": [
+    "Reframing kategori tidak boleh melanggar fakta: chopper 250 ml tidak boleh diklaim mampu menggantikan blender industri."
+  ],
+  "related_concepts": [
+    "pw-big-idea-before-copy",
+    "ce-integrity-gate"
+  ],
+  "source_id": "src_2357ba69c5b1",
+  "source_timestamp": "00:03:27-00:07:29",
+  "extraction_confidence": 0.89,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

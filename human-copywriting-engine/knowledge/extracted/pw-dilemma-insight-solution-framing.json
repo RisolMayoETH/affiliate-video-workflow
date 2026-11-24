@@ -1,0 +1,36 @@
+{
+  "concept_id": "pw-dilemma-insight-solution-framing",
+  "concept_name": "Menjawab Dilema Sehari-hari Pembeli Lewat Insight Situasional",
+  "category": "persuasive_writing",
+  "explanation": "Banyak pembeli terjebak dalam dilema antara dua keinginan (misalnya senang melihat anak aktif belajar di luar vs khawatir baju kotor; ingin masak enak tapi takut tidak cocok di lidah keluarga). Menemukan insight dilema tersebut lalu memosisikan produk sebagai penengahnya membuat pesan terasa sangat relevan dan membebaskan.",
+  "underlying_psychology": "Ketika sebuah produk membebaskan pembeli dari rasa bersalah atau dilema emosional tanpa menuntut mereka mengorbankan hal lain, nilai produk langsung meningkat di atas sekadar fungsi teknis.",
+  "application_conditions": [
+    "Produk rumah tangga, dapur, pembersih, perawatan anak/keluarga, dan barang mobilitas harian"
+  ],
+  "implementation": [
+    "Identifikasi dua sisi yang saling bertentangan dalam rutinitas pembeli (praktis vs hasil rapi, hemat waktu vs rasa masakan, eksplorasi vs bersih).",
+    "Bingkai produk sebagai alat bantu yang membuat pembeli bisa tenang melakukan aktivitas utamanya."
+  ],
+  "examples": [
+    "Rinso 'Berani Kotor Itu Baik': memecahkan dilema ibu antara menjaga baju bersih vs membiarkan anak bereksplorasi belajar.",
+    "Royco mengangkat insight kebanggaan menantu ketika masakannya disukai mertua, bukan sekadar 'penyedap rasa lezat'."
+  ],
+  "counterexamples": [
+    "Iklan deterjen yang hanya berteriak 'menghilangkan noda membandel' atau penyedap yang hanya bilang 'masakan enak'."
+  ],
+  "limitations": [
+    "Dilema harus terasa wajar dan selaras dengan kemampuan nyata produk."
+  ],
+  "related_concepts": [
+    "bp-surface-problem-vs-psychological-insight",
+    "st-relatable-everyday-moment",
+    "pw-big-idea-before-copy"
+  ],
+  "source_id": "src_2f13553ba568",
+  "source_timestamp": "00:10:29-00:13:59",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "practical_demonstration",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

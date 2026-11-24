@@ -1,0 +1,11 @@
+interface:
+  display_name: "Affiliate Review"
+  short_description: "Analisis produk affiliate, strategi & prompt gambar"
+  brand_color: "#1D4ED8"
+  default_prompt: "Analisa produk affiliate dari foto dan deskripsi ini, lalu buat product-brief.md, marketing-strategy.md, dan image-prompts.md."
+
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CHAT"
+    - "CODEX"

@@ -1,0 +1,34 @@
+{
+  "concept_id": "ce-seven-dimension-rubric",
+  "concept_name": "Rubrik Evaluasi Tujuh Dimensi dengan Saran Perbaikan Aksi Nyata",
+  "category": "creative_evaluation",
+  "explanation": "Setiap draf dievaluasi pada skala 1-10 untuk 7 dimensi terpisah: Naturalness, Buyer Psychology, Persuasiveness, Storytelling, Audience Adaptation, Product Accuracy, dan Authenticity. Evaluasi bukan sekadar angka, melainkan diagnosis spesifik dan saran revisi.",
+  "underlying_psychology": "Penilaian terpisah mencegah satu aspek bagus (misalnya humor atau hook) menyamarkan kelemahan kritis di aspek lain (misalnya kurangnya penanganan keraguan atau bahasa yang terasa seperti terjemahan).",
+  "application_conditions": [
+    "Setelah tahap Natural Language Engine refinement dan pada pengujian regresi"
+  ],
+  "implementation": [
+    "Periksa frasa repetitif, pola pembuka kalimat yang sama, kata AI klise, serta kesesuaian dengan platform.",
+    "Ubah setiap skor < 8.0 menjadi satu poin tindakan revisi yang spesifik (kalimat mana yang perlu diubah dan alasannya)."
+  ],
+  "examples": [
+    "Jika skor Storytelling rendah karena tidak ada jembatan visual antara adegan 1 dan 2, sarankan transisi visual konkret yang menunjukkan produk digunakan."
+  ],
+  "counterexamples": [
+    "Memberikan komentar umum seperti 'Skrip sudah bagus, tingkatkan lagi kealamiannya'."
+  ],
+  "limitations": [
+    "Penilaian otomatis membantu menyaring pola bahasa dan konsistensi fakta; umpan balik manusia tetap diperlukan untuk menilai nuansa humor, intonasi baca, dan konteks budaya lokal."
+  ],
+  "related_concepts": [
+    "ce-integrity-gate",
+    "ce-anti-repetition-audit"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:18",
+  "extraction_confidence": 0.96,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "7-dimension scoring rubric"}]
+}

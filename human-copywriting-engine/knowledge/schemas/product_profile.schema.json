@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hce.local/schemas/product_profile.schema.json",
+  "title": "HCE Product Input Profile",
+  "type": "object",
+  "required": ["product_id", "name", "category", "description", "verified_features"],
+  "properties": {
+    "product_id": { "type": "string" },
+    "name": { "type": "string" },
+    "category": { "type": "string" },
+    "price_idr": { "type": ["integer", "number", "null"] },
+    "description": { "type": "string" },
+    "verified_features": { "type": "array", "items": { "type": "string" } },
+    "verified_specs": { "type": "object" },
+    "available_evidence": { "type": "array", "items": { "type": "string" } },
+    "target_platform": {
+      "type": "string",
+      "enum": ["tiktok", "shopee_video", "instagram_reels", "facebook_reels"]
+    },
+    "supplied_audience": { "type": ["object", "null"] },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "human-copywriting-engine"
+version = "0.1.0"
+description = "Local-first Indonesian affiliate marketing copywriting knowledge & execution engine."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+transcription = [
+    "faster-whisper>=1.0.0",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+hce = "hce.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hce*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

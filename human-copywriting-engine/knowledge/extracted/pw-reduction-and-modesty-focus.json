@@ -1,0 +1,35 @@
+{
+  "concept_id": "pw-reduction-and-modesty-focus",
+  "concept_name": "Prinsip Reduksi, Limitasi, dan Fokus pada Fungsi Utama (Functional Clarity)",
+  "category": "persuasive_writing",
+  "explanation": "Mengutip prinsip desain Dieter Rams (Reduksi, Limitasi, Modesty): hilangkan elemen yang tidak menambah nilai dan batasi aspek yang mengalihkan perhatian dari fungsi utama produk. Baik pada produk maupun komunikasinya, hiasan berlebihan justru mencuri fokus dari kegunaan inti.",
+  "underlying_psychology": "Terlalu banyak fitur atau klaim yang memperebutkan sorotan membuat pembeli bingung apa manfaat utamanya; penyederhanaan yang tegas membangun kepercayaan terhadap fungsi inti.",
+  "application_conditions": [
+    "Menyaring fitur mana yang perlu diangkat ke skrip video pendek 15-35 detik",
+    "Merancang produk atau naskah sederhana yang langsung mudah dicerna"
+  ],
+  "implementation": [
+    "Lakukan reduksi pada naskah: buang kalimat pembuka basa-basi dan kata sifat yang tidak membuktikan fungsi.",
+    "Batasi detail ke fitur yang paling menjawab masalah pembeli, dan arahkan visual agar tidak mendistraksi cara kerja barang."
+  ],
+  "examples": [
+    "Lampu meja yang menonjolkan fungsi penerangan kerja yang rapi lebih fokus dibanding hiasan warna mencolok yang mengganggu kenyamanan mata."
+  ],
+  "counterexamples": [
+    "Video pendek yang dipenuhi teks berjalan, efek stiker ramai, dan daftar fitur sekunder hingga inti kegunaan produk tenggelam."
+  ],
+  "limitations": [
+    "Penyederhanaan berlebih membuat produk terasa 'biasa saja' di mata pembeli yang menyukai banyak kustomisasi atau aksen ramai."
+  ],
+  "related_concepts": [
+    "pw-single-core-message-focus",
+    "ce-message-clarity-over-production-budget"
+  ],
+  "source_id": "src_e6b9f813ebe4",
+  "source_timestamp": "00:03:20-00:07:10",
+  "extraction_confidence": 0.91,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

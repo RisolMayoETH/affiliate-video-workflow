@@ -1,0 +1,35 @@
+{
+  "concept_id": "ce-anti-repetition-audit",
+  "concept_name": "Audit Repetisi Pola Kalimat dan Kosakata Percakapan",
+  "category": "creative_evaluation",
+  "explanation": "AI sering mengulang struktur pembuka yang identik (misalnya 3 kalimat beruntun diawali 'Selain itu...' atau 'Dengan fitur...') serta mengulang penanda lisan yang sama ('nah', 'jadi', 'banget') terlalu rapat.",
+  "underlying_psychology": "Pengulangan ritme mekanis membuat pendengar cepat bosan dan langsung merasakan naskah dibuat oleh mesin, bukan pemikiran manusia yang mengalir.",
+  "application_conditions": [
+    "Pemeriksaan akhir sebelum naskah dianggap layak rekam"
+  ],
+  "implementation": [
+    "Bandingkan kata pertama setiap kalimat antar adegan.",
+    "Hitung frekuensi kata pengisi ('banget', 'parah', 'juga', 'nah') di seluruh naskah dan batasi pemakaian berulang.",
+    "Ubah salah satu kalimat menjadi pertanyaan ringan, contoh situasi, atau arahan visual langsung."
+  ],
+  "examples": [
+    "Ubah 'Selain itu lampu ini bisa dilipat. Selain itu cahayanya ada 3 mode.' -> 'Lampu ini gampang dilipat kalau meja lagi penuh, dan lampunya punya 3 mode cahaya.'"
+  ],
+  "counterexamples": [
+    "Mengulang 'Produk ini...' di awal setiap adegan dari Scene 1 hingga Scene 4."
+  ],
+  "limitations": [
+    "Pengulangan terencana (anaphora) sesekali efektif untuk penekanan ritmis, selama memang disengaja dan jarang dipakai."
+  ],
+  "related_concepts": [
+    "hl-spoken-indonesian-rhythm",
+    "ce-seven-dimension-rubric"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:19",
+  "extraction_confidence": 0.93,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Anti-repetition structural check"}]
+}

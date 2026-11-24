@@ -1,0 +1,35 @@
+{
+  "concept_id": "aa-honest-price-tradeoff-framing",
+  "concept_name": "Menjelaskan Nilai Harga Terjangkau Secara Jujur Beserta Trade-off-nya",
+  "category": "audience_adaptation",
+  "explanation": "Prinsip 'ada harga, ada barang' berarti produk harga terjangkau dengan spesifikasi tinggi biasanya tetap memiliki kompensasi (trade-off). Mengakui batas dan kesesuaian produk secara jujur jauh lebih sehat daripada mendorong klaim superioritas buta ('kaum mendang-mending').",
+  "underlying_psychology": "Pembeli Indonesia yang kritis tahu setiap harga punya kompensasi; pengakuan jujur atas batas produk membuat rekomendasi terasa dewasa dan jauh lebih dapat dipercaya.",
+  "application_conditions": [
+    "Produk kategori budget hingga menengah yang bersaing ketat pada harga dan spesifikasi"
+  ],
+  "implementation": [
+    "Saat menonjolkan harga terjangkau dan spesifikasi bagus, hindari meremehkan produk lain atau mengklaim barang murah cocok untuk semua kebutuhan.",
+    "Jelaskan batas wajar pemakaian agar pembeli tidak kecewa saat barang tiba."
+  ],
+  "examples": [
+    "Menyebutkan trade-off dengan lugas: seperti konten gratis yang dibayar dengan waktu menonton iklan, barang hemat juga punya batas fitur/kapasitas tertentu."
+  ],
+  "counterexamples": [
+    "Mengklaim barang ekonomis sebagai 'paling worth it mengalahkan semua produk mahal di kelasnya' tanpa menjelaskan batas pakainya."
+  ],
+  "limitations": [
+    "Komentar mengenai trade-off atau kelebihan produk tetap harus mengacu pada fakta produk nyata, bukan menebak kekurangan yang tidak terverifikasi."
+  ],
+  "related_concepts": [
+    "aa-price-positioning",
+    "bp-hesitation-risk-reduction",
+    "bp-trust-authenticity"
+  ],
+  "source_id": "src_35d969679ef5",
+  "source_timestamp": "00:06:28-00:08:53",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

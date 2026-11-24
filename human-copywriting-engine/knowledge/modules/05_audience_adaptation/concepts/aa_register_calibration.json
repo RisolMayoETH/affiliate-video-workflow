@@ -1,0 +1,36 @@
+{
+  "concept_id": "aa-register-calibration",
+  "concept_name": "Kalibrasi Register Bahasa Sesuai Segmen Audiens Indonesia",
+  "category": "audience_adaptation",
+  "explanation": "Audiens mahasiswa/pekerja muda di kota besar, ibu rumah tangga, hingga pembeli dewasa di Facebook Reels memiliki preferensi sapaan, tempo, dan toleransi istilah asing yang berbeda. Gaya bicara perlu disesuaikan secara halus tanpa kehilangan kealamian.",
+  "underlying_psychology": "Kemiripan gaya komunikasi membangun rasa kedekatan sosial, sedangkan gaya bicara yang terlalu dibuat-buat membuat audiens merasa pesan tidak ditujukan untuk mereka.",
+  "application_conditions": [
+    "Analisis audiens sebelum menulis hook, dialog, maupun caption"
+  ],
+  "implementation": [
+    "Gunakan sapaan netral dan akrab ('kalau kamu', 'buat yang lagi cari', atau tanpa kata ganti berlebihan) bila audiens luas.",
+    "Kurangi istilah bahasa Inggris pada produk kebutuhan rumah tangga harian atau audiens Facebook Reels yang mengutamakan kejelasan fungsi.",
+    "Untuk skincare/personal care, pakai istilah umum yang memang tertera di kemasan (seperti SPF 50 PA++++) sambil tetap menjelaskan rasa pakai dengan bahasa sehari-hari."
+  ],
+  "examples": [
+    "Untuk produk rumah tangga umum: 'Buat yang kamar mandinya nggak terlalu luas, rak tempel di sudut kayak gini bikin ruang lantai tetap lega.'",
+    "Untuk sunscreen ringan: 'Buat yang suka malas pakai sunscreen karena takut terasa lengket, tekstur gel kayak gini lebih nyaman dipakai tiap pagi.'"
+  ],
+  "counterexamples": [
+    "Memakai gaya bahasa remaja TikTok ('bestie fyp racun check') untuk produk perlengkapan keluarga di Facebook Reels."
+  ],
+  "limitations": [
+    "Jika profil audiens tidak diberikan oleh pengguna, catat segmentasi audiens sebagai hipotesis dan gunakan bahasa Indonesia lisan yang netral serta sopan."
+  ],
+  "related_concepts": [
+    "hl-conversational-not-slang",
+    "aa-price-positioning"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:14",
+  "extraction_confidence": 0.94,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Indonesian audience register calibration"}]
+}

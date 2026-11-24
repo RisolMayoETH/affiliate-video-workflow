@@ -1,0 +1,35 @@
+{
+  "concept_id": "pw-feature-to-benefit",
+  "concept_name": "Menerjemahkan Fitur Produk Menjadi Manfaat Praktis",
+  "category": "persuasive_writing",
+  "explanation": "Fitur adalah fakta teknis barang (misalnya baterai isi ulang, bahan stainless, SPF 50 PA++++); manfaat adalah dampak nyata yang dirasakan pengguna dalam rutinitasnya tanpa mengada-ada.",
+  "underlying_psychology": "Pembeli tidak membeli spesifikasi mentah; mereka membeli kemudahan, penghematan waktu, kerapian, atau kenyamanan yang muncul dari spesifikasi tersebut.",
+  "application_conditions": [
+    "Semua kategori produk terutama elektronik, dapur, rumah tangga, dan perawatan diri"
+  ],
+  "implementation": [
+    "Pasangkan setiap fitur terverifikasi dengan satu manfaat logis menggunakan jembatan 'jadi' atau 'supaya'.",
+    "Pastikan manfaat masih berada dalam batas wajar spesifikasi agar tidak menjadi klaim berlebihan."
+  ],
+  "examples": [
+    "Punya 3 mode cahaya -> jadi bisa disesuaikan dari cahaya terang untuk kerja sampai cahaya hangat biar mata nggak cepat lelah malam hari.",
+    "Bisa dicharge lewat USB -> jadi praktis dipakai di meja tanpa harus selalu dekat stopkontak."
+  ],
+  "counterexamples": [
+    "Lampu ini memiliki 3 mode cahaya dengan baterai lithium yang sangat canggih."
+  ],
+  "limitations": [
+    "Untuk pembeli teknis yang sudah paham kategori produk, sebutkan angkanya secara langsung bersama manfaat ringkas."
+  ],
+  "related_concepts": [
+    "bp-practical-emotional-triggers",
+    "pw-natural-cta"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:08",
+  "extraction_confidence": 0.95,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Feature-benefit translation"}]
+}

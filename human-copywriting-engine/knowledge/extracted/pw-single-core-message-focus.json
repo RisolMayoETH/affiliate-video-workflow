@@ -1,0 +1,35 @@
+{
+  "concept_id": "pw-single-core-message-focus",
+  "concept_name": "Fokus ke Satu Hal Penting dalam Satu Materi Copy",
+  "category": "persuasive_writing",
+  "explanation": "Naskah penjualan atau video pendek tidak perlu menjejalkan semua detail sekaligus; pilih satu kelebihan utama yang paling dirasakan manfaatnya oleh pembeli lalu jadikan fokus pesan.",
+  "underlying_psychology": "Pembeli yang dibombardir terlalu banyak klaim sekaligus justru gagal menangkap alasan terkuat untuk membeli.",
+  "application_conditions": [
+    "Video pendek 15-35 detik dengan waktu perhatian audiens terbatas",
+    "Produk yang memiliki banyak fitur sekunder"
+  ],
+  "implementation": [
+    "Tentukan satu pertanyaan kunci: apa satu manfaat terbesar produk ini bagi konsumen?",
+    "Gunakan fitur lain hanya sebagai pendukung atau penjawab keraguan, bukan pesan utama yang bersaing."
+  ],
+  "examples": [
+    "Pada rak kamar mandi tempel, fokuskan satu pesan inti pada kemudahan pasang tanpa bor keramik, sementara bahan stainless menjadi penunjang kepercayaan."
+  ],
+  "counterexamples": [
+    "Membacakan 10 spesifikasi katalog dalam 15 detik tanpa memberi penekanan manfaat utama."
+  ],
+  "limitations": [
+    "Untuk produk dengan pertimbangan harga lebih tinggi di Shopee Video, detail ukuran atau varian tetap perlu dicantumkan ringkas agar pembeli yakin."
+  ],
+  "related_concepts": [
+    "pw-feature-to-benefit",
+    "pw-big-idea-before-copy"
+  ],
+  "source_id": "src_2357ba69c5b1",
+  "source_timestamp": "00:08:50-00:11:46",
+  "extraction_confidence": 0.92,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

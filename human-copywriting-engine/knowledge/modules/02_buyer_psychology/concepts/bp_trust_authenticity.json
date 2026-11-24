@@ -1,0 +1,35 @@
+{
+  "concept_id": "bp-trust-authenticity",
+  "concept_name": "Kepercayaan Melalui Kejujuran dan Bukti Nyata",
+  "category": "buyer_psychology",
+  "explanation": "Kepercayaan tumbuh ketika kreator menyampaikan fakta yang selaras antara ucapan dan tampilan produk, tidak melebih-lebihkan fungsi, serta tidak mengarang pengalaman pribadi atau testimoni palsu.",
+  "underlying_psychology": "Ketidaksesuaian antara klaim dan kenyataan memicu skeptisisme permanen. Sikap jujur—termasuk menyebut untuk siapa produk cocok dan tidak cocok—meningkatkan kredibilitas pesan secara keseluruhan.",
+  "application_conditions": [
+    "Wajib pada seluruh skrip dan materi affiliate HCE tanpa pengecualian"
+  ],
+  "implementation": [
+    "Hanya sebutkan fitur, bahan, ukuran, dan bukti yang tercantum dalam data produk.",
+    "Jangan mengaku 'sudah pakai berbulan-bulan' atau 'semua orang cocok' apabila tidak ada bukti terverifikasi.",
+    "Gunakan pembuktian visual langsung di adegan bila memungkinkan."
+  ],
+  "examples": [
+    "Berdasarkan spesifikasinya, botol ini punya lapisan vacuum insulated stainless untuk menjaga suhu minuman lebih lama saat dibawa kerja atau kuliah."
+  ],
+  "counterexamples": [
+    "Aku udah pakai tumbler ini 2 tahun dan es batunya awet 3 hari penuh nggak cair sama sekali!"
+  ],
+  "limitations": [
+    "Jika informasi bukti pemakaian masih kurang, arahkan skrip pada penjelasan fungsi dan spesifikasi objektif."
+  ],
+  "related_concepts": [
+    "ce-integrity-gate",
+    "bp-hesitation-risk-reduction"
+  ],
+  "source_id": "hce-seed-core",
+  "source_timestamp": "seed:06",
+  "extraction_confidence": 0.98,
+  "validation_status": "validated",
+  "statement_type": "verified_fact",
+  "competing_viewpoints": [],
+  "provenance_refs": [{"source_id": "hce-seed-core", "note": "Non-negotiable authenticity standard"}]
+}

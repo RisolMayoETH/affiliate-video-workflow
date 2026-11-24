@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hce.local/schemas/learning_task.schema.json",
+  "title": "HCE Structured Learning Task",
+  "type": "object",
+  "required": [
+    "task_id",
+    "source_id",
+    "topic_id",
+    "start_seconds",
+    "end_seconds",
+    "source_timestamp",
+    "transcript_excerpt"
+  ],
+  "properties": {
+    "task_id": { "type": "string" },
+    "source_id": { "type": "string" },
+    "source_file_name": { "type": "string" },
+    "topic_id": { "type": "string" },
+    "title_hint": { "type": "string" },
+    "language": { "type": "string" },
+    "start_seconds": { "type": "number", "minimum": 0 },
+    "end_seconds": { "type": "number", "minimum": 0 },
+    "source_timestamp": { "type": "string" },
+    "transcript_excerpt": { "type": "string", "minLength": 1 },
+    "related_existing_concepts": { "type": "array", "items": { "type": "object" } },
+    "extraction_instructions": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "concept_id": "aa-segment-tone-and-social-context",
+  "concept_name": "Adaptasi Gaya Bahasa, Konflik, dan Nilai Sosial Sesuai Segmen Audiens Indonesia",
+  "category": "audience_adaptation",
+  "explanation": "Segmen audiens yang berbeda membutuhkan pendekatan cerita, konflik, dan bahasa yang berbeda: audiens pekerja muda urban cenderung merespons isu kemandirian atau rutinitas kerja yang tajam/reflektif, sedangkan segmen komunitas/daerah yang lebih guyub merespons tema kebersamaan, keakraban, dan konflik sederhana—sambil tetap menautkan ciri sifat produk ke dalam pesan.",
+  "underlying_psychology": "Pesan terasa relevan hanya ketika konflik dan nilai sosial yang ditampilkan sesuai dengan realitas keseharian target pembelinya.",
+  "application_conditions": [
+    "Tahap AudienceAnalyzer sebelum menulis hook, dialog, dan pemilihan register bahasa Indonesia"
+  ],
+  "implementation": [
+    "Sesuaikan tingkat kekritisan pesan, pilihan diksi, dan jenis konflik dengan target pembeli produk (misalnya mahasiswa/pekerja komuter vs keluarga/komunitas).",
+    "Selipkan ciri sifat fisik produk (ringan, dingin, ringkas, rapat) secara alami ke dalam situasi atau ekspresi karakter."
+  ],
+  "examples": [
+    "Komunikasi untuk target urban muda memakai metafora keluar dari rutinitas kerja monoton, sedangkan komunikasi untuk segmen guyub/komunitas menampilkan kehangatan kumpul bareng ('Asyiknya rame-rame').",
+    "Mengaitkan karakter dingin/menthol ke ekspresi langsung: 'Kalau gue dingin, kenapa lo yang panas?'"
+  ],
+  "counterexamples": [
+    "Menyeragamkan satu gaya bahasa gaul perkotaan untuk seluruh produk rumah tangga dan target pembeli daerah."
+  ],
+  "limitations": [
+    "Menggeneralisasi karakter kelompok sosioekonomi secara kaku berisiko terasa stereotip; gunakan sebagai panduan menyesuaikan konteks kebutuhan dan kenyamanan bahasa."
+  ],
+  "related_concepts": [
+    "aa-register-calibration",
+    "hl-conversational-not-slang",
+    "bp-attitude-and-emotional-differentiation"
+  ],
+  "source_id": "src_e9cda85c9057",
+  "source_timestamp": "00:06:23-00:10:30",
+  "extraction_confidence": 0.91,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}

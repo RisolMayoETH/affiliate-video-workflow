@@ -1,0 +1,36 @@
+{
+  "concept_id": "bp-contrast-paired-memory",
+  "concept_name": "Kontradiksi Kata dan Pasangan Berlawanan untuk Daya Ingat",
+  "category": "buyer_psychology",
+  "explanation": "Menyandingkan dua kata atau kondisi yang berlawanan (kecil vs besar, banyak vs sedikit, berat vs ringan) dalam satu kalimat ringkas membuat pesan nilai produk jauh lebih mudah diingat.",
+  "underlying_psychology": "Menurut penjelasan narasumber, ingatan manusia lebih mudah menangkap hal-hal yang tersusun berpasangan—baik berupa pengulangan berpola maupun kontras berlawanan.",
+  "application_conditions": [
+    "Produk yang punya kontras jelas (ukuran kecil tapi fungsi besar, harga terjangkau tapi rasa/tampilan rapi)"
+  ],
+  "implementation": [
+    "Cari dua aspek kontras yang memang nyata pada produk (misalnya ukuran wadah 250 ml yang kecil vs kecepatan mengolah bumbu).",
+    "Susun menjadi satu kalimat paralel pendek untuk hook atau penutup caption.",
+    "Hindari kontras yang melebih-lebihkan kualitas di luar spesifikasi."
+  ],
+  "examples": [
+    "Headline Apple: 'Small chip, giant leap' dan 'Lots to love, less to spend'.",
+    "Aplikasi lokal narasumber: 'Hidup boleh berat, bunga KPR harus ringan' serta ungkapan umum 'harga kaki lima, rasa bintang lima'."
+  ],
+  "counterexamples": [
+    "Memakai perbandingan hiperbolis tidak realistis seperti 'harga receh kualitas istana'."
+  ],
+  "limitations": [
+    "Jika dipakai berulang di setiap kalimat dalam satu naskah, gaya berpasangan akan terasa seperti pantun buatan atau template."
+  ],
+  "related_concepts": [
+    "hl-familiar-phrase-twist",
+    "pw-product-grounded-hooks"
+  ],
+  "source_id": "src_2357ba69c5b1",
+  "source_timestamp": "00:07:29-00:08:50",
+  "extraction_confidence": 0.9,
+  "validation_status": "validated",
+  "statement_type": "direct_instructor_statement",
+  "competing_viewpoints": [],
+  "provenance_refs": []
+}
