@@ -41,7 +41,8 @@ Baca modul pengetahuan berikut sesuai tahap `/video`:
 ### A. Adaptive Video Clip Segmentation
 - Pecah storyboard yang disetujui ke `04-video/video-plan.md` dalam rasio vertikal **9:16** (total durasi final maks. **40 detik**, sama persis dengan storyboard).
 - Batas maksimal per segmen klip adalah **10 detik** (kecuali generator terpilih secara eksplisit mendukung durasi lebih panjang dan dicatat di `campaign.json`).
-- **Jumlah klip dinamis** (bisa 1, 2, 3, 4, 5, atau lebih—**jangan pernah memaksa setiap kampanye menjadi tepat 2 video**). Gabungkan beberapa panel storyboard berdurasi variabel ke dalam satu segmen klip bila masuk akal dan tidak melebihi batas klip.
+- **Durasi Wajib Bilangan Bulat (Tanpa Koma/Desimal):** Generator video AI tidak menerima durasi pecahan/koma (seperti `9,5` atau `9.5` detik). Oleh karena itu, durasi setiap klip video (`Duration: <N> seconds.`), penanda waktu di dalam timeline klip (`0s–3s`, `3s–6s`, dst.), serta durasi tiap adegan penyusunnya **wajib berupa bilangan bulat utuh** (misal `10` detik penuh, bukan `9.5` detik).
+- **Jumlah klip dinamis** (bisa 1, 2, 3, 4, 5, atau lebih—**jangan pernah memaksa setiap kampanye menjadi tepat 2 video**). Gabungkan beberapa panel storyboard berdurasi bulat ke dalam satu segmen klip bila masuk akal dan tidak melebihi batas klip.
 
 ### B. Video Prompt Engineering & Paket Upload Terpadu
 - Salin (tanpa memindahkan atau menghapus file asli) aset foto jangkar tiap adegan dari `02-generated-assets/` secara berurutan (`1.<ext>`, `2.<ext>`, ..., `N.<ext>`) serta gambar storyboard (`storyboard.png` atau `storyboard-sheet-01.png`, ...) ke satu folder siap upload **`04-video/upload-assets/`** agar pengguna mudah mencari seluruh bahan upload sekaligus.
