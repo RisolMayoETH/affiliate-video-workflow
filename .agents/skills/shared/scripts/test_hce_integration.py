@@ -326,10 +326,112 @@ class TestHCEAVDIntegration(unittest.TestCase):
             self.assertEqual(sentinel.read_text(encoding="utf-8"), "ORIGINAL_REF_DO_NOT_TOUCH")
 
     def test_existing_avd_commands_backward_compatible(self) -> None:
-        for slug in ("saniye-lipstik-kapsul-k1139", "sapu-sawang-plafon-230cm"):
-            cdir = WORKSPACE_ROOT / "campaigns" / slug
+        with tempfile.TemporaryDirectory() as tmp:
+            cdir = Path(tmp) / "legacy-avd-campaign"
+            for rel in (
+                "01-product-review/references",
+                "02-generated-assets/hero",
+                "03-storyboard",
+                "04-video",
+                "05-publishing",
+            ):
+                (cdir / rel).mkdir(parents=True, exist_ok=True)
+
+            (cdir / "01-product-review" / "references" / "ref.txt").write_text("Legacy ref", encoding="utf-8")
+            (cdir / "01-product-review" / "product-brief.md").write_text("# Brief\n", encoding="utf-8")
+            (cdir / "01-product-review" / "marketing-strategy.md").write_text("# Strategy\n", encoding="utf-8")
+            (cdir / "01-product-review" / "image-prompts.md").write_text("# Prompts\n", encoding="utf-8")
+            (cdir / "05-publishing" / "publishing-package.md").write_text(
+                "# Publishing\nCek keranjang kuning kiri bawah.\n", encoding="utf-8"
+            )
+
+            (cdir / "03-storyboard" / "storyboard.md").write_text(
+                "\n".join(
+                    [
+                        "# Storyboard — Legacy",
+                        "",
+                        "## Tabel Timing Dialog",
+                        "",
+                        "| Adegan | Timestamp | Durasi (dtk) | Dialog (VO) | Suku kata | Estimasi (dtk) | Status |",
+                        "|---|---|---|---|---|---|---|",
+                        '| 1 | 00:00–00:02.5 | 2.5 | "Masih repot masak bumbu harian?" | 11 | 2.20 | OK |',
+                        '| 2 | 00:02.5–00:06.5 | 4.0 | "Tinggal tekan sekali, bumbu dapur langsung halus merata!" | 18 | 3.60 | OK |',
+                        '| 3 | 00:06.5–00:09.5 | 3.0 | "Cek variannya di keranjang kuning ya!" | 12 | 2.40 | OK |',
+                        "",
+                        "## Prompt Gambar Storyboard",
+                        "",
+                        "```text",
+                        "Clean 3-panel 9:16 storyboard.",
+                        "```",
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            (cdir / "04-video" / "video-01.md").write_text(
+                "\n".join(
+                    [
+                        "# Video 01",
+                        "Mencakup Adegan 1 dan Adegan 2.",
+                        "",
+                        "## Tabel Timing Dialog",
+                        "",
+                        "| Adegan | Timestamp | Durasi (dtk) | Dialog (VO) | Suku kata | Estimasi (dtk) | Status |",
+                        "|---|---|---|---|---|---|---|",
+                        '| 1 | 00:00–00:02.5 | 2.5 | "Masih repot masak bumbu harian?" | 11 | 2.20 | OK |',
+                        '| 2 | 00:02.5–00:06.5 | 4.0 | "Tinggal tekan sekali, bumbu dapur langsung halus merata!" | 18 | 3.60 | OK |',
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            (cdir / "04-video" / "video-02.md").write_text(
+                "\n".join(
+                    [
+                        "# Video 02",
+                        "Mencakup Adegan 3.",
+                        "",
+                        "## Tabel Timing Dialog",
+                        "",
+                        "| Adegan | Timestamp | Durasi (dtk) | Dialog (VO) | Suku kata | Estimasi (dtk) | Status |",
+                        "|---|---|---|---|---|---|---|",
+                        '| 3 | 00:06.5–00:09.5 | 3.0 | "Cek variannya di keranjang kuning ya!" | 12 | 2.40 | OK |',
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            legacy_cj = {
+                "schema_version": "1.0",
+                "slug": "legacy-avd-campaign",
+                "product_name": "Produk Legacy",
+                "stages": {
+                    "review": {"status": "approved"},
+                    "storyboard": {
+                        "status": "approved",
+                        "total_duration": 9.5,
+                        "scenes": [
+                            {"id": 1, "timestamp": "00:00–00:02.5", "duration": 2.5},
+                            {"id": 2, "timestamp": "00:02.5–00:06.5", "duration": 4.0},
+                            {"id": 3, "timestamp": "00:06.5–00:09.5", "duration": 3.0},
+                        ],
+                    },
+                    "video": {
+                        "status": "draft",
+                        "max_clip_duration": 10.0,
+                        "generations": [
+                            {"id": "GEN-01", "file": "04-video/video-01.md", "scenes": [1, 2], "duration": 6.5},
+                            {"id": "GEN-02", "file": "04-video/video-02.md", "scenes": [3], "duration": 3.0},
+                        ],
+                    },
+                },
+            }
+            (cdir / "campaign.json").write_text(json.dumps(legacy_cj, indent=2), encoding="utf-8")
+
             errs = campaign_check.validate_campaign_timing(cdir)
-            self.assertEqual(errs, [], f"Legacy campaign {slug} timing errors: {errs}")
+            self.assertEqual(errs, [], f"Legacy campaign timing errors: {errs}")
             rc = campaign_check.check_stage(cdir, "video", validate_timing=True)
             self.assertEqual(rc, 0)
             sb_res = dialogue_timing.check_table(cdir / "03-storyboard" / "storyboard.md")
