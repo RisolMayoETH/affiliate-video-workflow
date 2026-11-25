@@ -1,8 +1,8 @@
 interface:
   display_name: "Rapid Affiliate Review (10s)"
-  short_description: "Video affiliate 10 dtk cepat, smooth cuts & dual-mode prompt"
+  short_description: "Video affiliate 10 dtk: varian Clear/Hype & 1 master prompt"
   brand_color: "#1D4ED8"
-  default_prompt: "Aktifkan mode Rapid Affiliate Review (/fast) untuk produk ini: analisis produk, storyboard presisi tepat 10 detik (6-12 panel adaptif), prompt video dual-mode bilangan bulat, panduan editing 9:16, dan quality control."
+  default_prompt: "Aktifkan mode Rapid Affiliate Review (/fast) untuk produk ini: pilih varian otomatis (Clear 4-6 panel atau Hype 7-8 panel), susun storyboard 4 babak berdurasi bilangan bulat tepat 10 detik, dan hasilkan 1 master prompt video 10 detik (tanpa prompt per scene) beserta panduan assembly 9:16 dan quality control."
 
 policy:
   allow_implicit_invocation: true

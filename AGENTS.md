@@ -27,8 +27,8 @@ Proyek ini menggabungkan dua skill AI spesialis dalam satu alur kerja kolaborati
 
 3. **Kemandirian Kedua Skill & Mode Cepat Tetap Utuh:**
    - Perintah AVD (`/review`, `/storyboard`, `/video`) tetap berjalan sebagaimana mestinya bila dipanggil per tahap.
-   - Mode **Rapid Affiliate Review (`/fast`)** berjalan opsional untuk menghasilkan paket video cepat berdurasi tepat `10` detik di `./campaigns/<slug>/rapid-10s/` tanpa mengubah atau merusak alur utama maupun berkas kampanye standar.
-   - Mode **Turbo Affiliate Review (`/turbo`)** berjalan opsional untuk menghasilkan paket video berdurasi tepat `15` detik di `./campaigns/<slug>/turbo-15s/` dengan strategi segmentasi klip adaptif (`≤ 10` dtk/klip) tanpa mengubah atau merusak alur utama, `/fast`, maupun berkas kampanye standar.
+   - Mode **Rapid Affiliate Review (`/fast`)** berjalan opsional untuk menghasilkan paket video cepat berdurasi tepat `10` detik dengan varian `clear`/`hype` (otomatis bila tidak disebut) dan `1` master prompt video `10` detik di `./campaigns/<slug>/rapid-10s/` tanpa mengubah atau merusak alur utama maupun berkas kampanye standar.
+   - Mode **Turbo Affiliate Review (`/turbo`)** berjalan opsional untuk menghasilkan paket video berdurasi tepat `15` detik **sekali jalan** (`1` lembar storyboard tunggal + `1` master prompt video langsung `15` detik, dengan opsi cadangan segmentasi `≤ 10` dtk/klip atau per panel bila generator terbatas) di `./campaigns/<slug>/turbo-15s/` tanpa mengubah atau merusak alur utama, `/fast`, maupun berkas kampanye standar.
    - Skill HCE (`/human-copywriting-engine` dan `/belajar` di `human-copywriting-engine/.agents/skills/belajar/SKILL.md`) tetap dapat dipanggil mandiri tanpa tergantung AVD.
 
 4. **Integritas Data & Penanganan Kesalahan:**

@@ -44,7 +44,7 @@ python .agents/skills/shared/scripts/dialogue_timing.py ./campaigns/<slug-produk
 ### 2. Mode Skill Mandiri
 
 - **AVD per tahap:** `/review`, `/storyboard`, `/video`
-- **Mode Rapid Affiliate Review (10 detik):** `/fast`
+- **Mode Rapid Affiliate Review (10 detik):** `/fast` (otomatis), `/fast clear`, `/fast hype`
 - **Mode Turbo Affiliate Review (15 detik):** `/turbo`
 - **HCE mandiri:** `/human-copywriting-engine` atau `PYTHONPATH=human-copywriting-engine python -m hce --root human-copywriting-engine ...` (serta pembelajaran video lokal via `human-copywriting-engine/.agents/skills/belajar/SKILL.md`)
 

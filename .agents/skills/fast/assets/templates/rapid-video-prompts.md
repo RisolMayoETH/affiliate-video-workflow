@@ -1,67 +1,56 @@
-# Rapid Video Prompts & Assembly Guide (10s) — <Nama Produk>
+# Rapid Video Prompt & Assembly Guide (10s) — <Nama Produk>
 
 - **Slug Kampanye:** `<slug-produk>`
-- **Mode:** `Rapid Affiliate Review v1.0` (`/fast`)
+- **Mode:** `Rapid Affiliate Review v1.1` (`/fast`)
+- **Varian:** `<Clear | Hype>` (`<N>` panel)
 - **Acuan Storyboard:** `rapid-10s/rapid-brief-and-storyboard.md`
 - **Target Output Final:** `9:16` (`1080 × 1920 px`), tepat **`10` detik**
-- **Aturan Durasi Generator Video:** Seluruh prompt generasi di bawah wajib menggunakan **detik bilangan bulat tanpa koma/desimal**.
+- **Aturan Generator Video:** Hanya **1 Master Prompt berdurasi bilangan bulat tepat `10 seconds`** tanpa prompt terpisah per scene/panel.
 
 ---
 
-## Opsi 1 (Mode A — Direkomendasikan): Prompt Individual per Panel (`Generasi Bilangan Bulat → Trim Editing`)
+## Master Video Prompt (`10 Seconds`) — Satu-satunya Prompt Video
 
-> Catatan: Jangan memaksakan durasi generasi sama dengan durasi pendek panel (`0.8–2.0` dtk) bila model membutuhkan ruang gerak tambahan. Generate tiap panel dengan durasi bilangan bulat (`2`, `3`, `4`, atau `5` seconds), lalu potong (*trim*) tepat pada puncak aksi sesuai durasi target panel di editor.
-
-### Prompt Panel 01 — `<Judul / Fungsi Panel 01>`
-- **Durasi Generasi AI:** `2` seconds *(atau `3` seconds)*
-- **Target Trim Storyboard:** `1.0` detik (`00:00–00:01.0`)
-- **Gambar Referensi Wajib:** `01-product-review/references/...` *(Otoritas #1)*, `<aset jangkar di 02-generated-assets/ bila ada>`
-- **Copy-Ready Prompt (English):**
-```text
-Duration: 2 seconds. Vertical 9:16 commercial product video.
-[PRODUCT IDENTITY LOCK]: Strictly match exact shape, proportions, colors, materials, textures, logos, and component count from the attached original product reference photo.
-[COMPOSITION & CAMERA]: <Shot type, camera angle, and camera movement matching PANEL 01>.
-[SUBJECT ACTION]: <Exact realistic physical motion of product and consistent Indonesian adult hand, keeping the core hero motion clear between 0s–2s for clean 1s trim>.
-[LIGHTING & ENVIRONMENT]: <Consistent natural lighting and clean setting>.
-[NEGATIVE / AVOID]: No product deformation, no missing or extra parts, no logo distortion, no extra fingers, no human face (unless specified), no burned-in text, no watermarks.
-```
-- **Audio / SFX Cue (Editing):** `<SFX / beat sinkron pada 00:00–00:01.0>`
-
-*(Ulangi blok `Prompt Panel 02` s.d. `Prompt Panel <N>` dengan durasi generasi bilangan bulat masing-masing.)*
-
----
-
-## Opsi 2 (Mode B — Alternatif Satu Kali Generasi): 1 Master Video Prompt (`10 Seconds`)
-
-> Catatan: Gunakan opsi ini jika model generator video pilihanmu mendukung rangkaian *multi-shot rapid cuts* berdurasi **tepat `10` detik** dalam satu generasi sekaligus.
+> **Catatan:** Mode `/fast` hanya menyediakan **1 Master Prompt** agar seluruh timeline `10` detik digenerasi dalam satu alur yang konsisten. Jika generator video pilihanmu belum mendukung durasi `10` detik sekaligus, gunakan generator yang mendukung `10` detik dalam satu kali proses.
 
 - **Durasi Generasi AI:** `10` seconds *(bilangan bulat tepat)*
-- **Gambar Referensi Wajib:** `01-product-review/references/...` *(Otoritas #1)*, `<aset jangkar utama + lembar storyboard bila tersedia>`
+- **Gambar Referensi Wajib:** `01-product-review/references/...` *(Otoritas #1)*, `<lembar storyboard tunggal / aset jangkar bila tersedia>`
 - **Copy-Ready Master Prompt (English):**
 ```text
-Duration: 10 seconds. Vertical 9:16 fast-paced commercial affiliate video with dynamic smooth cuts.
-Strictly preserve the exact physical design, proportions, colors, materials, textures, logo, and components of the product from the attached original product reference photos across every shot. Maintain consistent Indonesian adult hand (sawo matang skin, clean nails, consistent neutral sleeve) and natural home lighting throughout.
+Duration: 10 seconds. Vertical 9:16 commercial affiliate product video following a clear 4-beat structure (Hook -> Demo -> Result/Benefit -> Hero + CTA).
 
-[MULTI-SHOT RAPID TIMELINE (0s–10s)]
+[PRODUCT IDENTITY LOCK]:
+Strictly preserve the exact physical design, shape, proportions, colors, materials, textures, logo, and component count of the product from the attached original product reference photos across every shot.
+
+[HAND & ENVIRONMENT LOCK]:
+Maintain continuity across all shots: the exact same Indonesian adult hand (sawo matang skin, clean natural nails, consistent neutral sleeve), the exact same clean everyday Indonesian room background, consistent soft natural daylight, and keep the product centered in the middle zone of the 9:16 frame in every shot.
+
+[SHOT TIMELINE (0s–10s)]
 - Shot 1 (0s–1s, Hook): ...
-- Shot 2 (1s–2s, Reveal): ...
-- ...
-- Final Shot (9s–10s, Hero Showcase / CTA Safe Space): Clean upright/held hero framing leaving the bottom 28% completely uncluttered for CTA overlay.
+- Shot 2 (1s–4s, Demo): ...
+- Shot 3 (4s–6s, Result/Benefit): ...
+- Shot 4 (6s–8s, Detail/Benefit): ...
+- Final Shot (8s–10s, Hero + CTA): Clean, steady product hero showcase held for 2 seconds, leaving the bottom 28% of the frame completely clean and unobstructed for CTA overlay.
 
 [CAMERA & TRANSITION STYLE]
-Purposeful commercial cinematography combining tight close-ups, medium POV demos, and smooth push-in/tracking shots connected by clean match cuts and natural motion transitions.
+Purposeful commercial cinematography combining tight close-ups, steady POV demonstration, and smooth push-in/tracking movements connected by clean cuts and natural action transitions. Fast attention-grabbing opening, unhurried uninterrupted demo, and steady closing hold.
+
+[AUDIO]
+Upbeat yet clean background music matched to the product mood, crisp realistic SFX synced to each cut and product action, no audio clipping. (Optional VO: natural Indonesian spoken delivery with numbers spelled out in words, max 5 syllables per second.)
 
 [NEGATIVE / AVOID]
-No product morphing or color shift, no invented parts, no unreadable distorted text, no extra fingers, no aimless 360 camera spin, no burned-in text, no watermarks.
+No product morphing or color shift, no missing or invented parts, no logo distortion, no extra fingers, no human face (unless specified), no erratic camera spin, no burned-in text, no watermarks.
 ```
+
+*(Sesuaikan jumlah baris `Shot 1` s.d. `Final Shot` pada `[SHOT TIMELINE (0s–10s)]` agar memetakan `1:1` terhadap timestamp bilangan bulat di `rapid-brief-and-storyboard.md` — `Clear`: `4–6` shot; `Hype`: `7–8` shot.)*
 
 ---
 
 ## Panduan Editing & Final Assembly (`1080 × 1920`, Tepat `10` Detik)
 
-1. **Urutan & Trim Timeline:** Susun klip Mode A berurutan dari Panel `01` hingga Panel `<N>` (atau impor klip Mode B), lalu *trim* presisi sesuai timestamp storyboard hingga durasi total **tepat `10.0` detik** (`00:00–00:10`).
-2. **Pengaturan Ekspor:** Rasio **`9:16`**, resolusi **`1080 × 1920 px`**, *frame rate* konsisten (`30 fps` atau `60 fps`), tanpa jeda kosong/frame hitam.
-3. **Sinkronisasi Audio & SFX:** Letakkan *BGM* sesuai karakter produk (level aman di bawah SFX/VO, bebas *clipping*), dan selaraskan setiap *SFX* aksi tepat pada titik potong (*cut*) pergantian klip.
-4. **Penempatan Text Overlay & CTA:**
-   - Teks singkat manfaat utama: zona aman `20%–32%` atau `60%–70%` tinggi layar (jangan menutupi produk).
-   - CTA akhir (`00:08.5–00:10.0` atau sesuai panel penutup): gunakan kalimat singkat jujur (`"Cek produknya sekarang!"`, `"Lihat detailnya!"`, atau `"Cek di keranjang kuning!"`) tanpa klaim kelangkaan/diskon palsu.
+1. **Impor 1 Klip & Verifikasi Durasi:** Masukkan klip hasil generasi `10` detik ke editor (`CapCut` / NLE). Pastikan durasi timeline tepat **`10` detik** (`00:00–00:10`). Jika klip hasil generate sedikit lebih panjang dari `10` detik, lakukan *trim* **hanya di bagian akhir** (tanpa pemotongan per panel).
+2. **Pengaturan Ekspor:** Rasio **`9:16`**, resolusi **`1080 × 1920 px`**, *frame rate* konsisten (`30 fps` atau `60 fps`), tanpa jeda kosong atau frame hitam.
+3. **Sinkronisasi Audio & SFX:** Tambahkan *BGM* sesuai karakter produk (level aman di bawah SFX/VO, bebas *clipping*), dan selaraskan *SFX* aksi tepat pada titik pergantian shot di timeline.
+4. **Penempatan Text Overlay & CTA (Maks. `2` Pergantian):**
+   - Teks singkat manfaat utama (`1` kali tampil): zona aman `20%–32%` atau `60%–70%` tinggi layar tanpa menutupi produk.
+   - CTA akhir (`00:08–00:10`, zona aman di atas `28%` bawah layar): gunakan kalimat singkat jujur (`"Cek produknya sekarang!"`, `"Lihat detailnya!"`, atau `"Cek di keranjang kuning!"`) tanpa klaim kelangkaan/diskon palsu.
