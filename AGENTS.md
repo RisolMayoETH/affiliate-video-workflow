@@ -3,8 +3,8 @@
 Proyek ini menggabungkan dua skill AI spesialis dalam satu alur kerja kolaboratif yang otonom:
 
 1. **Affiliate Video Director (AVD — Primary Workflow Controller):**
-   - Skill: `.agents/skills/review/SKILL.md`, `.agents/skills/storyboard/SKILL.md`, `.agents/skills/video/SKILL.md`, `.agents/skills/fast/SKILL.md`
-   - Mengendalikan struktur kampanye (`./campaigns/<slug>/`), audit visual referensi asli, *creative direction*, storyboard adaptif `9:16` (`≤ 40` dtk), koreografi kamera, demonstrasi fisik, prompt gambar & video AI (`≤ 10` dtk/klip, **wajib detik bilangan bulat tanpa koma/desimal**), mode cepat `10` detik (`/fast`), serta paket publikasi akhir.
+   - Skill: `.agents/skills/review/SKILL.md`, `.agents/skills/storyboard/SKILL.md`, `.agents/skills/video/SKILL.md`, `.agents/skills/fast/SKILL.md`, `.agents/skills/turbo/SKILL.md`
+   - Mengendalikan struktur kampanye (`./campaigns/<slug>/`), audit visual referensi asli, *creative direction*, storyboard adaptif `9:16` (`≤ 40` dtk), koreografi kamera, demonstrasi fisik, prompt gambar & video AI (`≤ 10` dtk/klip, **wajib detik bilangan bulat tanpa koma/desimal**), mode cepat `10` detik (`/fast`) dan mode turbo `15` detik (`/turbo`), serta paket publikasi akhir.
 
 2. **Human Copywriting Engine (HCE — Marketing Intelligence & Copywriting Specialist):**
    - Skill: `.agents/skills/human-copywriting-engine/SKILL.md` (didukung repositori lokal `./human-copywriting-engine/`)
@@ -28,6 +28,7 @@ Proyek ini menggabungkan dua skill AI spesialis dalam satu alur kerja kolaborati
 3. **Kemandirian Kedua Skill & Mode Cepat Tetap Utuh:**
    - Perintah AVD (`/review`, `/storyboard`, `/video`) tetap berjalan sebagaimana mestinya bila dipanggil per tahap.
    - Mode **Rapid Affiliate Review (`/fast`)** berjalan opsional untuk menghasilkan paket video cepat berdurasi tepat `10` detik di `./campaigns/<slug>/rapid-10s/` tanpa mengubah atau merusak alur utama maupun berkas kampanye standar.
+   - Mode **Turbo Affiliate Review (`/turbo`)** berjalan opsional untuk menghasilkan paket video berdurasi tepat `15` detik di `./campaigns/<slug>/turbo-15s/` dengan strategi segmentasi klip adaptif (`≤ 10` dtk/klip) tanpa mengubah atau merusak alur utama, `/fast`, maupun berkas kampanye standar.
    - Skill HCE (`/human-copywriting-engine` dan `/belajar` di `human-copywriting-engine/.agents/skills/belajar/SKILL.md`) tetap dapat dipanggil mandiri tanpa tergantung AVD.
 
 4. **Integritas Data & Penanganan Kesalahan:**

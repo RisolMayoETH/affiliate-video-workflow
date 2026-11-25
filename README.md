@@ -11,6 +11,7 @@ Alur kerja terintegrasi otonom yang menggabungkan **Affiliate Video Director (AV
 │   └── skills/
 │       ├── review/                            # /review: Product & buyer intelligence, strategi, image prompts
 │       ├── fast/                              # /fast: Mode Rapid Affiliate Review tepat 10 detik
+│       ├── turbo/                             # /turbo: Mode Turbo Affiliate Review tepat 15 detik
 │       ├── storyboard/                        # /storyboard: Storyboard adaptif 9:16 & loop review dua arah
 │       ├── video/                             # /video: Segmentasi klip <=10s, video prompts & publishing package
 │       ├── human-copywriting-engine/          # /human-copywriting-engine: Spesialis copywriting & HCE mandiri
@@ -44,6 +45,7 @@ python .agents/skills/shared/scripts/dialogue_timing.py ./campaigns/<slug-produk
 
 - **AVD per tahap:** `/review`, `/storyboard`, `/video`
 - **Mode Rapid Affiliate Review (10 detik):** `/fast`
+- **Mode Turbo Affiliate Review (15 detik):** `/turbo`
 - **HCE mandiri:** `/human-copywriting-engine` atau `PYTHONPATH=human-copywriting-engine python -m hce --root human-copywriting-engine ...` (serta pembelajaran video lokal via `human-copywriting-engine/.agents/skills/belajar/SKILL.md`)
 
 ## Verifikasi Integrasi

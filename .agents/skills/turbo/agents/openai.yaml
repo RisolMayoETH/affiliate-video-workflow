@@ -1,0 +1,11 @@
+interface:
+  display_name: "Turbo Affiliate Review (15s)"
+  short_description: "Video affiliate 15 dtk adaptif, 2–3 klip strategis & dual-mode prompt"
+  brand_color: "#EA580C"
+  default_prompt: "Aktifkan mode Turbo Affiliate Review (/turbo) untuk produk ini: analisis produk, storyboard presisi tepat 15 detik (8-15 panel adaptif), segmentasi klip strategis bilangan bulat (Mode A 2-3 klip total 15 dtk + Mode B per panel), panduan editing 9:16, dan quality control."
+
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CHAT"
+    - "CODEX"
