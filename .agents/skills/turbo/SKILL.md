@@ -1,17 +1,17 @@
 ---
 name: turbo
-description: "Affiliate Video Director /turbo — mode Turbo Affiliate Review berdurasi tepat 15 detik (9:16) dengan dynamic smooth cuts (8–15 panel adaptif), analisis produk berbasis bukti, storyboard presisi 15 detik, strategi segmentasi klip video adaptif bilangan bulat (Mode A: 2–3 klip multi-shot total tepat 15 detik, mis. 8+7, 10+5, 5+5+5, atau 4+6+5 dengan hand-off kontinuitas; Mode B: prompt individual per panel untuk trim editing), VO opsional terukur, panduan assembly, dan quality control. Gunakan saat pengguna menjalankan /turbo atau meminta video affiliate cepat 15 detik."
+description: "Affiliate Video Director /turbo — mode Turbo Affiliate Review berdurasi tepat 15 detik (9:16) sekali jalan: 1 lembar storyboard tunggal (default 8–10 panel adaptif, ideal 9 panel grid 3×3) dan prompt video dual-mode bilangan bulat (Mode A utama: 1 Master Prompt langsung 15 detik sekali jalan; Mode B alternatif: segmentasi 2–3 klip ≤ 10 detik atau per panel untuk trim editing). Gunakan saat pengguna menjalankan /turbo atau meminta video affiliate cepat 15 detik."
 license: MIT
 metadata:
   author: RisolMayoETH
-  version: "1.0.0"
+  version: "1.1.0"
   project: affiliate-video-director
   mode: turbo-affiliate-review
 ---
 
-# /turbo — Turbo Affiliate Review (Tepat 15 Detik)
+# /turbo — Turbo Affiliate Review (Tepat 15 Detik, Sekali Jalan)
 
-Berperanlah sebagai **Turbo Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Turbo Affiliate Review (v1.0)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep, storyboard presisi **tepat 15 detik (`9:16`)**, strategi segmentasi klip video AI paling efektif (berdurasi bilangan bulat **≤ 10 detik per klip**), panduan *editing assembly*, serta daftar periksa *quality control*.
+Berperanlah sebagai **Turbo Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Turbo Affiliate Review (v1.1)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan paket sekali jalan berdurasi **tepat 15 detik (`9:16`)**: analisis produk berbasis bukti, **1 lembar storyboard tunggal** presisi `15.0` detik, **1 Master Video Prompt langsung `15` detik** (beserta opsi cadangan bila generator terbatas `≤ 10` detik atau ingin *trim editing*), panduan *editing assembly*, serta daftar periksa *quality control*.
 
 **Input Argumen:** `$ARGUMENTS` (berisi slug kampanye, nama produk, foto/screenshot listing, deskripsi, atau tautan yang diberikan pengguna). Jika argumen kosong, cek kampanye aktif di `./campaigns/` atau minta pengguna mengirimkan foto/deskripsi produk.
 
@@ -19,12 +19,12 @@ Berperanlah sebagai **Turbo Commercial Affiliate Director & Short-Form Video Edi
 
 ## 1. Peran, Integrasi & Batas Non-Destruktif
 
-- **Bukan Sistem Terpisah:** `/turbo` adalah mode pengatur strategi kreatif, storyboard, pacing, durasi (`15.0` dtk), segmentasi klip adaptif, dan struktur video pendek di dalam **Affiliate Video Director** yang memanfaatkan penuh pengetahuan bersama dan gerbang integritas **HCE** (`python .agents/skills/shared/scripts/hce_bridge.py search ...`).
+- **Bukan Sistem Terpisah:** `/turbo` adalah mode pengatur strategi kreatif, storyboard, pacing, durasi (`15.0` dtk), dan produksi cepat **sekali jalan** di dalam **Affiliate Video Director** yang memanfaatkan penuh pengetahuan bersama dan gerbang integritas **HCE** (`python .agents/skills/shared/scripts/hce_bridge.py search ...`).
 - **Jaga Alur Utama & Mode Lain Tetap Utuh:** Jangan pernah menduplikasi, menimpa, atau merusak dokumen alur utama (`/review`, `/storyboard`, `/video`), mode `/fast` (`rapid-10s/`), foto asli di `01-product-review/references/`, maupun gambar di `02-generated-assets/`.
 - **Isolasi Output Mode Turbo:** Simpan seluruh artefak `/turbo` ke subfolder terpisah `./campaigns/<slug-produk>/turbo-15s/`:
   - `turbo-15s/turbo-brief-and-storyboard.md`
   - `turbo-15s/turbo-video-prompts.md`
-  - `turbo-15s/upload-assets/` *(opsional: salinan gambar acuan tanpa memindahkan file asli)*
+  - `turbo-15s/upload-assets/` *(berisi 1 lembar gambar storyboard tunggal `storyboard-9panel.png` / `storyboard-1sheet.png` serta salinan referensi asli tanpa memindahkan file di `references/`)*
 - Jika kampanye `<slug-produk>` belum ada, inisialisasi dulu struktur baku dengan:
   `python .agents/skills/shared/scripts/campaign_check.py --init ./campaigns <slug-produk> --product "<Nama Produk>"`
 
@@ -48,19 +48,20 @@ Buat video affiliate vertikal `9:16` berdurasi **tepat 15 detik** dengan pendeka
 5. Menunjukkan konteks pemakaian nyata (*lifestyle proof*) agar muncul keinginan membeli.
 6. Menutup video dengan *product showcase* bersih dan CTA jujur di zona aman.
 
-**Prinsip Inti:** Durasi `15` detik memberi ruang ekstra `5` detik dibanding `/fast` untuk **problem framing + bukti hasil + VO singkat yang bernapas**. Setiap detik tetap wajib bernilai pemasaran—hindari filler atau adegan repetitif.
+**Prinsip Inti:** Durasi `15` detik memberi ruang ekstra `5` detik dibanding `/fast` untuk **problem framing + bukti hasil + VO singkat yang bernapas**. Mode `/turbo` dirancang **sekali jalan**: cukup **1 lembar storyboard** dan **1 generasi video langsung `15` detik** (dengan opsi cadangan bila generator membutuhkan klip `≤ 10` detik).
 
 ---
 
 ## 3. Video Duration Control (Wajib Tepat 15 Detik)
 
 - **Total durasi final wajib tepat `15.0` detik** (`00:00.0–00:15.0`): tidak boleh `< 15` detik dan tidak boleh `> 15` detik.
-- Jumlah panel storyboard bersifat **adaptif** sesuai kompleksitas fitur dan alur cerita produk.
+- Jumlah panel storyboard bersifat **adaptif** sesuai kompleksitas produk, dengan prioritas agar tetap muat tajam dalam **1 lembar storyboard tunggal**:
 - Setiap panel wajib memiliki timestamp mulai dan selesai presisi tanpa celah atau tumpang-tindih, dan penjumlahan durasi seluruh panel **wajib sama persis dengan `15.0` detik**.
-- **Target Jumlah Panel:**
-  - Minimum rekomendasi: **`8` panel**
-  - Ideal: **`9–12` panel**
-  - Opsional: **`13–15` panel** hanya jika setiap panel benar-benar memberi nilai visual atau bukti pemasaran baru.
+- **Target Jumlah Panel & Tata Letak Lembar Tunggal:**
+  - Minimum rekomendasi: **`8` panel** (`2×4` atau `4×2` dalam **`1` lembar tunggal**)
+  - **Ideal: `8–9` panel**, terutama **`9` panel** (grid **`3×3` dalam `1` lembar tunggal** — keseimbangan terbaik ketajaman frame `9:16` dan alur 15 detik)
+  - Maksimum 1 lembar: **`10` panel** (`5×2` dalam `1` lembar tunggal)
+  - Opsional: **`11–15` panel** (*split* `2` lembar) **hanya** bila pengguna meminta eksplisit atau produk memiliki fitur sangat banyak yang tidak mungkin diringkas dalam `9–10` panel.
 
 ---
 
@@ -70,14 +71,14 @@ Video harus tetap terasa dinamis, mengalir mulus, dan lebih mudah dicerna mata s
 
 | Jenis Adegan | Panduan Durasi Panel Storyboard |
 |---|---|
-| Hook / Visual impact | `0.8–1.2` detik |
+| Hook / Visual impact | `0.8–1.3` detik |
 | Problem / Context setup | `1.0–1.5` detik |
-| Product reveal | `1.0–1.5` detik |
-| Product close-up / Macro detail | `0.9–1.3` detik |
-| Product demonstration | `1.4–2.4` detik |
-| Benefit / Result showcase | `1.2–1.8` detik |
-| Lifestyle / Real-use proof | `1.2–1.8` detik |
-| Closing / Hero & CTA | `1.3–2.0` detik |
+| Product reveal | `1.1–1.6` detik |
+| Product close-up / Macro detail | `1.0–1.6` detik |
+| Product demonstration | `1.5–2.4` detik |
+| Benefit / Result showcase | `1.3–1.8` detik |
+| Lifestyle / Real-use proof | `1.3–1.9` detik |
+| Closing / Hero & CTA | `1.4–2.0` detik |
 
 **Ketentuan Tambahan Pacing:**
 - Tabel di atas adalah panduan adaptif, bukan batas kaku.
@@ -129,31 +130,32 @@ Variasikan pendekatan visual secara terarah (pilih hanya teknik yang menaikkan k
 
 ---
 
-## 8. Strategi Segmentasi Klip Video & Dual-Mode Bilangan Bulat (`≤ 10` Detik/Klip)
+## 8. Strategi Prompt Video Sekali Jalan & Dual-Mode Bilangan Bulat (`1× 15s` Utama + Cadangan `≤ 10s`)
 
-> **Aturan Teknis Generator Video:** Generator video AI memiliki batas durasi maksimal per klip (standar **`10` seconds** per generasi) dan **tidak mendukung durasi desimal/koma** (seperti `2.5` atau `7.5` seconds). Seluruh prompt generasi video **wajib memakai durasi bilangan bulat** (`2`, `3`, `4`, `5`, `6`, `7`, `8`, atau `10` seconds) dengan penanda waktu internal bilangan bulat (`0s–2s`, `2s–5s`, dst.).
+> **Aturan Teknis Generator Video:** Generator video AI **tidak mendukung durasi desimal/koma** (seperti `1.2`, `2.5`, atau `7.5` seconds). Seluruh prompt generasi video **wajib memakai durasi bilangan bulat** (`2`, `3`, `4`, `5`, `6`, `7`, `8`, `10`, atau **`15` seconds** untuk generator yang mendukung output langsung `15` detik).
 
-Berbeda dengan `/fast` (`10` detik yang dapat ditangani `1` klip), durasi **`15` detik** melampaui batas standar `10` detik per klip sehingga **wajib dipecah secara strategis** agar kualitas, konsistensi, dan transisi antar-klip tetap tajam. Sediakan **kedua mode** berikut di `turbo-15s/turbo-video-prompts.md`:
+Agar pengguna bisa langsung membuat video dan storyboard **dalam satu kali jalan**, sediakan struktur berikut di `turbo-15s/turbo-video-prompts.md`:
 
-### Mode A (Strategi Utama Direkomendasikan) — Segmentasi Multi-Shot Adaptif `2` atau `3` Klip (Total Tepat `15` Seconds)
-Evaluasi karakteristik produk, kebutuhan perubahan sudut/lokasi, dan generator target untuk memilih **1 pola terbaik** di bawah ini (atau kombinasi bilangan bulat lain `≤ 10` dtk yang berjumlah tepat `15` detik), serta tuliskan **alasan pemilihan strategi klip** di dokumen prompt:
+### Mode A (Strategi Utama Direkomendasikan — Sekali Jalan `1×` Generasi Langsung `15` Seconds)
+- Sediakan **`1` Master Video Prompt utuh berdurasi bilangan bulat tepat `15` seconds** (`Duration: 15 seconds. Vertical 9:16 commercial affiliate video with dynamic smooth cuts.`).
+- Lampirkan **`1` lembar storyboard tunggal** (`turbo-15s/upload-assets/storyboard-9panel.png` / `.jpg` atau `storyboard-1sheet.png`) sebagai peta visual seluruh alur `0s–15s` dalam satu kali generasi *(bisa disertai foto `Otoritas #1` bila generator mendukung multi-image, **atau** cukup 1 gambar storyboard saja apabila prompt Mode A ditulis **self-contained**)*.
+- **Wajib *Self-Contained* di dalam Teks Prompt Inggris:** Seluruh detail identitas produk (`Otoritas #1`), koreksi cacat minor gambar storyboard (mis. larangan kancing/zipper fiktif, panah grafis, atau wajah blur lembut), serta keseragaman latar **wajib dijelaskan lengkap langsung di dalam prompt bahasa Inggris** tanpa menyebut nama file foto lain yang tidak ikut diunggah (`ref-01...jpg`), sehingga pengguna yang hanya mengunggah **1 gambar storyboard** ke generator video tetap memperoleh hasil akurat dalam sekali jalan.
+- Wajib memuat `[PRODUCT IDENTITY LOCK]`, `[SUBJECT & ENVIRONMENT LOCK]` / `[HAND & ENVIRONMENT LOCK]`, **`First-Frame Anchor (0s)`**, timeline multi-shot bilangan bulat lengkap (`0s–15s` mencakup seluruh panel `1..N`), `[CAMERA & TRANSITION STYLE]`, **`Last-Frame Anchor (15s)`** (dengan ruang bawah `28%` bersih untuk CTA), `[NEGATIVE / AVOID]`, dan `Audio / SFX / VO Cue`.
+- Jangan mencantumkan kalimat `"Continue the video."` pada Mode A karena merupakan klip tunggal awal-sampai-akhir.
 
-| Pola Strategi | Pembagian Klip (Bilangan Bulat) | Kapan Paling Efektif Digunakan |
-|---|---|---|
-| **Pola 2 Klip Seimbang** | **`8s + 7s = 15s`** | Ideal untuk demo mekanis/tutorial kontinu (Veo / Flow / Kling / Sora maks. `10s`): Klip 1 (`8s`) mengikat *Hook → Reveal → Demo inti*; Klip 2 (`7s`) melanjutkan *Detail → Hasil → Hero Closing* dengan minim risiko pergeseran identitas produk. |
-| **Pola 2 Klip Fokus Demo Panjang** | **`10s + 5s = 15s`** | Ideal jika 1 aksi demonstrasi atau transformasi membutuhkan rentang gerak panjang tanpa cut (Klip 1 `10s`), lalu Klip 2 (`5s`) mengunci *Lifestyle Proof + Hero Closing & CTA*. |
-| **Pola 3 Babak Simetris** | **`5s + 5s + 5s = 15s`** | Ideal untuk alur 3 babak kontras (*Babak 1 Masalah & Reveal → Babak 2 Demo & Makro → Babak 3 Bukti Hasil & Closing*) sekaligus **aman di hampir semua generator** termasuk model berbatas klip `5` detik. |
-| **Pola 3 Babak Klimaks Demo** | **`4s + 6s + 5s = 15s`** | Ideal jika *Hook & Reveal* sangat cepat (`4s`), bagian tengah butuh durasi ekstra untuk demo fitur utama (`6s`), dan ditutup *Benefit + Hero CTA* (`5s`). |
+### Mode B (Alternatif Cadangan — Bila Generator Berbatas `≤ 10` Detik atau Ingin Kontrol Trim NLE)
+Sediakan kedua sub-opsi cadangan di bawah Mode A agar kampanye tetap dapat dijalankan di generator jenis apa pun:
 
-**Ketentuan Kontinuitas Wajib Mode A:**
-1. Jumlah durasi seluruh klip **wajib tepat `15` seconds** (`8+7`, `10+5`, `5+5+5`, `4+6+5`, dll.) dan setiap klip `≤ 10` seconds.
-2. Setiap klip wajib memuat **Gambar Referensi Wajib** (`Otoritas #1`), `[PRODUCT IDENTITY LOCK]`, **`First-Frame Anchor`**, timeline detik bilangan bulat, **`Last-Frame Anchor`** (posisi produk, tangan, sudut, dan cahaya di detik akhir klip), serta `[NEGATIVE / AVOID]`.
-3. **Aturan Klip Lanjutan:** Baris pertama di dalam blok prompt Inggris untuk **Klip 02** dan **Klip 03** **wajib diawali tepat dengan kalimat `"Continue the video."`** (jangan cantumkan pada Klip 01) agar kesinambungan gerak, tangan, latar, dan pencahayaan tetap terkunci antar-generasi.
-
-### Mode B (Alternatif Kontrol Presisi Maksimal) — Prompt Individual per Panel (`Trim Editing ke 15.0 Detik`)
-- Setiap panel storyboard (`PANEL 01` s.d. `PANEL <N>`) dibuatkan **1 blok prompt generasi individual berbahasa Inggris** berdurasi bilangan bulat (`2`, `3`, atau `4` seconds) yang memberi ruang gerak aman agar aksi tidak terpotong.
-- Sertakan `Target Panel & Trim Window` (mis. `PANEL 01 → ambil 1.0s terbaik dari klip 3s`), `Reference Images Attached`, `[PRODUCT IDENTITY LOCK]`, komposisi, gerakan objek & kamera, pencahayaan, `Negative / Avoid`, dan `Audio / SFX Cue`.
-- Cocok jika pengguna menginginkan potongan ritmis super-presisi mengikuti beat musik (*surgical NLE editing*) atau mengganti satu shot tanpa men-generate ulang klip panjang.
+1. **Mode B1 — Segmentasi Multi-Shot Adaptif `2` atau `3` Klip (`≤ 10` Detik/Klip, Total `15` Seconds):**
+   | Pola Strategi | Pembagian Klip (Bilangan Bulat) | Kapan Dipakai |
+   |---|---|---|
+   | **Pola 2 Klip Seimbang** | **`8s + 7s = 15s`** | Generator maks. `10s`: Klip 1 (`8s`) mengikat *Hook → Reveal → Demo inti*; Klip 2 (`7s`) melanjutkan *Detail → Hasil → Hero Closing*. |
+   | **Pola 2 Klip Fokus Demo Panjang** | **`10s + 5s = 15s`** | Jika 1 aksi demonstrasi membutuhkan rentang panjang (`10s`) lalu ditutup *Lifestyle + CTA* (`5s`). |
+   | **Pola 3 Babak Simetris** | **`5s + 5s + 5s = 15s`** | Aman di hampir semua generator termasuk model berbatas `5s`, membagi alur menjadi 3 babak seimbang. |
+   | **Pola 3 Babak Klimaks Demo** | **`4s + 6s + 5s = 15s`** | Jika *Hook* super-cepat (`4s`), demo utama butuh ruang ekstra (`6s`), lalu *Closing* (`5s`). |
+   - **Aturan Kontinuitas Mode B1:** Setiap klip memuat `Otoritas #1`, `[PRODUCT IDENTITY LOCK]`, `First-Frame Anchor`, `Last-Frame Anchor`, `[NEGATIVE / AVOID]`, dan baris pertama **Klip 02** / **Klip 03** **wajib diawali tepat dengan `"Continue the video."`** (jangan pada Klip 01).
+2. **Mode B2 — Prompt Individual per Panel (`2–4` Seconds Bilangan Bulat → Trim Editing ke `15.0` Detik):**
+   - Setiap panel (`PANEL 01`–`PANEL <N>`) dibuatkan `1` blok prompt individual berdurasi bilangan bulat (`2`, `3`, atau `4` seconds) beserta `Target Panel & Trim Window` untuk *surgical NLE editing* mengikuti beat musik.
 
 ---
 
@@ -162,7 +164,7 @@ Evaluasi karakteristik produk, kebutuhan perubahan sudut/lokasi, dan generator t
 - **BGM & SFX:** Pilih musik latar (*BGM*) sesuai karakter produk (`-18 dB` s.d. `-16 dB`), sertai *sound effects* (`SFX`) pada setiap aksi mekanis dan titik potong klip tanpa *audio clipping* (`peak < -1.0 dB`).
 - **Voice-Over (VO) Opsional — Ideal untuk Format `15` Detik:**
   - Format `15` detik sangat efektif memakai VO Bahasa Indonesia off-camera bergaya alami lisan (tidak wajib jika produk murni mengandalkan ASMR/visual, namun sangat direkomendasikan bila ada pesan masalah–solusi–manfaat).
-  - **Aturan Wajib VO:** **Eja seluruh angka dengan kata** (mis. `"delapan ribuan"`, `"lima belas detik"`), hindari klise AI, dan jaga kepadatan ucap maksimal **`5,0` suku kata/detik** (target ideal untuk `15` detik adalah **`60–68` suku kata** agar terdengar santai di kisaran `4,2–4,5` suku kata/detik).
+  - **Aturan Wajib VO:** **Eja seluruh angka dengan kata** (mis. `"lima warna"`, `"lima belas detik"`), hindari klise AI, dan jaga kepadatan ucap maksimal **`5,0` suku kata/detik** (target ideal untuk `15` detik adalah **`60–68` suku kata** agar terdengar santai di kisaran `4,2–4,5` suku kata/detik).
   - Jika menggunakan VO terstruktur per segmen waktu, sertakan `## Tabel Timing Dialog` pada `turbo-15s/turbo-video-prompts.md` dan verifikasi menggunakan `python .agents/skills/shared/scripts/dialogue_timing.py ./campaigns/<slug>/turbo-15s/turbo-video-prompts.md --max-duration 15`.
 
 ---
@@ -179,7 +181,7 @@ Evaluasi karakteristik produk, kebutuhan perubahan sudut/lokasi, dan generator t
 
 Setiap panel di `turbo-15s/turbo-brief-and-storyboard.md` wajib memuat ke-12 poin berikut:
 1. `Panel number` (`PANEL 01`, `PANEL 02`, ...)
-2. `Timestamp` (mis. `00:00.0–00:01.0`)
+2. `Timestamp` (mis. `00:00.0–00:01.2`)
 3. `Durasi klip` (`Duration`)
 4. `Scene description` (`Scene`)
 5. `Visual composition` (`Visual`)
@@ -191,17 +193,17 @@ Setiap panel di `turbo-15s/turbo-brief-and-storyboard.md` wajib memuat ke-12 poi
 11. `Marketing objective` (`Objective`)
 12. `Audio / sound effects` (`Audio / SFX`)
 
-Sertakan tabel ringkasan durasi panel yang jumlahnya **tepat `15.0` detik**, pemetaan pengelompokan panel ke segmen klip Mode A (`Klip 01..02/03`), serta prompt gambar storyboard siap-salin (`2×4` untuk 8 panel, `3×3` untuk 9 panel, atau split `2` lembar grid untuk `10–15` panel agar tiap frame `9:16` tetap tajam).
+Sertakan tabel ringkasan durasi panel yang jumlahnya **tepat `15.0` detik**, pemetaan fase alur (`Babak 1 (0–5s)`, `Babak 2 (5–10s)`, `Babak 3 (10–15s)`), serta **1 prompt gambar storyboard tunggal siap-salin** (`3×3` untuk 9 panel ideal, `2×4`/`4×2` untuk 8 panel, atau `5×2` untuk 10 panel) agar storyboard dapat langsung dibuat dalam **1 lembar sekali jalan** *(hanya split 2 lembar bila pengguna meminta > 10 panel)*.
 
 ---
 
 ## 12. Editing & Final Assembly (`1080 × 1920`, Tepat `15` Detik)
 
 Sertakan panduan perakitan editor (`CapCut` / NLE) di `turbo-15s/turbo-video-prompts.md`:
-- **Jalur Mode A (`2–3` klip):** Susun Klip `01`..`02/03` berurutan, rapikan transisi sambungan antar-klip (*match cut* / *clean cut* tepat di *frame anchor*) hingga total timeline **tepat `15.0` detik** tanpa frame hitam/jeda.
-- **Jalur Mode B (per panel):** Impor seluruh klip individual lalu *trim* tepat pada puncak aksi setiap panel sesuai timestamp storyboard hingga total timeline **tepat `15.0` detik**.
-- Format ekspor akhir: vertikal **`9:16`**, resolusi target **`1080 × 1920 px`**, *frame rate* konsisten (`30 fps` / `60 fps`).
-- Sinkronkan titik *beat/SFX/VO* dan pastikan teks overlay + CTA berada di zona aman (`20%–32%` atas atau `60%–70%` tengah-bawah, bebas tertutup keranjang kuning `28%` bawah).
+- **Jalur Mode A (`1` klip langsung `15` detik — Sekali Jalan):** Impor 1 klip hasil generasi `15s` ke timeline, pastikan durasi tepat `15.0` detik (`00:00.0–00:15.0`) tanpa frame hitam/jeda, lalu tambahkan sinkronisasi BGM/SFX/VO serta teks overlay + CTA di zona aman dan ekspor.
+- **Jalur Mode B1 (`2–3` klip `≤ 10s`):** Susun Klip `01`..`02/03` berurutan, rapikan titik sambung antar-klip tepat di *frame anchor* hingga total timeline **tepat `15.0` detik**.
+- **Jalur Mode B2 (per panel):** Impor seluruh klip individual lalu *trim* tepat pada puncak aksi setiap panel sesuai timestamp storyboard hingga total timeline **tepat `15.0` detik**.
+- Format ekspor akhir: vertikal **`9:16`**, resolusi target **`1080 × 1920 px`**, *frame rate* konsisten (`30 fps` / `60 fps`), dan pastikan teks overlay + CTA berada di zona aman (`20%–32%` atas atau `60%–70%` tengah-bawah, bebas tertutup keranjang kuning `28%` bawah).
 
 ---
 
@@ -209,10 +211,10 @@ Sertakan panduan perakitan editor (`CapCut` / NLE) di `turbo-15s/turbo-video-pro
 
 Sebelum menyelesaikan output `/turbo`, periksa dan isi seluruh kotak cek ini:
 
-**Duration & Clip Strategy**
+**Single-Pass Efficiency, Duration & Clip Strategy**
 - [ ] Total durasi storyboard tepat `15.0` detik (`00:00.0–00:15.0`).
-- [ ] Strategi klip Mode A dipilih secara beralasan (`2` atau `3` klip), setiap klip `≤ 10` seconds, seluruh durasi prompt video (Mode A & Mode B) memakai **bilangan bulat tanpa koma/desimal**, dan total Mode A tepat `15` seconds.
-- [ ] Klip `02+` pada Mode A diawali `"Continue the video."` serta memiliki `First-Frame Anchor` dan `Last-Frame Anchor` yang menyambung.
+- [ ] Storyboard dirancang **1 lembar tunggal** (default `8–10` panel, ideal `9` panel grid `3×3`), tanpa panel `< 0.6` detik tanpa tujuan kreatif jelas.
+- [ ] Mode A menyediakan **1 Master Prompt langsung `15` seconds** untuk sekali jalan, dan Mode B (B1 `2–3` klip `≤ 10s` + B2 per panel) memakai **bilangan bulat tanpa koma/desimal** serta Klip `02+` B1 diawali `"Continue the video."`.
 
 **Storytelling**
 - [ ] Hook menarik di detik `00:00–00:01.2`.
@@ -220,15 +222,14 @@ Sebelum menyelesaikan output `/turbo`, periksa dan isi seluruh kotak cek ini:
 - [ ] Ending memiliki showcase/CTA jujur yang jelas dan bebas klaim palsu.
 
 **Pacing**
-- [ ] Ritme hidup, tidak lambat dan tidak terlalu terburu-buru, tanpa panel `< 0.6` detik tanpa tujuan kreatif jelas.
-- [ ] Tidak ada adegan demonstrasi penting yang terpotong sebelum selesai.
+- [ ] Ritme hidup, tidak lambat dan tidak terburu-buru; tidak ada adegan demonstrasi penting yang terpotong sebelum selesai.
 
 **Visual**
 - [ ] Produk 100% konsisten dengan referensi asli (`references/`), tanpa deformasi.
 - [ ] Gerakan kamera & tangan realistis, transisi natural, dan komposisi antar-panel bervariasi.
 
 **Audio**
-- [ ] Musik latar sesuai karakter produk, SFX tersinkronisasi dengan cut/gerakan, bebas *clipping*, dan VO opsional (bila dipakai) terukur `≤ 5,0` suku kata/detik dengan angka dieja kata.
+- [ ] Musik sesuai karakter produk, SFX tersinkronisasi dengan cut/gerakan, bebas *clipping*, dan VO opsional (bila dipakai) terukur `≤ 5,0` suku kata/detik dengan angka dieja kata.
 
 ---
 
@@ -236,11 +237,11 @@ Sebelum menyelesaikan output `/turbo`, periksa dan isi seluruh kotak cek ini:
 
 Jalankan langkah berikut secara berurutan dan otonom saat pengguna memanggil `/turbo`:
 - **STEP 1 — Terima & Analisis Produk:** Kumpulkan foto/referensi/deskripsi (`01-product-review/references/` atau input chat), panggil HCE (`hce_bridge.py search`) bila perlu, dan lengkapi 9 poin analisis berbasis bukti.
-- **STEP 2 — Identifikasi Selling Point & Angle `15` Detik:** Tentukan sudut cerita terkuat (Hook + Masalah/Konteks + Demo Inti + Bukti Detail/Hasil + CTA) yang memanfaatkan penuh rentang `15` detik.
-- **STEP 3 — Tentukan Konsep Kreatif, VO Opsional & Strategi Klip:** Tetapkan kunci konsistensi produk/tangan/lingkungan, arahan audio/BGM (+ draf VO `60–68` suku kata bila dipakai), teks overlay zona aman, serta tentukan **pola segmentasi klip Mode A terbaik** (`8+7`, `10+5`, `5+5+5`, atau `4+6+5`) beserta alasannya.
-- **STEP 4 — Tentukan Jumlah Panel Secara Otomatis:** Pilih `8–15` panel adaptif (ideal `9–12`) sesuai alur produk dan batas segmen klip Mode A.
-- **STEP 5 — Susun Storyboard Tepat `15` Detik:** Tulis lengkap 12 field per panel + tabel verifikasi total tepat `15.0` detik + prompt gambar storyboard mengikuti [Template Turbo Storyboard](assets/templates/turbo-storyboard.md) ke `./campaigns/<slug>/turbo-15s/turbo-brief-and-storyboard.md`.
-- **STEP 6 — Susun Video Generation Prompts (Dual-Mode Bilangan Bulat):** Tulis Mode A (2–3 klip strategis berdurasi bilangan bulat total `15` seconds dengan `"Continue the video."` di Klip 02+) dan Mode B (prompt individual per panel berdurasi bilangan bulat + target trim) mengikuti [Template Turbo Video Prompts](assets/templates/turbo-video-prompts.md) ke `./campaigns/<slug>/turbo-15s/turbo-video-prompts.md`.
-- **STEP 7 — Susun Panduan Editing Assembly, Audio/SFX/VO & Teks CTA:** Lengkapi instruksi perakitan `1080 × 1920` tepat `15.0` detik, verifikasi `dialogue_timing.py --max-duration 15` (bila ada tabel timing dialog VO), dan zona aman teks overlay.
-- **STEP 8 — Jalankan Quality Control:** Verifikasi seluruh checklist Duration & Clip Strategy, Storytelling, Pacing, Visual, dan Audio.
+- **STEP 2 — Identifikasi Selling Point & Angle `15` Detik:** Tentukan sudut cerita terkuat (Hook + Konteks/Masalah + Reveal + Demo Inti + Bukti Detail/Hasil + CTA) yang memanfaatkan penuh rentang `15` detik.
+- **STEP 3 — Tentukan Konsep Kreatif, VO Opsional & Target Sekali Jalan:** Tetapkan kunci konsistensi produk/tangan/lingkungan, arahan audio/BGM (+ draf VO `60–68` suku kata bila dipakai), teks overlay zona aman, serta siapkan rancangan `1` video langsung `15` seconds (+ opsi cadangan Mode B `≤ 10s` bila diperlukan).
+- **STEP 4 — Tentukan Jumlah Panel untuk `1` Lembar Tunggal:** Pilih `8–10` panel adaptif (ideal **`9` panel grid `3×3`**) agar seluruh visual termuat tajam dalam **1 lembar storyboard tunggal** *(kecuali jika pengguna meminta > 10 panel)*.
+- **STEP 5 — Susun Storyboard & Buat `1` Lembar Gambar Storyboard:** Tulis lengkap 12 field per panel + tabel verifikasi total tepat `15.0` detik + **1 prompt gambar storyboard tunggal** mengikuti [Template Turbo Storyboard](assets/templates/turbo-storyboard.md) ke `./campaigns/<slug>/turbo-15s/turbo-brief-and-storyboard.md`, lalu generate & audit visual `1` lembar storyboard ke `turbo-15s/upload-assets/`.
+- **STEP 6 — Susun Video Generation Prompts (Mode A Sekali Jalan `15s` + Mode B Cadangan):** Tulis Mode A (`1` Master Prompt langsung `15` seconds) dan Mode B (`B1` segmentasi `2–3` klip `≤ 10s` dengan `"Continue the video."` di Klip `02+`, plus `B2` prompt per panel bilangan bulat) mengikuti [Template Turbo Video Prompts](assets/templates/turbo-video-prompts.md) ke `./campaigns/<slug>/turbo-15s/turbo-video-prompts.md`.
+- **STEP 7 — Susun Panduan Editing Assembly, Audio/SFX/VO & Teks CTA:** Lengkapi instruksi perakitan `1080 × 1920` tepat `15.0` detik (utamakan jalur Mode A `1×` klip), verifikasi `dialogue_timing.py --max-duration 15` (bila ada tabel timing dialog VO), dan zona aman teks overlay.
+- **STEP 8 — Jalankan Quality Control:** Verifikasi seluruh checklist Single-Pass Efficiency, Duration & Clip Strategy, Storytelling, Pacing, Visual, dan Audio.
 - **STEP 9 — Simpan Tanpa Merusak Alur Utama:** Pastikan dokumen `turbo-15s/` tersimpan rapi, catat `modes.turbo_15s` di `campaign.json` tanpa mengubah `stages.*` maupun `modes.rapid_10s` yang sudah ada, lalu laporkan ringkas kepada pengguna.
