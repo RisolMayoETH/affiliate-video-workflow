@@ -1,17 +1,17 @@
 ---
 name: fast
-description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, struktur 4 babak, panel detik bilangan bulat, dan SATU master prompt video 10 detik (tanpa prompt per scene). Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
+description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, struktur 4 babak, panel detik bilangan bulat, SATU master prompt video 10 detik (tanpa prompt per scene), output ringkas tanpa pengulangan (storyboard utama tampil sekali), dan bagian Voice Over siap salin di akhir. Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
 license: MIT
 metadata:
   author: RisolMayoETH
-  version: "1.1.0"
+  version: "1.2.0"
   project: affiliate-video-director
   mode: rapid-affiliate-review
 ---
 
 # /fast — Rapid Affiliate Review (Tepat 10 Detik)
 
-Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.1)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep, storyboard presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (tanpa prompt per scene)**, panduan editing assembly, serta daftar periksa *quality control*.
+Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.2)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep ringkas tanpa pengulangan, storyboard utama presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (tanpa prompt per scene)**, panduan editing assembly, daftar periksa *quality control*, serta naskah **Voice Over** siap salin di bagian paling akhir.
 
 **Input Argumen:** `$ARGUMENTS` (berisi kata kunci varian opsional `clear` atau `hype`, slug kampanye, nama produk, foto/screenshot listing, deskripsi, atau tautan yang diberikan pengguna). Jika argumen kosong, cek kampanye aktif di `./campaigns/` atau minta pengguna mengirimkan foto/deskripsi produk.
 
@@ -22,8 +22,9 @@ Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Edi
 - **Bukan Sistem Terpisah:** `/fast` adalah mode pengatur strategi kreatif, storyboard, pacing, durasi (`10` detik), dan struktur video cepat di dalam **Affiliate Video Director** yang memanfaatkan penuh pengetahuan bersama dan gerbang integritas **HCE** (`python .agents/skills/shared/scripts/hce_bridge.py search ...`).
 - **Jaga Alur Utama Tetap Utuh:** Jangan pernah menduplikasi, menimpa, atau merusak dokumen alur utama (`/review`, `/storyboard`, `/video`), `/turbo`, foto asli di `01-product-review/references/`, maupun gambar di `02-generated-assets/`.
 - **Isolasi Output Mode Cepat:** Simpan seluruh artefak `/fast` ke subfolder terpisah `./campaigns/<slug-produk>/rapid-10s/`:
-  - `rapid-10s/rapid-brief-and-storyboard.md`
-  - `rapid-10s/rapid-video-prompts.md`
+  - `rapid-10s/rapid-brief-and-storyboard.md` *(berisi bagian 1–4)*
+  - `rapid-10s/rapid-video-prompts.md` *(berisi bagian 5–8)*
+  - `rapid-10s/_vo-timing.md` *(internal: tabel timing VO untuk `dialogue_timing.py`, tidak ditampilkan di jawaban pengguna)*
   - `rapid-10s/upload-assets/` *(opsional: salinan gambar acuan tanpa memindahkan file asli)*
 - Jika kampanye `<slug-produk>` belum ada, inisialisasi dulu struktur baku dengan:
   `python .agents/skills/shared/scripts/campaign_check.py --init ./campaigns <slug-produk> --product "<Nama Produk>"`
@@ -34,6 +35,7 @@ Baca modul bersama berikut seperlunya tanpa menduplikasi aturan:
 - [Bahasa Kamera](../shared/camera-language.md) & [Interaksi Produk](../shared/product-interaction.md)
 - [Konsistensi Visual](../shared/visual-consistency.md) & [Rekayasa Video](../shared/video-engineering.md)
 - [Copywriting Konversi](../shared/conversion-copywriting.md) & [Optimasi Platform](../shared/platform-optimization.md)
+- [Dialogue Engine](../shared/dialogue-engine.md)
 
 ---
 
@@ -106,7 +108,7 @@ Video harus terasa menarik di awal, jernih di tengah, dan mantap di akhir. **Pri
 
 ## 5. Storyboard Intelligence, 4 Babak Wajib & Kesinambungan
 
-Sebelum menyusun panel, lakukan analisis produk berbasis bukti (`[TERVERIFIKASI]`, `[ASUMSI]`, `[PERLU DICEK]`) untuk 9 aspek wajib:
+Sebelum menyusun panel, lakukan analisis produk berbasis bukti (`[TERVERIFIKASI]`, `[ASUMSI]`, `[PERLU DICEK]`) untuk 9 aspek wajib (**1 kalimat ringkas per sel + tag fakta**):
 1. **Kategori produk**
 2. **Fungsi utama**
 3. **Keunggulan produk**
@@ -156,51 +158,35 @@ Variasikan pendekatan visual secara terarah (pilih hanya teknik yang menaikkan k
 - Pilih musik latar (*BGM*) yang sesuai karakter produk dan aman hak cipta.
 - Gunakan *sound effects* (`SFX`) pada momen aksi dan titik pergantian shot untuk mempertegas ritme *cuts*.
 - Hindari audio terlalu ramai atau *clipping*; utamakan suara yang memperjelas fungsi produk.
-- **Voice-Over (VO) bersifat opsional:** gunakan hanya bila benar-benar memperkuat pesan. Jika memakai VO Bahasa Indonesia, jaga agar terdengar natural lisan, **eja angka dengan kata**, dan pastikan durasi ucap pas (maks. `5` suku kata/detik pada durasi segmen terkait atau kalimat singkat `10` detik yang menyatu).
+- **Voice-Over (VO) diputuskan oleh HCE dan hanya ditulis di bagian `## Voice Over` pada akhir dokumen** (lihat **Bagian 15**). Dilarang menuliskan naskah VO di `Konsep Video`, arahan audio, maupun di dalam master prompt video.
 
 ---
 
 ## 9. Text Overlay & CTA (Selaras Hard Integrity Gate HCE)
 
 - **Text Overlay Maksimal `2` Pergantian:** Dalam durasi `10` detik, teks overlay hanya boleh berganti paling banyak **`2` kali** (`1` teks manfaat utama + `1` teks CTA penutup). Gunakan tipografi jelas dan jangan menutupi produk maupun zona UI platform (atas `14%`, kanan `16%`, bawah `28%`).
-- **CTA:** Singkat, natural, sesuai konteks platform (mis. `"Cek produknya sekarang!"`, `"Lihat detailnya!"`, `"Cek di keranjang kuning!"`, `"Cek link di bio!"`).
+- **CTA:** Singkat, natural, sesuai konteks platform (TikTok default: `"Cek di keranjang kuning!"`; Reels: `"Cek link di bio!"`).
 - **Gerbang Integritas (Wajib):** Dilarang keras mengklaim kelangkaan palsu (*"stok menipis"*, *"sisa 3"*), diskon/promo fiktif, atau klise AI kosong (*"Wajib banget!"* tanpa alasan produk yang valid) apabila tidak ada bukti nyata pada data produk.
 
 ---
 
-## 10. Storyboard Output Format (12 Field Wajib)
+## 10. Storyboard Utama (12 Data Wajib, Tampil Satu Kali)
 
-Setiap panel di `rapid-10s/rapid-brief-and-storyboard.md` wajib memuat ke-12 poin berikut dengan **timestamp dan durasi bilangan bulat**:
-1. `Panel number` (`PANEL 01`, `PANEL 02`, ...)
-2. `Timestamp` (bilangan bulat, mis. `00:00–00:01`)
-3. `Durasi klip` (`Duration`, bilangan bulat `≥ 1` detik)
-4. `Scene description` (`Scene`)
-5. `Visual composition` (`Visual`)
-6. `Camera angle` (`Camera angle`)
-7. `Camera movement` (`Camera movement`)
-8. `Subject action` (`Action`)
-9. `Lighting` (`Lighting`)
-10. `Transition` (`Transition`)
-11. `Marketing objective` (`Objective`)
-12. `Audio / sound effects` (`Audio / SFX`)
+Sebagai **persyaratan produksi internal**, pastikan ke-12 titik data berikut diputuskan untuk setiap panel: (1) nomor panel, (2) timestamp bilangan bulat, (3) durasi bilangan bulat `≥ 1` dtk, (4) adegan/babak, (5) komposisi visual, (6) sudut kamera, (7) gerakan kamera, (8) aksi subjek, (9) pencahayaan, (10) transisi, (11) tujuan pemasaran, dan (12) audio/SFX.
 
-**Contoh Format Panel:**
+Pada output ke pengguna dan `rapid-10s/rapid-brief-and-storyboard.md`, **tampilkan setiap panel SATU KALI saja** dalam format blok ringkas yang langsung memuat ke-12 titik data tersebut (1 kalimat singkat per butir; *scene* digabung ke dalam **Visual**):
+
 ```text
-PANEL 01
-Timestamp: 00:00–00:01
-Duration: 1 second
-Scene: Attention-grabbing product hook (Babak 1 — Hook).
-Visual: Close-up produk di zona tengah 20%–65% dengan latar rumah Indonesia rapi.
-Camera angle: Eye-level tight close-up.
-Camera movement: Smooth push-in.
-Action: Produk diangkat atau diperlihatkan pada situasi masalah untuk memicu rasa ingin tahu.
-Lighting: Cahaya pagi alami lembut dari jendela samping.
-Transition: Clean cut.
-Objective: Menghentikan scrolling penonton di 1 detik pertama.
-Audio / SFX: Beat pembuka bersih + whoosh halus tersinkronisasi.
+**PANEL 01 · `00:00–00:01` · 1 dtk · Hook**
+- **Visual:** <scene + komposisi, produk di zona tengah>
+- **Kamera:** <angle> • <movement> • **Cahaya:** <lighting>
+- **Aksi:** <subject action> • **Transisi:** <transition>
+- **Tujuan:** <objective> • **SFX:** <audio/SFX>
 ```
 
-Sertakan tabel ringkasan durasi panel yang mencantumkan kolom `Babak` dan jumlah durasi **tepat `10` detik**, serta prompt gambar storyboard siap-salin **selalu dalam `1` lembar tunggal** (*single sheet*):
+> **Larangan Pengulangan:** **Dilarang keras** menampilkan tabel ringkasan babak dan durasi terpisah, dan **dilarang keras** membuat bagian detail kedua yang mengulang panel. Informasi durasi sudah tercantum pada setiap panel dan penjumlahannya dicek di bagian Quality Control.
+
+Sertakan prompt gambar storyboard siap-salin **selalu dalam `1` lembar tunggal** (*single sheet*):
 - **Varian Clear:** Grid `2×3` (atau `1×4` / `2×2` bila `4` panel).
 - **Varian Hype:** Grid `2×4`.
 
@@ -215,7 +201,7 @@ Prompt video wajib berbahasa Inggris, dimulai dengan `Duration: 10 seconds. Vert
 - `[HAND & ENVIRONMENT LOCK]`: Kunci kesinambungan tangan/lengan baju, latar ruangan, arah pencahayaan, dan posisi produk di zona tengah layar di seluruh shot.
 - `[SHOT TIMELINE (0s–10s)]`: Daftar 1 baris per panel storyboard memakai **timestamp bilangan bulat yang sama persis** (`Shot 1 (0s–1s, Hook): ...` hingga `Final Shot (8s–10s, Hero + CTA): ...` dengan `28%` area bawah layar tetap bersih tanpa objek mengganggu untuk ruang CTA).
 - `[CAMERA & TRANSITION STYLE]`: Gaya sinematografi komersial dan transisi bersih antar-shot.
-- `[AUDIO]`: Arahan BGM & titik SFX per shot; sertakan VO Bahasa Indonesia opsional hanya bila perlu (eja angka dengan kata, maks. `5` suku kata/detik).
+- `[AUDIO]`: Arahan BGM + titik SFX per shot, serta instruksi eksplisit: `No on-camera speaking, no lip-sync, no generated speech; leave clean audio space for an off-screen Indonesian voice-over added in editing.` *(Jika VO tidak digunakan, hilangkan klausa terakhir.)* **Dilarang mengulang naskah VO di dalam master prompt.**
 - `[NEGATIVE / AVOID]`: Larangan deformasi produk, pergeseran warna/logo, tangan/jari berlebih, teks terbakar, dan watermark.
 
 Sertakan catatan 1 baris di `rapid-10s/rapid-video-prompts.md`: *"Jika generator video belum mendukung durasi `10` detik sekaligus, gunakan generator yang mendukung generasi `10` detik dalam satu kali proses (jangan memecah prompt per scene)."*
@@ -227,17 +213,18 @@ Sertakan catatan 1 baris di `rapid-10s/rapid-video-prompts.md`: *"Jika generator
 Sertakan panduan perakitan editor (`CapCut` / NLE) di `rapid-10s/rapid-video-prompts.md`:
 - Impor **1 klip hasil generasi `10` detik** dan pastikan durasi timeline tepat `10` detik (`00:00–00:10`), format vertikal **`9:16`**, resolusi **`1080 × 1920`**, *frame rate* konsisten (mis. `30 fps` / `60 fps`), tanpa jeda kosong/frame hitam.
 - Jika durasi klip hasil generate sedikit melebihi `10` detik, lakukan *trim* **hanya di bagian akhir** (*tanpa* pemotongan atau perakitan per panel).
-- Tambahkan BGM dan sinkronkan *SFX* tepat pada titik pergantian shot sesuai timeline storyboard.
+- Tambahkan BGM dan sinkronkan *SFX* tepat pada titik pergantian shot sesuai storyboard utama.
+- **Penempatan Voice Over:** Rekam atau generate TTS dari naskah di bagian `## Voice Over`, lalu tempatkan tepat pada rentang waktu segmen yang tercatat di `rapid-10s/_vo-timing.md` (sebutkan rentang awal–akhir tiap segmen di panduan assembly agar VO tidak menabrak transisi visual). Atur level VO sekitar **`-6 dBFS`** dan turunkan (*duck*) BGM ke sekitar **`-22 dBFS`**. *(Lewati langkah ini bila VO tidak digunakan.)*
 - Tempatkan maksimal `2` pergantian teks overlay + CTA di zona aman (`20%–32%` atas atau `60%–70%` tengah-bawah, bebas tertutup keranjang kuning `28%` bawah).
 
 ---
 
 ## 13. Quality Control Checklist (Wajib Diverifikasi)
 
-Sebelum menyelesaikan output `/fast`, periksa dan isi seluruh kotak cek ini:
+Sebelum menyelesaikan output `/fast`, periksa dan isi seluruh kotak cek ini (cantumkan penjumlahan durasi nyata pada baris pertama, mis. `1 + 3 + 2 + 2 + 2 = 10` detik):
 
 **Duration & Prompt**
-- [ ] Total durasi storyboard tepat `10` detik (`00:00–00:10`) dengan semua panel memakai **detik bilangan bulat** (`≥ 1` detik).
+- [ ] Total durasi storyboard utama tepat `10` detik (`00:00–00:10`, penjumlahan: `... = 10` detik) dengan semua panel memakai **detik bilangan bulat** (`≥ 1` detik).
 - [ ] Jumlah panel sesuai varian terpilih (**Clear:** `4–6` panel; **Hype:** `7–8` panel).
 - [ ] `rapid-video-prompts.md` hanya berisi **tepat `1` master prompt `10` detik** dan **tidak ada prompt terpisah per scene/panel**.
 
@@ -256,18 +243,87 @@ Sebelum menyelesaikan output `/fast`, periksa dan isi seluruh kotak cek ini:
 **Audio**
 - [ ] Musik latar sesuai karakter produk, SFX tersinkronisasi dengan pergantian shot, bebas *audio clipping*.
 
+**Output**
+- [ ] Tidak ada tabel ringkasan babak & durasi terpisah; setiap panel hanya tampil satu kali.
+- [ ] Urutan output tepat `1–8` dengan `## Voice Over` berada paling akhir.
+
+**Voice Over**
+- [ ] Hanya ada `1` versi VO terbaik (atau tertulis tidak digunakan beserta alasan singkat), selaras 4 babak, tanpa mengulang teks layar kata per kata.
+- [ ] Bahasa Indonesia lisan natural, seluruh angka ditulis dengan huruf/kata (tanpa digit), dan tanpa klaim yang tidak terverifikasi.
+- [ ] File internal `_vo-timing.md` lolos validasi `dialogue_timing.py` *(atau ditandai N/A beserta alasan bila VO tidak digunakan)*.
+
 ---
 
 ## 14. Execution Workflow (`/fast`)
 
 Jalankan langkah berikut secara berurutan dan otonom saat pengguna memanggil `/fast`:
 - **STEP 0 — Tentukan Varian:** Periksa token pertama `$ARGUMENTS` (`clear` atau `hype`); jika tidak ada, pilih otomatis berdasarkan jenis produk (`Clear` untuk produk fungsional / fallback jika ragu, `Hype` untuk produk estetik) dan siapkan alasan satu barisnya.
-- **STEP 1 — Terima & Analisis Produk:** Kumpulkan foto/referensi/deskripsi (`01-product-review/references/` atau input chat), panggil HCE (`hce_bridge.py search`) bila perlu, dan lengkapi 9 poin analisis berbasis bukti.
-- **STEP 2 — Identifikasi 1 Selling Point Utama:** Tetapkan tepat `1` sudut jualan terkuat yang paling mudah dibuktikan secara visual dalam `10` detik.
-- **STEP 3 — Tentukan Konsep & Kunci Kesinambungan:** Tetapkan struktur 4 babak, tangan/lengan konsisten, latar & cahaya konsisten, zona tengah produk, arahan audio/BGM, serta rencana maksimal `2` pergantian teks overlay + CTA aman.
-- **STEP 4 — Tentukan Jumlah Panel Sesuai Varian:** Pilih jumlah panel di rentang varian (`Clear`: `4–6` ideal `5`; `Hype`: `7–8` maks. `8`) dengan durasi bilangan bulat (`Demo ≥ 2` dtk, `Hero + CTA ≥ 2` dtk, total tepat `10` dtk).
-- **STEP 5 — Susun Storyboard 1 Lembar Tepat 10 Detik:** Tulis varian + alasan di header, tabel timeline berkolom `Babak`, 12 field per panel (timestamp & durasi bilangan bulat), dan `1` prompt gambar storyboard tunggal mengikuti [Template Rapid Storyboard](assets/templates/rapid-storyboard.md) ke `./campaigns/<slug>/rapid-10s/rapid-brief-and-storyboard.md`.
-- **STEP 6 — Susun 1 Master Prompt Video 10 Detik:** Tulis **hanya 1 Master Prompt** berbahasa Inggris berdurasi `10 seconds` dengan shot timeline `1:1` mengikuti [Template Rapid Video Prompts](assets/templates/rapid-video-prompts.md) ke `./campaigns/<slug>/rapid-10s/rapid-video-prompts.md` (tanpa prompt per scene).
-- **STEP 7 — Susun Panduan Assembly 1 Klip:** Lengkapi instruksi impor 1 klip `10` detik (`1080 × 1920`), trim akhir bila berlebih, sinkronisasi BGM/SFX, dan zona aman teks overlay.
-- **STEP 8 — Jalankan Quality Control:** Verifikasi seluruh checklist Duration & Prompt, Storytelling & Pacing, Visual & Continuity, serta Audio.
-- **STEP 9 — Simpan Tanpa Merusak Alur Utama:** Pastikan dokumen `rapid-10s/` tersimpan rapi, opsional catat `modes.rapid_10s` di `campaign.json` (sertakan `"variant": "clear"` atau `"hype"`) tanpa mengubah `stages.review` / `stages.storyboard` / `stages.video` yang sudah ada, lalu laporkan ringkas kepada pengguna.
+- **STEP 1 — Terima & Analisis Produk:** Kumpulkan foto/referensi/deskripsi (`01-product-review/references/` atau input chat), panggil HCE (`hce_bridge.py search`) bila perlu, dan lengkapi 9 poin analisis berbasis bukti (1 kalimat per sel).
+- **STEP 2 — Identifikasi 1 Selling Point Utama & Konsep Video:** Tetapkan tepat `1` *selling point* terkuat dan susun maks. `6` butir **Konsep Video** (tanpa naskah VO).
+- **STEP 3 — Tentukan Jumlah Panel Sesuai Varian:** Pilih jumlah panel di rentang varian (`Clear`: `4–6` ideal `5`; `Hype`: `7–8` maks. `8`) dengan durasi bilangan bulat (`Demo ≥ 2` dtk, `Hero + CTA ≥ 2` dtk, total tepat `10` dtk).
+- **STEP 4 — Susun Storyboard Utama 1 Lembar Tepat 10 Detik:** Tulis blok ringkas satu kali per panel (memuat ke-12 data internal) dan `1` prompt gambar storyboard tunggal mengikuti [Template Rapid Storyboard](assets/templates/rapid-storyboard.md) ke `./campaigns/<slug>/rapid-10s/rapid-brief-and-storyboard.md`.
+- **STEP 5 — Susun 1 Master Prompt Video 10 Detik:** Tulis **hanya 1 Master Prompt** berbahasa Inggris berdurasi `10 seconds` dengan shot timeline `1:1` dan `[AUDIO]` bebas ucapan (siap diisi VO di editing) ke `./campaigns/<slug>/rapid-10s/rapid-video-prompts.md`.
+- **STEP 6 — Voice Over (HCE + Dialogue Engine):** Tentukan apakah VO dipakai; jika ya, susun 1 naskah VO terbaik sesuai **Bagian 15**, tulis `rapid-10s/_vo-timing.md` mengikuti [Template Rapid VO Timing](assets/templates/rapid-vo-timing.md), dan jalankan `python .agents/skills/shared/scripts/dialogue_timing.py ./campaigns/<slug>/rapid-10s/_vo-timing.md` hingga `LOLOS`.
+- **STEP 7 — Lengkapi Editing & Assembly + Quality Control + Voice Over:** Lengkapi `rapid-10s/rapid-video-prompts.md` mengikuti [Template Rapid Video Prompts](assets/templates/rapid-video-prompts.md) (bagian 5–8 berurutan, dengan `## Voice Over` paling akhir).
+- **STEP 8 — Simpan & Laporkan Ringkas:** Pastikan artefak `rapid-10s/` tersimpan rapi, opsional catat `modes.rapid_10s` di `campaign.json` (sertakan `"variant": "clear"` atau `"hype"`) tanpa mengubah `stages.review` / `stages.storyboard` / `stages.video`, lalu tampilkan output ke pengguna sesuai **Bagian 16**.
+
+---
+
+## 15. Voice Over (Selalu Paling Akhir)
+
+Bagian `## Voice Over` wajib berada **paling akhir** setelah `Editing & Final Assembly` dan `Quality Control Checklist`.
+
+### Keputusan & Pendekatan HCE
+- Gunakan pengetahuan [Conversion Copywriting](../shared/conversion-copywriting.md) (`§1` formula hook, `§2` micro-arc, `§3` bank CTA) dan [Buyer Psychology](../shared/buyer-psychology.md) (`§2–3` awareness level & objection handling), serta opsional `python .agents/skills/shared/scripts/hce_bridge.py search "hook voice over <kategori>" --limit 5`, dengan tetap mematuhi **Hard Integrity Gate**.
+- **Kapan VO digunakan:** Secara default, **gunakan VO** (varian `Clear` hampir selalu memerlukan VO agar fungsi & manfaat cepat dipahami). Hanya lewati VO bila HCE menilai visual + musik + text overlay sudah jauh lebih kuat tanpa bicara (mis. video *Hype* estetik/ASMR murni).
+- **Jika VO tidak digunakan:** Tampilkan subjudul `**VOICE OVER — TIDAK DIGUNAKAN**` diikuti `1–2` kalimat alasan singkat. Jangan membuat file `_vo-timing.md`, dan tandai item validasi VO di checklist sebagai `N/A`.
+
+### Aturan Penulisan & Dialogue Engine (`dialogue-engine.md`)
+- **Bahasa Indonesia Lisan Natural:** Pakai bahasa percakapan manusia (*nggak*, *banget*, *nih*, *langsung*, dsb.), bukan bahasa brosur/iklan kaku.
+- **Selaras 4 Babak & Tidak Repetitif:** Ikuti alur `Hook → Demo → Manfaat → CTA`, jangan membaca teks overlay di layar kata per kata, dan dilarang mengklaim hal di luar bukti produk.
+- **CTA Sesuai Platform:** TikTok default `"Cek di keranjang kuning!"`; Reels `"Cek link di bio!"`.
+- **Tepat 1 Versi Terbaik:** Jangan membuat beberapa alternatif VO secara otomatis kecuali diminta pengguna.
+- **Laju Bicara & Angka:** Target **`5,0` suku kata/detik** (rentang nyaman **`4,5–5,5`** sk/dtk; batas maksimal **`6,0`** sk/dtk), kepadatan segmen **`60%–105%`**. **Seluruh angka wajib ditulis dengan huruf/kata** (dilarang digit). Gunakan tanda baca (`…` atau titik) untuk jeda alami di blok salin — jangan menuliskan `[jeda]` di blok teks salin.
+- **Validasi Wajib via `_vo-timing.md`:** Tulis file internal `rapid-10s/_vo-timing.md` berisi `## Tabel Timing Dialog` dengan baris segmen berurutan `00:00` hingga `00:10` memakai **timestamp bilangan bulat** (segmen hening memakai `"[jeda]"`). Gabungan teks dialog baris non-`[jeda]` yang dipisahkan spasi **harus persis sama** dengan blok salin `**VOICE OVER — 10 DETIK**`. Jalankan:
+  `python .agents/skills/shared/scripts/dialogue_timing.py ./campaigns/<slug>/rapid-10s/_vo-timing.md`
+  Revisi hingga status `LOLOS`, lalu laporkan hasil nyatanya. Jika skrip tidak dapat dijalankan, laporkan sejujurnya dan jangan pernah mengarang hasil lolos.
+
+### Format Baku `## Voice Over`
+
+```markdown
+## Voice Over
+
+**VOICE OVER — 10 DETIK**
+
+```text
+<Naskah VO lengkap dari awal sampai akhir, satu versi terbaik, angka dieja huruf>
+```
+
+- **Voice character:** <karakter suara yang direkomendasikan>
+- **Gender:** <pilihan gender suara bila relevan, atau netral>
+- **Delivery:** <gaya penyampaian per babak>
+- **Tone:** <emosi dan intonasi>
+- **Speaking rate:** ± 5 suku kata/detik (<N> suku kata dalam 10 detik; `dialogue_timing.py`: LOLOS)
+```
+
+---
+
+## 16. Format Jawaban ke Pengguna
+
+Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali maksimal `2` baris pembuka (varian + jumlah panel terpilih, serta tautan ke file `rapid-10s/`), lalu mengikuti urutan baku **1–8** berikut:
+
+1. `## Analisis Produk & Selling Point` *(tabel 9 aspek, 1 kalimat per sel + tag fakta)*
+2. `## Konsep Video` *(maks. 6 butir, tanpa naskah VO)*
+3. `## Storyboard Utama` *(blok ringkas satu kali per panel, 1 kalimat per butir)*
+4. `## Prompt Gambar Storyboard` *(`1` lembar tunggal siap salin)*
+5. `## Master Prompt Video (10 Detik)` *(`1` master prompt siap salin, tanpa prompt per scene)*
+6. `## Editing & Final Assembly` *(termasuk timestamp segmen VO untuk editor)*
+7. `## Quality Control Checklist` *(beserta penjumlahan durasi nyata `= 10` detik)*
+8. `## Voice Over` *(bagian paling akhir)*
+
+**Dilarang Keras Menampilkan di Jawaban Pengguna:**
+- Tabel ringkasan babak dan durasi terpisah.
+- Bagian detail storyboard kedua yang mengulang panel.
+- Penjelasan panjang yang tidak membantu proses produksi.
+- Beberapa versi atau alternatif VO tanpa diminta.
+- Tabel internal `_vo-timing.md`.
