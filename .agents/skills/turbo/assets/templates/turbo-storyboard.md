@@ -1,14 +1,12 @@
 # Turbo Affiliate Review (15 Detik) — <Nama Produk>
 
 - **Slug Kampanye:** `<slug-produk>`
-- **Mode:** `Turbo Affiliate Review v1.2` (`/turbo` — Sekali Jalan)
-- **Mode Subjek:** `<Human Demo | Product-Only>`
+- **Mode:** `Turbo Affiliate Review v1.1` (`/turbo` — Sekali Jalan)
 - **Total Durasi Final:** `15.0` detik (`00:00.0–00:15.0`, wajib tepat `15` detik)
 - **Jumlah Panel:** `<N>` panel *(adaptif dalam 1 lembar tunggal: ideal `9` panel grid `3×3`; min. rekomendasi `8` panel `2×4`; maks. 1 lembar `10` panel `5×2`)*
-- **Strategi Video Utama (Mode A):** `1 Klip Langsung 15 Seconds (Sekali Jalan, 11 Blok PCS)` *(+ opsi cadangan Mode B untuk generator `≤ 10s` / trim NLE)*
+- **Strategi Video Utama (Mode A):** `1 Klip Langsung 15 Seconds (Sekali Jalan)` *(+ opsi cadangan Mode B untuk generator `≤ 10s` / trim NLE)*
 - **Tata Letak Storyboard:** `1 Lembar Tunggal` (`<mis. Grid 3×3 / 2×4 / 5×2>`, `turbo-15s/upload-assets/storyboard-9panel.png`)
 - **Rasio & Resolusi Target:** `9:16` (`1080 × 1920 px`)
-- **Product Identity Sheet (PCS v2.0):** `<01-product-review/product-identity-lock.md | turbo-15s/product-identity-lock.md>`
 - **Referensi Sumber (Otoritas #1):** `01-product-review/references/...`
 
 ---
@@ -30,8 +28,8 @@
 ### Konsep Kreatif, Strategi Sekali Jalan & Kunci Konsistensi
 - **Konsep 15 Detik:** `<Hook → Problem/Context → Product Reveal → Demo Inti → Detail Makro → Benefit/Lifestyle Proof → Closing/CTA>`
 - **Alasan Pemilihan Alur `1` Lembar & `1× 15` Seconds:** `<Jelaskan mengapa susunan panel tunggal (mis. 9 panel 3×3) dan 1 generasi video 15 detik efektif merangkai aksi dari hook hingga CTA tanpa jeda canggung>`
-- **Product Identity Lock (PCS v2.0):** `<Salin English Identity Descriptor spesifik dari product-identity-lock.md>`
-- **Hand / Subject & Environment Lock:** `<Human Demo: spesifikasi tangan/pakaian konsisten tanpa wajah + latar/cahaya konsisten | Product-Only Mode: tanpa tangan/manusia, fokus pada permukaan, latar, dan cahaya konsisten>`
+- **Visual & Product Identity Lock:** `<Bentuk, proporsi, warna, material, tekstur, logo, jumlah komponen, detail desain dari Otoritas #1>`
+- **Hand / Subject & Environment Lock:** `<Spesifikasi tangan/subjek/pakaian konsisten tanpa wajah & latar ruangan/cahaya konsisten>`
 - **Arahan Audio, BGM & VO Opsional:** `<Karakter musik latar + titik SFX sinkron gerakan + naskah VO Bahasa Indonesia opsional 60–68 suku kata dengan angka dieja kata>`
 - **Rencana Teks Overlay & CTA (Bebas Klaim Palsu):** `<Teks overlay singkat zona aman + CTA akhir jujur sesuai platform>`
 
@@ -73,8 +71,8 @@
 
 ```text
 Create a clean <N>-panel vertical commercial storyboard sheet (<e.g., 3x3 grid layout, 3 columns by 3 rows>, each panel in 9:16 portrait proportion) for <product>.
-[PRODUCT IDENTITY LOCK]: <Specific English Identity Descriptor + explicit component permanence list from product-identity-lock.md — never a generic category description.> Zero marketplace UI or watermarks.
-[HAND & ENVIRONMENT LOCK]: <Human Demo: consistent Indonesian adult hand/sleeve, consistent setting/daylight | Product-Only Mode: strictly NO humans or hands in any panel, consistent setting/daylight.>
+[PRODUCT IDENTITY LOCK]: Strictly match exact shape, proportions, colors, materials, textures, logos, and component count from the attached original product reference photo. Zero marketplace UI or watermarks.
+[HAND & ENVIRONMENT LOCK]: ...
 PANEL 01 (00:00.0–00:01.2): ...
 ...
 PANEL <N> (00:13.1–00:15.0): ...
@@ -88,45 +86,21 @@ Style: Realistic commercial film storyboard frames, sharp focus, authentic light
 **Single-Pass Efficiency, Duration & Clip Strategy**
 - [ ] Total video tepat `15.0` detik (`00:00.0–00:15.0`).
 - [ ] Storyboard termuat tajam dalam **1 lembar tunggal** (`8–10` panel, ideal `9` panel `3×3`), tanpa panel `< 0.6` detik tanpa tujuan kreatif jelas.
-- [ ] Mode A menyediakan **1 Master Prompt langsung `15` seconds** berarsitektur `11` blok PCS untuk sekali jalan, serta Mode B cadangan (`≤ 10` dtk/klip & per panel) memakai bilangan bulat tanpa koma/desimal.
+- [ ] Mode A menyediakan **1 Master Prompt langsung `15` seconds** untuk sekali jalan, serta Mode B cadangan (`≤ 10` dtk/klip & per panel) memakai bilangan bulat tanpa koma/desimal.
 
-**Storytelling & Pacing**
-- [ ] Hook menarik di `00:00–00:01.2` dan produk diperlihatkan jelas sejak awal.
-- [ ] Demonstrasi, detail fitur, dan manfaat tersampaikan visual tanpa adegan penting terpotong sebelum selesai.
+**Storytelling**
+- [ ] Hook menarik di `00:00–00:01.2`.
+- [ ] Produk diperlihatkan dengan jelas sejak awal.
+- [ ] Demonstrasi, detail fitur, dan manfaat tersampaikan secara visual.
 - [ ] Ending memiliki showcase & CTA jujur yang jelas di zona aman.
+
+**Pacing**
+- [ ] Ritme dinamis, tidak terlalu lambat dan tidak terburu-buru.
+- [ ] Tidak ada pergantian klip yang membingungkan dan tidak ada aksi penting yang terpotong sebelum selesai.
+
+**Visual**
+- [ ] Produk konsisten 100% dengan referensi asli, tanpa deformasi.
+- [ ] Gerakan tangan & kamera realistis, transisi natural, dan visual antar-panel bervariasi.
 
 **Audio**
 - [ ] Musik sesuai karakter produk, SFX tersinkronisasi dengan cut/gerakan, bebas *clipping*, dan VO opsional (bila ada) terukur `≤ 5,0` suku kata/detik.
-
-**PRODUCT IDENTITY (PCS v2.0):**
-- [ ] Product shape matches the original reference.
-- [ ] Original colors are preserved.
-- [ ] Material and texture remain consistent.
-- [ ] All original components are accounted for.
-- [ ] Logos and distinctive details remain unchanged.
-
-**OBJECT PERMANENCE (PCS v2.0):**
-- [ ] Product remains the same physical object.
-- [ ] No components disappear.
-- [ ] No components detach unexpectedly.
-- [ ] No spontaneous structural changes.
-
-**ANTI-MORPHING (PCS v2.0):**
-- [ ] No product replacement.
-- [ ] No geometry changes.
-- [ ] No duplicated components.
-- [ ] No unexplained color or texture changes.
-
-**CAMERA CONTROL (PCS v2.0):**
-- [ ] Camera movements are appropriate for the product.
-- [ ] Critical features remain recognizable.
-- [ ] No unnecessary extreme perspective changes.
-- [ ] Camera movement does not conflict with product continuity.
-
-**SHOT CONTINUITY (PCS v2.0):**
-- [ ] Every shot includes appropriate identity constraints.
-- [ ] Product identity is consistent between shots.
-- [ ] Final hero shot matches the original product.
-- [ ] Product-only mode follows user instructions.
-
-**Status QC Konsistensi Produk (PCS v2.0):** `<PASS | WARNING (<daftar item [PERLU DICEK]>) | FAIL (<daftar kegagalan>)>`

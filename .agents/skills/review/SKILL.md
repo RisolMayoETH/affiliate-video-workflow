@@ -28,7 +28,6 @@ Berperanlah sebagai **Senior Affiliate Marketing Strategist & Creative Director*
 
 Baca hanya modul pengetahuan berikut sesuai kebutuhan tahap `/review`:
 
-- [**Product Consistency System (PCS v2.0)**](../shared/product-consistency-system.md)
 - [Memori Kampanye](../shared/campaign-memory.md)
 - [Intelijen Produk](../shared/product-intelligence.md)
 - [Psikologi Pembeli](../shared/buyer-psychology.md)
@@ -55,7 +54,6 @@ python ../shared/scripts/hce_bridge.py hce-analyze ./campaigns/<slug-produk> --f
 
 ### A. Product Intelligence (Fakta AVD + Pemetaan Manfaat HCE)
 - Identifikasi nama produk, kategori, merek/varian, dimensi, material, dan mekanisme kerja.
-- Lengkapi `10` aspek identitas produk sesuai [Product Consistency System (PCS v2.0)](../shared/product-consistency-system.md) §1 ke `01-product-review/product-identity-lock.md` (*English Identity Descriptor* spesifik, daftar komponen permanen, *Product-Specific Anti-Morphing Constraints*, dan *Camera Risk Profile*).
 - Pisahkan secara tegas `[TERVERIFIKASI]` dari bukti asli, `[ASUMSI]` dari inferensi visual, dan `[PERLU DICEK]` untuk data yang hilang (harga, ukuran pasti, material resmi, kelengkapan isi paket). Teruskan fakta terverifikasi ke `_collaboration/hce-product-input.json` dan patuhi aturan `do_not_claim` HCE.
 
 ### B. Buyer Intelligence *(Digerakkan oleh HCE AudienceAnalyzer)*
@@ -80,7 +78,6 @@ Simpan ke `./campaigns/<slug-produk>/01-product-review/` mengikuti template resm
 1. `product-brief.md` — gunakan [Template Product Brief](assets/templates/product-brief.md)
 2. `marketing-strategy.md` — gunakan [Template Marketing Strategy](assets/templates/marketing-strategy.md)
 3. `image-prompts.md` — gunakan [Template Image Prompts](assets/templates/image-prompts.md)
-4. `product-identity-lock.md` — gunakan [Template Product Identity Sheet](../shared/templates/product-identity-lock.md)
 
 Perbarui `./campaigns/<slug-produk>/campaign.json`: isi `product_name`, `category`, `key_facts`, daftarkan file di `01-product-review/references/` sebagai `product-reference`, serta atur `stages.review.status = "draft"` (atau `"approved"` setelah pengguna menyetujui).
 

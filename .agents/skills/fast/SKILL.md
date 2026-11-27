@@ -1,39 +1,36 @@
 ---
 name: fast
-description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, struktur 4 babak, panel detik bilangan bulat, SATU master prompt video 10 detik (tanpa prompt per scene), output ringkas tanpa pengulangan (storyboard utama tampil sekali), bagian Voice Over siap salin di akhir, Product Consistency System v2.0 (identity lock, anti-morphing, kontrol kamera, kontinuitas per shot), dan Product-Only Mode opsional. Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
+description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, struktur 4 babak, panel detik bilangan bulat, SATU master prompt video 10 detik (tanpa prompt per scene), output ringkas tanpa pengulangan (storyboard utama tampil sekali), dan bagian Voice Over siap salin di akhir. Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
 license: MIT
 metadata:
   author: RisolMayoETH
-  version: "1.3.0"
+  version: "1.2.0"
   project: affiliate-video-director
   mode: rapid-affiliate-review
 ---
 
 # /fast — Rapid Affiliate Review (Tepat 10 Detik)
 
-Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.3)** di dalam ekosistem **Affiliate Video Director** yang terintegrasi dengan **Product Consistency System (PCS v2.0)** untuk menghasilkan konsep ringkas tanpa pengulangan, storyboard utama presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (11 blok PCS, tanpa prompt per scene)**, panduan editing assembly, daftar periksa *quality control* (termasuk status QC PCS v2.0), serta naskah **Voice Over** siap salin di bagian paling akhir.
+Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.2)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep ringkas tanpa pengulangan, storyboard utama presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (tanpa prompt per scene)**, panduan editing assembly, daftar periksa *quality control*, serta naskah **Voice Over** siap salin di bagian paling akhir.
 
-**Input Argumen:** `$ARGUMENTS` (berisi kata kunci varian opsional `clear` atau `hype`, opsi `product-only`, slug kampanye, nama produk, foto/screenshot listing, deskripsi, atau tautan yang diberikan pengguna). Jika argumen kosong, cek kampanye aktif di `./campaigns/` atau minta pengguna mengirimkan foto/deskripsi produk.
+**Input Argumen:** `$ARGUMENTS` (berisi kata kunci varian opsional `clear` atau `hype`, slug kampanye, nama produk, foto/screenshot listing, deskripsi, atau tautan yang diberikan pengguna). Jika argumen kosong, cek kampanye aktif di `./campaigns/` atau minta pengguna mengirimkan foto/deskripsi produk.
 
 ---
 
 ## 1. Peran, Integrasi & Batas Non-Destruktif
 
-- **Bukan Sistem Terpisah:** `/fast` adalah mode pengatur strategi kreatif, storyboard, pacing, durasi (`10` detik), dan struktur video cepat di dalam **Affiliate Video Director** yang memanfaatkan penuh pengetahuan bersama, standar global **Product Consistency System (PCS v2.0)**, serta gerbang integritas **HCE** (`python .agents/skills/shared/scripts/hce_bridge.py search ...`).
+- **Bukan Sistem Terpisah:** `/fast` adalah mode pengatur strategi kreatif, storyboard, pacing, durasi (`10` detik), dan struktur video cepat di dalam **Affiliate Video Director** yang memanfaatkan penuh pengetahuan bersama dan gerbang integritas **HCE** (`python .agents/skills/shared/scripts/hce_bridge.py search ...`).
 - **Jaga Alur Utama Tetap Utuh:** Jangan pernah menduplikasi, menimpa, atau merusak dokumen alur utama (`/review`, `/storyboard`, `/video`), `/turbo`, foto asli di `01-product-review/references/`, maupun gambar di `02-generated-assets/`.
 - **Isolasi Output Mode Cepat:** Simpan seluruh artefak `/fast` ke subfolder terpisah `./campaigns/<slug-produk>/rapid-10s/`:
-  - `rapid-10s/product-identity-lock.md` *(salinan lokal dari template PCS jika `01-product-review/product-identity-lock.md` belum ada)*
   - `rapid-10s/rapid-brief-and-storyboard.md` *(berisi bagian 1–4)*
   - `rapid-10s/rapid-video-prompts.md` *(berisi bagian 5–8)*
   - `rapid-10s/_vo-timing.md` *(internal: tabel timing VO untuk `dialogue_timing.py`, tidak ditampilkan di jawaban pengguna)*
   - `rapid-10s/upload-assets/` *(opsional: salinan gambar acuan tanpa memindahkan file asli)*
-- **Lokasi Product Identity Sheet:** Baca `01-product-review/product-identity-lock.md` jika sudah ada (bersifat otoritatif). Jika belum ada, tulis salinan lokal ke `rapid-10s/product-identity-lock.md` menggunakan [Template Product Identity Sheet](../shared/templates/product-identity-lock.md) tanpa menulis ke `01-product-review/`.
 - Jika kampanye `<slug-produk>` belum ada, inisialisasi dulu struktur baku dengan:
   `python .agents/skills/shared/scripts/campaign_check.py --init ./campaigns <slug-produk> --product "<Nama Produk>"`
 
 ### Pengetahuan Bersama yang Dirujuk
 Baca modul bersama berikut seperlunya tanpa menduplikasi aturan:
-- [**Product Consistency System (PCS v2.0)**](../shared/product-consistency-system.md) *(Sumber Kebenaran Tunggal konsistensi identitas produk)*
 - [Intelijen Produk](../shared/product-intelligence.md) & [Psikologi Pembeli](../shared/buyer-psychology.md)
 - [Bahasa Kamera](../shared/camera-language.md) & [Interaksi Produk](../shared/product-interaction.md)
 - [Konsistensi Visual](../shared/visual-consistency.md) & [Rekayasa Video](../shared/video-engineering.md)
@@ -42,38 +39,36 @@ Baca modul bersama berikut seperlunya tanpa menduplikasi aturan:
 
 ---
 
-## 2. Varian, Mode Subjek, Cara Pemanggilan & Primary Objective
+## 2. Varian, Cara Pemanggilan & Primary Objective
 
 ### Cara Pemanggilan & Pemilihan Varian
 
-| Perintah | Perilaku Varian & Mode Subjek | Target Panel |
+| Perintah | Perilaku Varian | Target Panel |
 |---|---|---|
-| `/fast <produk/foto/link/slug>` | **Otomatis:** AI memilih `Clear` atau `Hype` sesuai jenis produk; `Mode Subjek: Human Demo` (default) | Mengikuti varian terpilih |
+| `/fast <produk/foto/link/slug>` | **Otomatis:** AI memilih `Clear` atau `Hype` sesuai jenis produk | Mengikuti varian terpilih |
 | `/fast clear <produk/foto/link/slug>` | Paksa **Fast Clear** (fokus fungsi & kejelasan demo) | `4–6` panel (ideal `5`) |
 | `/fast hype <produk/foto/link/slug>` | Paksa **Fast Hype** (fokus daya tarik visual & ritme cepat) | `7–8` panel (maks. `8`) |
-| `/fast [clear\|hype] product-only <produk>` | Aktifkan **Product-Only Mode** (tanpa manusia/tangan sama sekali; varian mengikuti token pertama atau otomatis) | Mengikuti varian terpilih |
 
 **Aturan Parsing & Pemilihan Otomatis:**
-- Jika token pertama pada `$ARGUMENTS` adalah `clear` atau `hype` (*case-insensitive*), paksa varian tersebut.
+- Jika token pertama pada `$ARGUMENTS` adalah `clear` atau `hype` (*case-insensitive*), paksa varian tersebut dan gunakan sisa argumen sebagai identitas produk/slug.
 - Jika tidak ada kata kunci varian, tentukan secara otomatis:
   - **Produk fungsional** (alat dapur, gadget, alat kebersihan, *organizer*, perkakas, *holder*, perlengkapan rumah tangga) → **`Clear`**.
   - **Produk estetik / visual** (fashion, aksesori, dekorasi, kemasan kosmetik/bulu mata, produk *unboxing-worthy*) → **`Hype`**.
   - **Jika ragu atau campuran** → **`Clear`** *(default paling aman untuk konversi)*.
-- **Product-Only Mode (Opt-In Khusus, PCS §6):** Default adalah **`Human Demo`**. Aktifkan **`Product-Only`** *hanya* jika token `product-only` muncul di mana saja pada `$ARGUMENTS` atau pengguna meminta eksplisit (mis. *"tanpa manusia"*, *"tanpa tangan"*, *"produk saja"*, *"product only"*). Jangan pernah mengaktifkan larangan manusia secara otomatis bila pengguna menginginkan demonstrasi tangan/manusia.
-- Catat varian terpilih beserta alasan satu baris dan **`Mode Subjek: Human Demo | Product-Only`** di bagian header `rapid-10s/rapid-brief-and-storyboard.md`, misalnya:
+- Catat varian terpilih beserta alasan satu baris di bagian header `rapid-10s/rapid-brief-and-storyboard.md`, misalnya:
   `Varian: Clear (otomatis — produk fungsional)`.
 
 ### Primary Objective (Sasaran Video 10 Detik)
 
 Buat video affiliate vertikal `9:16` berdurasi **tepat `10` detik** dengan pendekatan *4-beat storytelling*, *purposeful cuts*, *product-focused cinematography*, *short-form conversion marketing*, dan *engaging product demonstration* yang mampu:
 1. Menarik perhatian sejak detik pertama (`00:00–00:01`).
-2. Memperkenalkan produk dan `1` *selling point* utama secara jernih dengan identitas fisik terkunci (`PCS v2.0`).
-3. Menunjukkan fungsi dan cara penggunaan (atau *feature showcase* pada *Product-Only Mode*) secara nyata tanpa terpotong.
+2. Memperkenalkan produk dan `1` *selling point* utama secara jernih.
+3. Menunjukkan fungsi dan cara penggunaan produk secara nyata tanpa terpotong.
 4. Membuktikan manfaat melalui demonstrasi visual (bukan sekadar teks).
-5. Membangun keinginan membeli lewat kesinambungan visual yang nyaman dicerna tanpa morphing produk.
+5. Membangun keinginan membeli lewat kesinambungan visual yang nyaman dicerna.
 6. Mengakhiri video dengan *hero showcase* tertahan dan CTA jujur yang terbaca jelas.
 
-**Prinsip Inti:** Prioritaskan konsistensi identitas produk di atas variasi visual yang tidak diperlukan. Jangan memecah adegan hanya demi terlihat sibuk.
+**Prinsip Inti:** Setiap detik wajib bernilai pemasaran. Jangan memecah adegan hanya demi terlihat sibuk; prioritaskan kejelasan konversi daripada banyaknya potongan.
 
 ---
 
@@ -111,16 +106,23 @@ Video harus terasa menarik di awal, jernih di tengah, dan mantap di akhir. **Pri
 
 ---
 
-## 5. Storyboard Intelligence, Identitas PCS, 4 Babak Wajib & Kesinambungan
+## 5. Storyboard Intelligence, 4 Babak Wajib & Kesinambungan
 
-Sebelum menyusun panel, lakukan dua langkah wajib berikut berbasis bukti (`[TERVERIFIKASI]`, `[ASUMSI]`, `[PERLU DICEK]`):
-1. **Analisis 9 Aspek Produk** (**1 kalimat ringkas per sel + tag fakta**): Kategori produk, Fungsi utama, Keunggulan produk, Target konsumen *(tandai `[ASUMSI]` bila hipotesis)*, Masalah yang diselesaikan, Cara penggunaan, Detail visual menarik, Potensi demonstrasi, dan tepat **`1` Selling point paling kuat**.
-2. **Analisis Identitas Produk 10 Aspek (PCS §1):** Baca `01-product-review/product-identity-lock.md` jika sudah ada, atau lengkapi `rapid-10s/product-identity-lock.md` untuk mengunci *English Identity Descriptor* spesifik, *Component Permanence List*, *Product-Specific Anti-Morphing Constraints*, dan *Camera Risk Profile*.
+Sebelum menyusun panel, lakukan analisis produk berbasis bukti (`[TERVERIFIKASI]`, `[ASUMSI]`, `[PERLU DICEK]`) untuk 9 aspek wajib (**1 kalimat ringkas per sel + tag fakta**):
+1. **Kategori produk**
+2. **Fungsi utama**
+3. **Keunggulan produk**
+4. **Target konsumen** *(tandai hipotesis bila belum disediakan pengguna)*
+5. **Masalah yang dapat diselesaikan**
+6. **Cara penggunaan**
+7. **Detail visual yang menarik**
+8. **Potensi demonstrasi**
+9. **Selling point paling kuat** *(pilih tepat `1` selling point utama untuk video `10` detik ini)*
 
 ### Struktur 4 Babak Wajib (Kedua Varian)
 Seluruh video `10` detik wajib mengikuti tulang punggung **4 babak** berikut — panel storyboard adalah potongan (*cuts*) di dalam keempat babak ini:
 1. **Babak 1 — Hook:** Visual mencolok, situasi masalah relevan, atau hasil instan untuk menghentikan *scrolling*.
-2. **Babak 2 — Demo (`≥ 2` dtk):** Pemakaian nyata produk dalam satu aksi utuh yang jelas dan realistis *(pada `Product-Only Mode`, gunakan feature & mechanism showcase tanpa tangan)*.
+2. **Babak 2 — Demo (`≥ 2` dtk):** Pemakaian nyata produk dalam satu aksi utuh yang jelas dan realistis.
 3. **Babak 3 — Hasil / Manfaat:** Bukti visual perubahan, detail material, atau keunggulan yang dihasilkan produk.
 4. **Babak 4 — Hero + CTA (`≥ 2` dtk):** Tampilan *product hero showcase* yang bersih dan stabil dengan ruang aman untuk CTA.
 
@@ -128,28 +130,26 @@ Blok kreatif berikut dapat dipakai sebagai pengisi di dalam 4 babak sesuai kebut
 - **A. Hook** · **B. Product Reveal** · **C. Problem & Solution** · **D. Product Demonstration** · **E. Benefits** · **F. Product Details** · **G. Closing**
 
 ### Kunci Kesinambungan & Fokus Pesan
-- **Continuity Anchors (Wajib Konsisten di Semua Panel):** Pada `Human Demo`, gunakan tangan dan lengan baju yang sama; pada `Product-Only Mode`, hilangkan seluruh referensi tangan/manusia. Pada kedua mode, pertahankan latar/permukaan yang sama, arah pencahayaan konsisten, serta **jaga posisi produk selalu di zona tengah layar** pada setiap panel agar perpindahan shot terasa sebagai satu alur utuh.
+- **Continuity Anchors (Wajib Konsisten di Semua Panel):** Gunakan tangan dan lengan baju yang sama, latar ruangan yang sama, arah pencahayaan yang konsisten, serta **jaga posisi produk selalu di zona tengah layar** pada setiap panel agar perpindahan shot terasa sebagai satu alur utuh.
 - **Satu Video, Satu Selling Point:** Fokuskan seluruh panel pada `1` pesan jualan terkuat agar penonton langsung paham dalam `10` detik.
 
 ---
 
-## 6. Visual Direction & Camera Movement Control (PCS §4)
+## 6. Visual Direction
 
-Patuhi **System 4 — Camera Movement Control** pada [Product Consistency System (PCS v2.0)](../shared/product-consistency-system.md) §4 sebelum menentukan shot:
-- Tetapkan **8 parameter kamera** (posisi, sudut, gerakan, arah, intensitas, visibilitas subjek, framing, metode transisi) sesuai **profil risiko kamera produk** (*Simple/Rigid*, *Moderate*, *Complex*).
-- **Aturan Inti:** Prioritaskan kamera bergerak mengelilingi produk yang diam; hindari rotasi produk tidak perlu, perubahan perspektif ekstrem, kamera menembus produk, serta jangan menyembunyikan fitur kritis terlalu lama. **Hindari orbit `360°` penuh** kecuali benar-benar diperlukan **dan** didukung referensi multi-sudut. Tidak ada batas sudut seragam — pilih sudut sesuai bentuk produk dan kebutuhan storyboard.
-- **Jenis Shot:** `Extreme close-up`, `Macro detail`, `Close-up`, `Medium shot`, `Wide shot`, `POV shot`, `Top-down shot`, `Side angle`, `Product hero shot` *(pada `Product-Only Mode`: Front hero view, Three-quarter view, Side profile, Macro detail, Final hero shot)*.
-- **Gerakan Kamera:** `Smooth push-in`, `Pull-out`, `Tracking shot`, `Pan`, `Tilt`, `Dolly movement`, serta gerakan konservatif untuk produk berprofil risiko *Complex*.
-- **Transisi:** `Clean cuts`, `Match cuts`, `Motion cuts`, `Natural action transitions`.
+Variasikan pendekatan visual secara terarah (pilih hanya teknik yang menaikkan kejelasan dan kualitas, jangan memaksakan semua teknik sekaligus):
+- **Jenis Shot:** `Extreme close-up`, `Macro detail`, `Close-up`, `Medium shot`, `Wide shot`, `POV shot`, `Top-down shot`, `Side angle`, `Product hero shot`.
+- **Gerakan Kamera:** `Smooth push-in`, `Pull-out`, `Tracking shot`, `Pan`, `Tilt`, `Controlled purposeful orbit` *(hanya bila memperlihatkan sisi 3D nyata dengan tujuan jelas)*, `Dolly movement`, `Handheld movement` (bila cocok).
+- **Transisi:** `Clean cuts`, `Match cuts`, `Motion cuts`, `Whip transitions`, `Natural action transitions`.
 
 ---
 
-## 7. Product Accuracy & Consistency (PCS v2.0 — Prioritas Tertinggi)
+## 7. Product Accuracy & Consistency (Prioritas Tertinggi)
 
-- **Otoritas #1 (`01-product-review/references/`) selalu menang.** Jika ada aset di `02-generated-assets/`, wajib mengacu pada referensi asli dan *Product Identity Sheet*.
-- Terapkan kelima sistem **Product Consistency System (PCS v2.0)**: *Product Identity Lock* (10 aspek spesifik), *Object Permanence Lock* (daftar komponen lengkap tetap terpasang), *Anti-Morphing Lock* (larangan inti + spesifik produk), *Camera Movement Control*, dan *Shot-by-Shot Identity Continuity*.
-- Jaga skala produk relatif terhadap tangan (pada `Human Demo`) atau terhadap permukaan lingkungan (pada `Product-Only Mode`) agar selalu realistis.
-- **Dilarang keras** mengubah desain produk demi estetika atau mengarang detail yang tidak ada pada referensi; detail yang tidak dapat dipastikan ditandai `[PERLU DICEK]` dan memicu status `WARNING` pada QC.
+- **Otoritas #1 (`01-product-review/references/`) selalu menang.** Jika ada aset di `02-generated-assets/`, wajib mengacu pada referensi asli.
+- Pertahankan identitas visual identik di seluruh panel: **bentuk, proporsi & dimensi, warna, material, tekstur, logo, jumlah komponen, detail desain, serta fitur produk**.
+- Jaga skala produk relatif terhadap tangan, tubuh, dan lingkungan agar selalu realistis.
+- **Dilarang keras** mengubah desain produk demi estetika atau mengarang spesifikasi, fitur, maupun manfaat yang tidak didukung bukti produk.
 
 ---
 
@@ -186,28 +186,23 @@ Pada output ke pengguna dan `rapid-10s/rapid-brief-and-storyboard.md`, **tampilk
 
 > **Larangan Pengulangan:** **Dilarang keras** menampilkan tabel ringkasan babak dan durasi terpisah, dan **dilarang keras** membuat bagian detail kedua yang mengulang panel. Informasi durasi sudah tercantum pada setiap panel dan penjumlahannya dicek di bagian Quality Control.
 
-Sertakan prompt gambar storyboard siap-salin **selalu dalam `1` lembar tunggal** (*single sheet*) dengan `[PRODUCT IDENTITY LOCK]` berisi *English Identity Descriptor* spesifik + daftar komponen dari `product-identity-lock.md`:
+Sertakan prompt gambar storyboard siap-salin **selalu dalam `1` lembar tunggal** (*single sheet*):
 - **Varian Clear:** Grid `2×3` (atau `1×4` / `2×2` bila `4` panel).
 - **Varian Hype:** Grid `2×4`.
 
 ---
 
-## 11. Video Generation Prompt — 1 Master Prompt 10 Detik (Arsitektur 11 Blok PCS, Tanpa Prompt per Scene)
+## 11. Video Generation Prompt — 1 Master Prompt 10 Detik (Tanpa Prompt per Scene)
 
 > **Aturan Mutlak Master Prompt:** Mode `/fast` hanya menghasilkan **1 (SATU) Master Prompt video berdurasi bilangan bulat tepat `10 seconds`** di `rapid-10s/rapid-video-prompts.md`. **Dilarang keras membuat prompt terpisah per panel/scene** ataupun memecah video menjadi beberapa klip generasi.
 
-Prompt video wajib berbahasa Inggris dan mengikuti **Arsitektur 11 Blok Baku** (`../shared/product-consistency-system.md` §7) secara persis:
-1. `[1. VIDEO SPECIFICATION]`: Baris pertama wajib dimulai `Duration: 10 seconds. Vertical 9:16 ...`.
-2. `[2. PRODUCT IDENTITY LOCK]`: Salin *English Identity Descriptor* spesifik dari `product-identity-lock.md` *(jangan pernah memakai deskripsi kategori generik)*.
-3. `[3. OBJECT PERMANENCE LOCK]`: 7 kalimat permanensi objek PCS §2 beserta daftar komponen lengkap + aturan bagian bergerak/lepas-pasang.
-4. `[4. ANTI-MORPHING LOCK]`: Larangan inti PCS §3 + larangan spesifik produk sesuai komponen dan *anchors*.
-5. `[5. HUMAN MODE]` **atau** `[5. PRODUCT-ONLY MODE]`: Pilih salah satu sesuai `Mode Subjek` aktif (PCS §6).
-6. `[6. ENVIRONMENT & CONTINUITY LOCK]`: Kunci latar, permukaan, arah cahaya, suhu warna, dan zona tengah `9:16`.
-7. `[7. SHOT-BY-SHOT TIMELINE]`: Daftar 1 baris per panel storyboard (memetakan `1:1` timestamp bilangan bulat `0s–10s`) memakai **format baris shot PCS §5** (`Shot <n> (<t0>–<t1>, <beat> — <VIEW>): ... Camera: ... Identity: ... Continuity: ... Avoid: ...`), hingga `Final Shot` yang menyisakan `28%` area bawah bersih untuk CTA.
-8. `[8. CAMERA MOVEMENT CONTROL]`: Profil risiko produk dan batasan gerak kamera aman sesuai PCS §4.
-9. `[9. AUDIO DIRECTION]`: Arahan BGM + titik SFX per shot, serta instruksi eksplisit: `No on-camera speaking, no lip-sync, no generated speech; leave clean audio space for an off-screen Indonesian voice-over added in editing.` *(Jika VO tidak digunakan, hilangkan klausa terakhir.)* **Dilarang mengulang naskah VO di dalam master prompt.**
-10. `[10. NEGATIVE PROMPT]`: Gabungan larangan spesifik produk, negatif per shot, negatif mode subjek (tanpa wajah / atau tanpa manusia sama sekali di `Product-Only Mode`), tanpa teks terbakar, tanpa watermark, tanpa UI marketplace.
-11. `[11. FINAL PRODUCT IDENTITY VERIFICATION]`: Verifikasi akhir kesesuaian bentuk, proporsi, warna, tekstur, logo, dan jumlah komponen dari awal hingga akhir.
+Prompt video wajib berbahasa Inggris, dimulai dengan `Duration: 10 seconds. Vertical 9:16 ...`, dan memuat seluruh blok berikut:
+- `[PRODUCT IDENTITY LOCK]`: Kunci bentuk, proporsi, warna, material, tekstur, logo, dan jumlah komponen identik dengan referensi asli (`01-product-review/references/`).
+- `[HAND & ENVIRONMENT LOCK]`: Kunci kesinambungan tangan/lengan baju, latar ruangan, arah pencahayaan, dan posisi produk di zona tengah layar di seluruh shot.
+- `[SHOT TIMELINE (0s–10s)]`: Daftar 1 baris per panel storyboard memakai **timestamp bilangan bulat yang sama persis** (`Shot 1 (0s–1s, Hook): ...` hingga `Final Shot (8s–10s, Hero + CTA): ...` dengan `28%` area bawah layar tetap bersih tanpa objek mengganggu untuk ruang CTA).
+- `[CAMERA & TRANSITION STYLE]`: Gaya sinematografi komersial dan transisi bersih antar-shot.
+- `[AUDIO]`: Arahan BGM + titik SFX per shot, serta instruksi eksplisit: `No on-camera speaking, no lip-sync, no generated speech; leave clean audio space for an off-screen Indonesian voice-over added in editing.` *(Jika VO tidak digunakan, hilangkan klausa terakhir.)* **Dilarang mengulang naskah VO di dalam master prompt.**
+- `[NEGATIVE / AVOID]`: Larangan deformasi produk, pergeseran warna/logo, tangan/jari berlebih, teks terbakar, dan watermark.
 
 Sertakan catatan 1 baris di `rapid-10s/rapid-video-prompts.md`: *"Jika generator video belum mendukung durasi `10` detik sekaligus, gunakan generator yang mendukung generasi `10` detik dalam satu kali proses (jangan memecah prompt per scene)."*
 
@@ -224,24 +219,28 @@ Sertakan panduan perakitan editor (`CapCut` / NLE) di `rapid-10s/rapid-video-pro
 
 ---
 
-## 13. Quality Control Checklist (Wajib Diverifikasi — Termasuk PCS v2.0)
+## 13. Quality Control Checklist (Wajib Diverifikasi)
 
 Sebelum menyelesaikan output `/fast`, periksa dan isi seluruh kotak cek ini (cantumkan penjumlahan durasi nyata pada baris pertama, mis. `1 + 3 + 2 + 2 + 2 = 10` detik):
 
 **Duration & Prompt**
 - [ ] Total durasi storyboard utama tepat `10` detik (`00:00–00:10`, penjumlahan: `... = 10` detik) dengan semua panel memakai **detik bilangan bulat** (`≥ 1` detik).
 - [ ] Jumlah panel sesuai varian terpilih (**Clear:** `4–6` panel; **Hype:** `7–8` panel).
-- [ ] `rapid-video-prompts.md` hanya berisi **tepat `1` master prompt `10` detik** berarsitektur `11` blok PCS dan **tidak ada prompt terpisah per scene/panel**.
+- [ ] `rapid-video-prompts.md` hanya berisi **tepat `1` master prompt `10` detik** dan **tidak ada prompt terpisah per scene/panel**.
 
 **Storytelling & Pacing**
 - [ ] Mengikuti struktur **4 babak** (`Hook → Demo → Hasil/Manfaat → Hero + CTA`) dengan fokus pada `1` *selling point* utama.
 - [ ] Hook kuat pada detik `00:00–00:01` dan produk langsung terbaca jelas.
-- [ ] Panel **Demo berdurasi `≥ 2` detik** dalam satu aksi utuh tanpa terpotong sebelum selesai *(atau feature showcase pada Product-Only Mode)*.
+- [ ] Panel **Demo berdurasi `≥ 2` detik** dalam satu aksi utuh tanpa terpotong sebelum selesai.
 - [ ] Panel penutup **Hero + CTA ditahan `≥ 2` detik** dengan ruang aman CTA bersih dan jujur.
 - [ ] Pergantian teks overlay maksimal `2` kali dan tidak ada pergantian shot yang membingungkan.
 
-**Storyboard & Audio**
+**Visual & Continuity**
+- [ ] Produk 100% konsisten dengan referensi asli (`references/`), tanpa deformasi.
+- [ ] Continuity anchors terjaga (tangan/lengan baju, latar, cahaya konsisten, produk tetap di zona tengah).
 - [ ] Gambar storyboard disusun dalam **1 lembar tunggal** (`2×3`/`1×4`/`2×2` untuk Clear; `2×4` untuk Hype).
+
+**Audio**
 - [ ] Musik latar sesuai karakter produk, SFX tersinkronisasi dengan pergantian shot, bebas *audio clipping*.
 
 **Output**
@@ -253,54 +252,20 @@ Sebelum menyelesaikan output `/fast`, periksa dan isi seluruh kotak cek ini (can
 - [ ] Bahasa Indonesia lisan natural, seluruh angka ditulis dengan huruf/kata (tanpa digit), dan tanpa klaim yang tidak terverifikasi.
 - [ ] File internal `_vo-timing.md` lolos validasi `dialogue_timing.py` *(atau ditandai N/A beserta alasan bila VO tidak digunakan)*.
 
-**PRODUCT IDENTITY (PCS v2.0):**
-- [ ] Product shape matches the original reference.
-- [ ] Original colors are preserved.
-- [ ] Material and texture remain consistent.
-- [ ] All original components are accounted for.
-- [ ] Logos and distinctive details remain unchanged.
-
-**OBJECT PERMANENCE (PCS v2.0):**
-- [ ] Product remains the same physical object.
-- [ ] No components disappear.
-- [ ] No components detach unexpectedly.
-- [ ] No spontaneous structural changes.
-
-**ANTI-MORPHING (PCS v2.0):**
-- [ ] No product replacement.
-- [ ] No geometry changes.
-- [ ] No duplicated components.
-- [ ] No unexplained color or texture changes.
-
-**CAMERA CONTROL (PCS v2.0):**
-- [ ] Camera movements are appropriate for the product.
-- [ ] Critical features remain recognizable.
-- [ ] No unnecessary extreme perspective changes.
-- [ ] Camera movement does not conflict with product continuity.
-
-**SHOT CONTINUITY (PCS v2.0):**
-- [ ] Every shot includes appropriate identity constraints.
-- [ ] Product identity is consistent between shots.
-- [ ] Final hero shot matches the original product.
-- [ ] Product-only mode follows user instructions.
-
-**Status QC Konsistensi Produk (PCS v2.0):** `PASS` | `WARNING (<daftar item [PERLU DICEK]>)` | `FAIL (<daftar kegagalan>)`
-
 ---
 
 ## 14. Execution Workflow (`/fast`)
 
 Jalankan langkah berikut secara berurutan dan otonom saat pengguna memanggil `/fast`:
-- **STEP 0 — Tentukan Varian & Mode Subjek:** Periksa `$ARGUMENTS` untuk varian (`clear`/`hype`, atau otomatis per produk) serta deteksi `Product-Only Mode` (`product-only` / permintaan eksplisit tanpa manusia; default `Human Demo`).
+- **STEP 0 — Tentukan Varian:** Periksa token pertama `$ARGUMENTS` (`clear` atau `hype`); jika tidak ada, pilih otomatis berdasarkan jenis produk (`Clear` untuk produk fungsional / fallback jika ragu, `Hype` untuk produk estetik) dan siapkan alasan satu barisnya.
 - **STEP 1 — Terima & Analisis Produk:** Kumpulkan foto/referensi/deskripsi (`01-product-review/references/` atau input chat), panggil HCE (`hce_bridge.py search`) bila perlu, dan lengkapi 9 poin analisis berbasis bukti (1 kalimat per sel).
-- **STEP 1B — Susun / Baca Product Identity Sheet (PCS §1):** Jika `01-product-review/product-identity-lock.md` sudah ada, baca sebagai acuan otoritatif; jika belum ada, lengkapi seluruh `10` aspek, daftar komponen, *English Identity Descriptor*, *Product-Specific Anti-Morphing Constraints*, dan *Camera Risk Profile* ke `rapid-10s/product-identity-lock.md` (tandai `[PERLU DICEK]` bila ada detail tak terlihat — jangan dikarang).
-- **STEP 2 — Identifikasi 1 Selling Point Utama & Konsep Video:** Tetapkan tepat `1` *selling point* terkuat dan susun maks. `6` butir **Konsep Video** menggunakan *English Identity Descriptor* dari sheet dan `Continuity Anchors` sesuai `Mode Subjek` (tanpa naskah VO).
-- **STEP 3 — Tentukan Jumlah Panel & Parameter Kamera:** Pilih jumlah panel di rentang varian (`Clear`: `4–6` ideal `5`; `Hype`: `7–8` maks. `8`) dengan durasi bilangan bulat (`Demo ≥ 2` dtk, `Hero + CTA ≥ 2` dtk, total tepat `10` dtk), serta tetapkan 8 parameter kamera sesuai *Camera Risk Profile* (PCS §4).
-- **STEP 4 — Susun Storyboard Utama 1 Lembar Tepat 10 Detik:** Tulis blok ringkas satu kali per panel (memuat ke-12 data internal) dan `1` prompt gambar storyboard tunggal (memuat *English Identity Descriptor* + daftar komponen) mengikuti [Template Rapid Storyboard](assets/templates/rapid-storyboard.md) ke `./campaigns/<slug>/rapid-10s/rapid-brief-and-storyboard.md`.
-- **STEP 5 — Susun 1 Master Prompt Video 10 Detik (11 Blok PCS):** Tulis **hanya 1 Master Prompt** berbahasa Inggris berdurasi `10 seconds` mengikuti **11 Blok PCS v2.0** (shot timeline `1:1` format PCS §5, `[5. HUMAN MODE]` atau `[5. PRODUCT-ONLY MODE]`, `[AUDIO DIRECTION]` bebas ucapan) ke `./campaigns/<slug>/rapid-10s/rapid-video-prompts.md`.
+- **STEP 2 — Identifikasi 1 Selling Point Utama & Konsep Video:** Tetapkan tepat `1` *selling point* terkuat dan susun maks. `6` butir **Konsep Video** (tanpa naskah VO).
+- **STEP 3 — Tentukan Jumlah Panel Sesuai Varian:** Pilih jumlah panel di rentang varian (`Clear`: `4–6` ideal `5`; `Hype`: `7–8` maks. `8`) dengan durasi bilangan bulat (`Demo ≥ 2` dtk, `Hero + CTA ≥ 2` dtk, total tepat `10` dtk).
+- **STEP 4 — Susun Storyboard Utama 1 Lembar Tepat 10 Detik:** Tulis blok ringkas satu kali per panel (memuat ke-12 data internal) dan `1` prompt gambar storyboard tunggal mengikuti [Template Rapid Storyboard](assets/templates/rapid-storyboard.md) ke `./campaigns/<slug>/rapid-10s/rapid-brief-and-storyboard.md`.
+- **STEP 5 — Susun 1 Master Prompt Video 10 Detik:** Tulis **hanya 1 Master Prompt** berbahasa Inggris berdurasi `10 seconds` dengan shot timeline `1:1` dan `[AUDIO]` bebas ucapan (siap diisi VO di editing) ke `./campaigns/<slug>/rapid-10s/rapid-video-prompts.md`.
 - **STEP 6 — Voice Over (HCE + Dialogue Engine):** Tentukan apakah VO dipakai; jika ya, susun 1 naskah VO terbaik sesuai **Bagian 15**, tulis `rapid-10s/_vo-timing.md` mengikuti [Template Rapid VO Timing](assets/templates/rapid-vo-timing.md), dan jalankan `python .agents/skills/shared/scripts/dialogue_timing.py ./campaigns/<slug>/rapid-10s/_vo-timing.md` hingga `LOLOS`.
-- **STEP 7 — Lengkapi Editing & Assembly + Quality Control + Voice Over:** Lengkapi `rapid-10s/rapid-video-prompts.md` mengikuti [Template Rapid Video Prompts](assets/templates/rapid-video-prompts.md) (bagian 5–8 berurutan, pastikan status QC PCS bukan `FAIL`, dan `## Voice Over` paling akhir).
-- **STEP 8 — Simpan & Laporkan Ringkas:** Pastikan artefak `rapid-10s/` tersimpan rapi, opsional catat `modes.rapid_10s` di `campaign.json` (sertakan `"variant": "clear" | "hype"` dan `"subject_mode": "human-demo" | "product-only"`) tanpa mengubah `stages.review` / `stages.storyboard` / `stages.video`, lalu tampilkan output ke pengguna sesuai **Bagian 16**.
+- **STEP 7 — Lengkapi Editing & Assembly + Quality Control + Voice Over:** Lengkapi `rapid-10s/rapid-video-prompts.md` mengikuti [Template Rapid Video Prompts](assets/templates/rapid-video-prompts.md) (bagian 5–8 berurutan, dengan `## Voice Over` paling akhir).
+- **STEP 8 — Simpan & Laporkan Ringkas:** Pastikan artefak `rapid-10s/` tersimpan rapi, opsional catat `modes.rapid_10s` di `campaign.json` (sertakan `"variant": "clear"` atau `"hype"`) tanpa mengubah `stages.review` / `stages.storyboard` / `stages.video`, lalu tampilkan output ke pengguna sesuai **Bagian 16**.
 
 ---
 
@@ -325,7 +290,7 @@ Bagian `## Voice Over` wajib berada **paling akhir** setelah `Editing & Final As
 
 ### Format Baku `## Voice Over`
 
-````markdown
+```markdown
 ## Voice Over
 
 **VOICE OVER — 10 DETIK**
@@ -339,21 +304,21 @@ Bagian `## Voice Over` wajib berada **paling akhir** setelah `Editing & Final As
 - **Delivery:** <gaya penyampaian per babak>
 - **Tone:** <emosi dan intonasi>
 - **Speaking rate:** ± 5 suku kata/detik (<N> suku kata dalam 10 detik; `dialogue_timing.py`: LOLOS)
-````
+```
 
 ---
 
 ## 16. Format Jawaban ke Pengguna
 
-Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali maksimal `2` baris pembuka (varian + jumlah panel terpilih + Mode Subjek, serta tautan ke file `rapid-10s/`), lalu mengikuti urutan baku **1–8** berikut:
+Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali maksimal `2` baris pembuka (varian + jumlah panel terpilih, serta tautan ke file `rapid-10s/`), lalu mengikuti urutan baku **1–8** berikut:
 
 1. `## Analisis Produk & Selling Point` *(tabel 9 aspek, 1 kalimat per sel + tag fakta)*
 2. `## Konsep Video` *(maks. 6 butir, tanpa naskah VO)*
 3. `## Storyboard Utama` *(blok ringkas satu kali per panel, 1 kalimat per butir)*
 4. `## Prompt Gambar Storyboard` *(`1` lembar tunggal siap salin)*
-5. `## Master Prompt Video (10 Detik)` *(`1` master prompt 11 blok PCS siap salin, tanpa prompt per scene)*
+5. `## Master Prompt Video (10 Detik)` *(`1` master prompt siap salin, tanpa prompt per scene)*
 6. `## Editing & Final Assembly` *(termasuk timestamp segmen VO untuk editor)*
-7. `## Quality Control Checklist` *(beserta penjumlahan durasi nyata `= 10` detik dan baris `Status QC Konsistensi Produk (PCS v2.0)`)*
+7. `## Quality Control Checklist` *(beserta penjumlahan durasi nyata `= 10` detik)*
 8. `## Voice Over` *(bagian paling akhir)*
 
 **Dilarang Keras Menampilkan di Jawaban Pengguna:**

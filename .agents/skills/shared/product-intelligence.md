@@ -27,8 +27,6 @@ Lakukan inspeksi menyeluruh dari foto referensi dan screenshot listing:
    - Isi paket penjualan: unit utama, kepala cadangan, kabel, buku panduan, box.
 5. **Detail Visual Khas (Visual Anchor)**: Ciri pembeda yang wajib tidak berubah di gambar/video AI (misal: bentuk lekuk gagang, warna cincin pengunci, tipe huruf label botol, motif jahitan kerah).
 
-> **Integrasi PCS v2.0:** Hasil inspeksi `10` aspek identitas produk langsung dituangkan ke *Product Identity Sheet* (`../shared/templates/product-identity-lock.md`) sesuai [Product Consistency System](product-consistency-system.md) §1.
-
 ## 3. Peta Fungsi & Fitur ke Manfaat Nyata
 
 Jangan berhenti pada fitur teknis; terjemahkan setiap fitur ke manfaat yang langsung dirasakan pembeli:

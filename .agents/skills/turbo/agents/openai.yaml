@@ -1,8 +1,8 @@
 interface:
   display_name: "Turbo Affiliate Review (15s)"
-  short_description: "Video affiliate 15 dtk sekali jalan: PCS v2.0, 1 lembar & 1 klip 15s"
+  short_description: "Video affiliate 15 dtk sekali jalan: 1 lembar storyboard & 1 klip 15s (+ opsi cadangan)"
   brand_color: "#EA580C"
-  default_prompt: "Aktifkan mode Turbo Affiliate Review (/turbo) dengan Product Consistency System v2.0 (dan Product-Only Mode bila diminta): kunci identitas 10 aspek produk, susun storyboard presisi tepat 15 detik dalam 1 lembar tunggal (default 8-10 panel adaptif, ideal 9 panel grid 3x3), prompt video 11 blok PCS dual-mode bilangan bulat (Mode A utama: 1 Master Prompt langsung 15 detik sekali jalan; Mode B cadangan: segmentasi <=10s dan per panel), panduan editing 9:16, dan quality control PCS."
+  default_prompt: "Aktifkan mode Turbo Affiliate Review (/turbo) untuk produk ini: analisis produk, storyboard presisi tepat 15 detik dalam 1 lembar tunggal (default 8-10 panel adaptif, ideal 9 panel grid 3x3), prompt video dual-mode bilangan bulat (Mode A utama: 1 Master Prompt langsung 15 detik sekali jalan; Mode B cadangan: segmentasi <=10s dan per panel), panduan editing 9:16, dan quality control."
 
 policy:
   allow_implicit_invocation: true

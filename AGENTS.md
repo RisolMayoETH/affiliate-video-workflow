@@ -4,7 +4,7 @@ Proyek ini menggabungkan dua skill AI spesialis dalam satu alur kerja kolaborati
 
 1. **Affiliate Video Director (AVD — Primary Workflow Controller):**
    - Skill: `.agents/skills/review/SKILL.md`, `.agents/skills/storyboard/SKILL.md`, `.agents/skills/video/SKILL.md`, `.agents/skills/fast/SKILL.md`, `.agents/skills/turbo/SKILL.md`
-   - Mengendalikan struktur kampanye (`./campaigns/<slug>/`), audit visual referensi asli, standar konsistensi produk global *Product Consistency System v2.0* (`.agents/skills/shared/product-consistency-system.md`), *creative direction*, storyboard adaptif `9:16` (`≤ 40` dtk), koreografi kamera, demonstrasi fisik, prompt gambar & video AI (`≤ 10` dtk/klip, **wajib detik bilangan bulat tanpa koma/desimal**), mode cepat `10` detik (`/fast`) dan mode turbo `15` detik (`/turbo`), serta paket publikasi akhir.
+   - Mengendalikan struktur kampanye (`./campaigns/<slug>/`), audit visual referensi asli, *creative direction*, storyboard adaptif `9:16` (`≤ 40` dtk), koreografi kamera, demonstrasi fisik, prompt gambar & video AI (`≤ 10` dtk/klip, **wajib detik bilangan bulat tanpa koma/desimal**), mode cepat `10` detik (`/fast`) dan mode turbo `15` detik (`/turbo`), serta paket publikasi akhir.
 
 2. **Human Copywriting Engine (HCE — Marketing Intelligence & Copywriting Specialist):**
    - Skill: `.agents/skills/human-copywriting-engine/SKILL.md` (didukung repositori lokal `./human-copywriting-engine/`)

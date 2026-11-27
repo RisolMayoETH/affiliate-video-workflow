@@ -1,6 +1,6 @@
 # Visual Consistency — Hierarki Otoritas Aset & Kunci Identitas Produk
 
-Kesalahan terbesar dalam produksi iklan berbasis AI adalah *product drift*: warna botol berganti, panjang gagang menyusut, logo meleleh, atau tangan mendadak berganti baju antar adegan. Dokumen ini menetapkan hukum otoritas visual yang wajib dipatuhi seluruh perintah (`/review`, `/storyboard`, `/video`, `/fast`, `/turbo`).
+Kesalahan terbesar dalam produksi iklan berbasis AI adalah *product drift*: warna botol berganti, panjang gagang menyusut, logo meleleh, atau tangan mendadak berganti baju antar adegan. Dokumen ini menetapkan hukum otoritas visual yang wajib dipatuhi ketiga perintah.
 
 ## 1. Lima Klasifikasi Gambar & Hierarki Otoritas
 
@@ -27,10 +27,10 @@ Setiap gambar dalam kampanye wajib masuk salah satu dari lima kelas berikut. Ang
 
 ## 4. Blok Wajib Pengunci Identitas (Identity Locks)
 
-Setiap prompt gambar di `/review` dan prompt video di `/video`, `/fast`, serta `/turbo` wajib memuat kunci konsistensi mengacu pada standar global [Product Consistency System (PCS v2.0)](product-consistency-system.md):
+Setiap prompt gambar di `/review` dan prompt video di `/video` wajib memuat kunci konsistensi:
 
-- **PRODUCT IDENTITY LOCK (`& OBJECT PERMANENCE / ANTI-MORPHING LOCK`)**: Wajib diturunkan dari *Product Identity Sheet* ([templates/product-identity-lock.md](templates/product-identity-lock.md)) sesuai `product-consistency-system.md` §1–3 (deskripsi fisik spesifik 10 aspek, daftar komponen tetap, dan larangan morphing spesifik produk — dilarang memakai frasa kategori generik).
-- **HAND / CHARACTER LOCK**: Warna kulit, bentuk jari, kuku, ketiadaan aksesori berlebih, serta warna/potongan lengan pakaian yang identik di semua generasi *(atau ikuti blok `[5. PRODUCT-ONLY MODE]` di PCS §6 bila pengguna memilih mode tanpa manusia)*.
+- **PRODUCT IDENTITY LOCK**: Bentuk geometris, rasio dimensi, warna tiap komponen (utama & aksen), tipe permukaan (*matte/glossy/brushed*), ciri mekanis (ulir kunci, engsel, tutup), larangan mengubah label/proporsi.
+- **HAND / CHARACTER LOCK**: Warna kulit, bentuk jari, kuku, ketiadaan aksesori berlebih, serta warna/potongan lengan pakaian yang identik di semua generasi.
 - **ENVIRONMENT & LIGHTING LOCK**: Jenis ruangan, warna dinding/meja, posisi jendela/sumber cahaya, arah bayangan, dan suhu warna (*color temperature*) agar sambungan antar video tidak loncat.
 
 ## 5. Daftar Periksa Evaluasi Aset di `/storyboard`
