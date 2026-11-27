@@ -20,7 +20,7 @@ Setiap gerakan kamera harus memiliki **alasan cerita dan penjualan**. Gerakan ka
 Hindari menulis instruksi berikut di storyboard maupun prompt video:
 
 - **Zoom-in / zoom-out generik berulang**: Membuat video terasa statis seperti *slideshow* foto yang diperbesar. Gunakan *dolly movement* fisik atau aksi tangan nyata.
-- **Rotasi orbit 360 derajat tanpa alasan**: Kecuali pada *hero turntable reveal* singkat yang disengaja, orbit berputar terus-menerus sering merusak geometri produk (tulisan terbalik, bentuk pegangan berubah).
+- **Rotasi orbit 360 derajat tanpa alasan**: Kecuali benar-benar dibutuhkan **dan** didukung foto referensi multi-sudut yang memadai, orbit berputar terus-menerus sering merusak geometri produk (tulisan terbalik, bentuk pegangan berubah).
 - **Handheld goyang berlebihan**: Menurunkan persepsi kualitas produk dan mengaburkan detail fitur. Gunakan *natural micro-handheld stability* saja saat POV.
 - **Potongan adegan acak tanpa garis arah**: Melompat dari sudut kiri ke sudut kanan tanpa kesinambungan arah gerak tangan.
 
@@ -36,3 +36,9 @@ Hindari menulis instruksi berikut di storyboard maupun prompt video:
 Di setiap adegan, tuliskan pasangan wajib:
 `Gerakan Kamera: [Nama Teknik] — Tujuan: [Alasan Naratif / Pembuktian]`.
 Contoh: `Gerakan Kamera: Slow Dolly Pull-Back mendongak — Tujuan: membuktikan tiang tetap lurus dan tidak melengkung saat dipanjangkan penuh ke sudut plafon`.
+
+## 5. Kontrol Kamera untuk Konsistensi Produk (PCS v2.0)
+
+Ikuti aturan lengkap kontrol kamera di [Product Consistency System (PCS v2.0)](product-consistency-system.md) §4:
+- Tetapkan **8 parameter kamera** (posisi, sudut, gerakan, arah, intensitas, visibilitas subjek, framing, metode transisi) sebelum menulis master prompt.
+- Sesuaikan konservatisme gerak dengan **profil risiko produk** (*Simple/Rigid*, *Moderate*, *Complex*): utamakan kamera bergerak mengelilingi produk yang diam, hindari rotasi produk yang tidak perlu dan perubahan perspektif ekstrem, jaga produk terpusat, serta jangan menetapkan batas sudut seragam untuk semua produk.

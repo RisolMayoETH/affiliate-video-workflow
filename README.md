@@ -15,7 +15,7 @@ Alur kerja terintegrasi otonom yang menggabungkan **Affiliate Video Director (AV
 │       ├── storyboard/                        # /storyboard: Storyboard adaptif 9:16 & loop review dua arah
 │       ├── video/                             # /video: Segmentasi klip <=10s, video prompts & publishing package
 │       ├── human-copywriting-engine/          # /human-copywriting-engine: Spesialis copywriting & HCE mandiri
-│       └── shared/                            # Modul pengetahuan bersama, template, & skrip validator/bridge
+│       └── shared/                            # Modul pengetahuan bersama, PCS v2.0, template, & skrip validator/bridge
 │           ├── hce-collaboration.md           # Kontrak kolaborasi & review dua arah (maks 3 iterasi)
 │           └── scripts/
 │               ├── campaign_check.py          # Inisialisasi & validasi kesiapan tahap kampanye
@@ -46,6 +46,7 @@ python .agents/skills/shared/scripts/dialogue_timing.py ./campaigns/<slug-produk
 - **AVD per tahap:** `/review`, `/storyboard`, `/video`
 - **Mode Rapid Affiliate Review (10 detik):** `/fast` (otomatis), `/fast clear`, `/fast hype`
 - **Mode Turbo Affiliate Review (15 detik):** `/turbo`
+- **Product Consistency System v2.0:** `.agents/skills/shared/product-consistency-system.md` — standar identitas produk untuk `/fast`, `/turbo`, `/video`; *Product-Only Mode* via kata kunci `product-only`
 - **HCE mandiri:** `/human-copywriting-engine` atau `PYTHONPATH=human-copywriting-engine python -m hce --root human-copywriting-engine ...` (serta pembelajaran video lokal via `human-copywriting-engine/.agents/skills/belajar/SKILL.md`)
 
 ## Verifikasi Integrasi

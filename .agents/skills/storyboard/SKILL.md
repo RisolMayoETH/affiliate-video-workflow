@@ -19,13 +19,14 @@ Berperanlah sebagai **Commercial Storyboard Director**. Tugasmu adalah mengaudit
 1. Jalankan pengecekan tahap storyboard:
    `python ../shared/scripts/campaign_check.py ./campaigns/<slug-produk> --stage storyboard`
    *(Jika dijalankan lewat plugin di folder lain, gunakan `${CLAUDE_SKILL_DIR}/../shared/scripts/campaign_check.py`.)*
-2. Baca wajib seluruh hasil `/review` (`campaign.json`, `01-product-review/product-brief.md`, `marketing-strategy.md`, `image-prompts.md`) serta inspeksi foto referensi di `01-product-review/references/` dan gambar di `02-generated-assets/`.
+2. Baca wajib seluruh hasil `/review` (`campaign.json`, `01-product-review/product-brief.md`, `01-product-review/product-identity-lock.md` bila tersedia, `marketing-strategy.md`, `image-prompts.md`) serta inspeksi foto referensi di `01-product-review/references/` dan gambar di `02-generated-assets/`.
 3. Jika output `/review` belum ada (kode keluar `2`), hentikan produksi final, jelaskan file apa yang hilang, dan minta pengguna menjalankan `/review <slug-produk>` terlebih dahulu (jangan membuat storyboard buta kecuali pengguna secara eksplisit meminta draf awal berlabel `[ASUMSI]`).
 
 ## Pengetahuan yang Dimuat
 
 Baca modul pengetahuan berikut sesuai tahap `/storyboard`:
 
+- [**Product Consistency System (PCS v2.0)**](../shared/product-consistency-system.md)
 - [Memori Kampanye](../shared/campaign-memory.md)
 - [Prinsip Storyboard](../shared/storyboard-principles.md)
 - [Arahan Kreatif](../shared/creative-direction.md)
@@ -39,7 +40,7 @@ Baca modul pengetahuan berikut sesuai tahap `/storyboard`:
 ## Alur Kerja (A – F) — Storyboard Adaptif & Review Dua Arah HCE ↔ AVD
 
 ### A. Image Analysis & Masukan Copy HCE
-- Evaluasi setiap gambar di `02-generated-assets/` dengan membandingkannya terhadap `01-product-review/references/` (otoritas #1).
+- Evaluasi setiap gambar di `02-generated-assets/` dengan membandingkannya terhadap `01-product-review/references/` (otoritas #1) serta daftar komponen dan *visual anchors* di `01-product-review/product-identity-lock.md` (PCS §1–2).
 - Nilai 6 aspek: akurasi produk, konsistensi tangan/karakter, pencahayaan, lingkungan, komposisi 9:16, dan kelayakan pakai untuk generasi video. Beri vonis tegas: `Pakai` / `Perbaiki` / `Buang`. Jika `02-generated-assets/` kosong, beri peringatan dan catat strategi referensi alternatif.
 - Muat paket copywriting HCE terbaru di `_collaboration/hce-package-v*.json` (atau jalankan `hce_bridge.py hce-analyze` bila belum tersedia) sebagai bahan dialog, hook, dan arah pesan per panel.
 

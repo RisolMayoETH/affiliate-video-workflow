@@ -23,15 +23,19 @@ Sesuai spesifikasi Agent Skills, folder yang tidak memiliki `SKILL.md` tidak did
 | `camera-language.md` | - | Ya | Ya |
 | `dialogue-engine.md` | - | Ya | Ya |
 | `visual-consistency.md` | Ya | Ya | Ya |
+| `product-consistency-system.md` | Ya | Ya | Ya |
 | `storyboard-principles.md` | - | Ya | - |
 | `video-engineering.md` | - | - | Ya |
 | `platform-optimization.md` | Ya | - | Ya |
 | `campaign-memory.md` | Ya | Ya | Ya |
 | `hce-collaboration.md` | Ya | Ya | Ya |
 
+> **Catatan Mode Cepat (`/fast` & `/turbo`):** Kedua mode cepat juga wajib memuat `product-consistency-system.md` bersama `visual-consistency.md`, `camera-language.md`, dan `video-engineering.md`.
+
 ## Skrip & Template Bersama
 
 - [templates/campaign.json](./templates/campaign.json) — Skema baku memori kampanye (termasuk blok `collaboration` opsional).
+- [templates/product-identity-lock.md](./templates/product-identity-lock.md) — Template baku *Product Identity Sheet* (PCS v2.0).
 - [scripts/campaign_check.py](./scripts/campaign_check.py) — Inisialisasi direktori kampanye & cek prasyarat per tahap (`--validate-timing`, `--check-collaboration`).
 - [scripts/dialogue_timing.py](./scripts/dialogue_timing.py) — Penghitung suku kata Bahasa Indonesia & validator durasi dialog.
 - [scripts/hce_bridge.py](./scripts/hce_bridge.py) — Jembatan eksekusi kolaborasi dua arah antara Affiliate Video Director dan Human Copywriting Engine (`search`, `hce-analyze`, `avd-review`, `hce-review`, `collaborate`).

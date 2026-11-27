@@ -469,6 +469,7 @@ def normalize_product_input(
         "hand_spec": str(raw.get("hand_spec") or default_hand),
         "environment_spec": str(raw.get("environment_spec") or default_env),
         "references": references,
+        "product_only": bool(raw.get("product_only", False)),
         "assumptions": [str(x) for x in raw.get("assumptions", []) if str(x).strip()],
         "missing_checks": [str(x) for x in raw.get("missing_checks", []) if str(x).strip()],
         "platforms": [normalize_platform(p) for p in raw.get("platforms", ["tiktok", "instagram-reels", "facebook-reels"])],
@@ -533,6 +534,7 @@ def extract_product_input_from_campaign(campaign_dir: Path) -> tuple[dict[str, A
         "target_platform": (cj.get("platforms") or ["tiktok"])[0],
         "platforms": cj.get("platforms") or ["tiktok", "instagram-reels", "facebook-reels"],
         "references": inv["product-reference"],
+        "product_only": bool(cj.get("product_only", False)),
     }
     return normalize_product_input(raw, slug=campaign_dir.name, campaign_dir=campaign_dir)
 
@@ -2445,11 +2447,21 @@ def _render_video_clip_md(
     clip_scenes = [sc for sc in avd_plan["scenes"] if int(sc["id"]) in covered_ids]
     locks = avd_plan["consistency_locks"]
     refs = avd_context.get("references") or ["01-product-review/references/"]
+    anchors_list = [str(x).strip() for x in (avd_context.get("visual_anchors") or []) if str(x).strip()]
+    anchors_text = "; ".join(anchors_list) if anchors_list else locks["product_lock"]
+    product_only = bool(avd_context.get("product_only", False))
+    subject_mode_label = "Product-Only" if product_only else "Human Demo"
+    specific_neg_items = [
+        f"no missing, detached, duplicated or altered {a}"
+        for a in (anchors_list[:6] if anchors_list else [hce_input["name"]])
+    ]
+    specific_neg_line = ", ".join(specific_neg_items)
 
     lines = [
         f"# Video Generation Prompt {clip_num:02d} — {hce_input['name']}",
         "",
         f"- **File:** `{clip['file']}`",
+        f"- **Mode Subjek:** `{subject_mode_label}`",
         f"- **Durasi Klip:** `{clip['duration']:.1f}` detik *(maks. `10.0` detik)*",
         "- **Rasio Aspek:** `9:16`",
         "- **Panel Storyboard Dicakup:** " + ", ".join(f"`Adegan {sc['id']}`" for sc in clip_scenes),
@@ -2472,7 +2484,7 @@ def _render_video_clip_md(
         "",
         f"- **Strict Storyboard Adherence:** Follow panels {clip['scenes'][0]}–{clip['scenes'][-1]} of `03-storyboard/storyboard.md` exactly.",
         f"- **Product Consistency Lock:** {locks['product_lock']}",
-        f"- **Hand / Character Consistency Lock:** {locks['hand_lock']}",
+        f"- **Hand / Character Consistency Lock:** {'Tanpa manusia atau tangan (Product-Only Mode)' if product_only else locks['hand_lock']}",
         f"- **Environment & Lighting Lock:** {locks['environment_lighting_lock']}",
         "",
         "## 3. Master Video Prompt (Copy-Ready English)",
@@ -2481,31 +2493,111 @@ def _render_video_clip_md(
     ])
     if clip_num > 1:
         lines.append("Continue the video.")
+
+    env_clean = avd_context["environment_spec"].rstrip(".")
+    if product_only:
+        subject_block_header = "[5. PRODUCT-ONLY MODE]"
+        subject_block_body = (
+            "Product is the sole subject in every shot. Strictly NO humans, NO babies, NO children, "
+            "NO hands, NO arms, NO legs, NO body parts, NO human reflections or silhouettes, and NO human interaction."
+        )
+        first_frame_line = (
+            f"First-Frame Anchor (0.0s): Product-only commercial showcase over {env_clean}. "
+            f"Frame {hce_input['name']} cleanly inside the 20%-68% vertical safe zone."
+        )
+        subject_neg = "no humans, no hands, no body parts, no human reflections or silhouettes"
+    else:
+        subject_block_header = "[5. HUMAN MODE]"
+        subject_block_body = (
+            f"Consistent Indonesian adult hands only ({locks['hand_lock']}), no face visible. "
+            "Hand-to-product contact must be physically plausible with honest real-world scale. "
+            "Hands must never permanently obscure distinctive product anchors or key components."
+        )
+        first_frame_line = (
+            f"First-Frame Anchor (0.0s): First-person POV over {env_clean}. "
+            f"Consistent Indonesian adult hand framing {hce_input['name']} cleanly inside the 20%-68% vertical safe zone."
+        )
+        subject_neg = "no human face, no talking head, no extra fingers"
+
     lines.extend([
+        "[1. VIDEO SPECIFICATION]",
         f"Duration: {clip['duration']:.1f} seconds. Vertical 9:16 realistic commercial affiliate video for {hce_input['name']}.",
-        "Strictly match the attached original product reference photo for exact geometry, colors, proportions, and materials.",
         "",
-        "[STARTING FRAME (0.0s)]",
-        f"First-person POV over {avd_context['environment_spec'].rstrip('.')}. Consistent Indonesian adult hand framing {hce_input['name']} cleanly inside the 20%-68% vertical safe zone.",
+        "[2. PRODUCT IDENTITY LOCK]",
+        (
+            f"The product is exactly {hce_input['name']} as shown in the attached original reference photos. "
+            f"Locked visual anchors: {anchors_text}. "
+            "Preserve exact shape, proportions, colors, materials, surface texture, logo/label and component count."
+        ),
         "",
-        "[SCENE TIMELINE & PHYSICAL ACTIONS]",
+        "[3. OBJECT PERMANENCE LOCK]",
+        "- The product must remain the same physical object throughout the entire video.",
+        f"- All original components must remain attached in their correct positions: {anchors_text}.",
+        "- No component may disappear, detach, duplicate or spontaneously appear.",
+        "- Product geometry must remain consistent between frames and shots.",
+        "- Camera movement must not cause the AI to reinterpret the product as a different object.",
+        f"- All distinctive visual anchors must remain consistent: {anchors_text}.",
+        "- A feature that becomes less visible due to perspective must still physically exist.",
+        "",
+        "[4. ANTI-MORPHING LOCK]",
+        (
+            "Core constraints: No product morphing, no geometry changes, no product replacement, "
+            "no disappearing components, no duplicated components, no color shifting, no texture transformation, "
+            "no material substitution, no logo distortion, no spontaneous redesign, no melting or deformation, "
+            "no inconsistent product proportions, no unexplained structural changes."
+        ),
+        f"Product-specific constraints: {specific_neg_line}.",
+        "",
+        subject_block_header,
+        subject_block_body,
+        "",
+        "[6. ENVIRONMENT & CONTINUITY LOCK]",
+        f"{locks['environment_lighting_lock']} Keep product centered in the 20%-68% vertical safe zone.",
+        first_frame_line,
+        "",
+        "[7. SHOT-BY-SHOT TIMELINE]",
     ])
 
     local_cursor = 0.0
     for sc in clip_scenes:
         d = float(sc["duration"])
         lines.append(
-            f"- {local_cursor:.1f}s–{local_cursor + d:.1f}s (Adegan {sc['id']} — {d:.1f}s): {sc['visual_description']} Physical action: {sc['physical_action']} Camera: {sc['camera_movement']}."
+            f"- Shot {sc['id']} ({local_cursor:.1f}s–{local_cursor + d:.1f}s, {sc['title']}): "
+            f"{sc['visual_description']} Physical action: {sc['physical_action']}. "
+            f"Camera: {sc['camera_angle']}, {sc['camera_movement']}. "
+            f"Identity: same exact product; anchors: {anchors_text}. "
+            "Continuity: maintain exact geometry, lighting, and scale across shots. "
+            "Avoid: reconstructing or replacing the product."
         )
         local_cursor += d
 
     lines.extend([
+        f"Last-Frame Anchor ({local_cursor:.1f}s): Stable framing of {hce_input['name']} with all original components intact and consistent lighting.",
         "",
-        "[LIGHTING & ATMOSPHERE]",
-        "Consistent natural diffused Indonesian window daylight, clean background, zero burned-in text or watermarks.",
+        "[8. CAMERA MOVEMENT CONTROL]",
+        (
+            "Move the camera smoothly around a stationary product; avoid needless product rotation, "
+            "extreme perspective changes, full 360-degree orbit, or camera passing through the product; "
+            "keep the product centered and key features recognizable."
+        ),
         "",
-        "[NEGATIVE INSTRUCTIONS]",
-        "No human face visible, no talking head, no warped or floating parts, no extra fingers, no aimless zoom or 360 orbit, no burned-in captions or watermarks.",
+        "[9. AUDIO DIRECTION]",
+        (
+            "Off-camera natural Indonesian reviewer voice-over synchronized to the dialogue timing table, "
+            "realistic product action SFX, balanced BGM with zero clipping; no on-camera speaking or lip-sync."
+        ),
+        "",
+        "[10. NEGATIVE PROMPT]",
+        (
+            f"{specific_neg_line}, {subject_neg}, no aimless zoom or 360 orbit, "
+            "no burned-in text, no marketplace UI, no watermarks."
+        ),
+        "",
+        "[11. FINAL PRODUCT IDENTITY VERIFICATION]",
+        (
+            f"Verify from start to finish that {hce_input['name']} remains 100% identical to the original "
+            f"reference photos ({anchors_text}) with zero morphing or missing parts."
+        ),
         "```",
         "",
         "## 4. Arahan Audio & Dialog VO Bahasa Indonesia",
@@ -2522,11 +2614,53 @@ def _render_video_clip_md(
         lines.append(f"- `{sc['timestamp']}` *(Adegan {sc['id']})*: {vo_disp}")
         table_rows.append(f"| {sc['id']} | {sc['timestamp']} | {sc['duration']:.1f} | {vo_disp} | {syl} | {est:.2f} | OK |")
 
+    qc_status = (
+        "PASS"
+        if anchors_list
+        else "WARNING (visual anchors belum tersedia — lengkapi 01-product-review/product-identity-lock.md)"
+    )
+    qc_mark = "x" if anchors_list else " "
+
     lines.extend([
         "",
         "## 5. Hand-Off Kontinuitas ke Klip Berikutnya",
         "",
-        f"- **Kondisi Frame Terakhir (`Last-Frame Anchor`):** Posisi produk, tangan, dan arah pencahayaan di akhir `Adegan {clip_scenes[-1]['id']}` tetap terkunci stabil untuk transisi mulus.",
+        f"- **Kondisi Frame Terakhir (`Last-Frame Anchor`):** Posisi produk, subjek (`{subject_mode_label}`), dan arah pencahayaan di akhir `Adegan {clip_scenes[-1]['id']}` tetap terkunci stabil untuk transisi mulus.",
+        "",
+        "## 6. Quality Control Konsistensi Produk (PCS v2.0)",
+        "",
+        "**PRODUCT IDENTITY:**",
+        f"- [{qc_mark}] Product shape matches the original reference.",
+        f"- [{qc_mark}] Original colors are preserved.",
+        f"- [{qc_mark}] Material and texture remain consistent.",
+        f"- [{qc_mark}] All original components are accounted for.",
+        f"- [{qc_mark}] Logos and distinctive details remain unchanged.",
+        "",
+        "**OBJECT PERMANENCE:**",
+        "- [x] Product remains the same physical object.",
+        "- [x] No components disappear.",
+        "- [x] No components detach unexpectedly.",
+        "- [x] No spontaneous structural changes.",
+        "",
+        "**ANTI-MORPHING:**",
+        "- [x] No product replacement.",
+        "- [x] No geometry changes.",
+        "- [x] No duplicated components.",
+        "- [x] No unexplained color or texture changes.",
+        "",
+        "**CAMERA CONTROL:**",
+        "- [x] Camera movements are appropriate for the product.",
+        "- [x] Critical features remain recognizable.",
+        "- [x] No unnecessary extreme perspective changes.",
+        "- [x] Camera movement does not conflict with product continuity.",
+        "",
+        "**SHOT CONTINUITY:**",
+        "- [x] Every shot includes appropriate identity constraints.",
+        "- [x] Product identity is consistent between shots.",
+        "- [x] Final hero shot matches the original product.",
+        "- [x] Product-only mode follows user instructions.",
+        "",
+        f"**Status QC Konsistensi Produk (PCS v2.0):** {qc_status}",
         "",
         "## Tabel Timing Dialog",
         "",

@@ -241,6 +241,9 @@ class TestHCEAVDIntegration(unittest.TestCase):
             # Verify video-02+ starts with Continue the video. and video-01 does not
             v1_text = (cdir / "04-video" / "video-01.md").read_text(encoding="utf-8")
             self.assertNotIn("Continue the video.", v1_text)
+            self.assertIn("[2. PRODUCT IDENTITY LOCK]", v1_text)
+            self.assertIn("[11. FINAL PRODUCT IDENTITY VERIFICATION]", v1_text)
+            self.assertIn("Status QC Konsistensi Produk", v1_text)
             v2_path = cdir / "04-video" / "video-02.md"
             if v2_path.is_file():
                 v2_text = v2_path.read_text(encoding="utf-8")
