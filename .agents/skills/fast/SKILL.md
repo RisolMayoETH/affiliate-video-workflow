@@ -1,17 +1,17 @@
 ---
 name: fast
-description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, struktur 4 babak, panel detik bilangan bulat, SATU master prompt video 10 detik (tanpa prompt per scene), output ringkas tanpa pengulangan (storyboard utama tampil sekali), dan bagian Voice Over siap salin di akhir. Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
+description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, strategi conversion-first, creative route adaptif, panel detik bilangan bulat, SATU master prompt video 10 detik (tanpa prompt per scene), output ringkas tanpa pengulangan (storyboard utama tampil sekali), dan bagian Voice Over siap salin di akhir. Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
 license: MIT
 metadata:
   author: RisolMayoETH
-  version: "1.2.0"
+  version: "1.3.0"
   project: affiliate-video-director
   mode: rapid-affiliate-review
 ---
 
 # /fast — Rapid Affiliate Review (Tepat 10 Detik)
 
-Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.2)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep ringkas tanpa pengulangan, storyboard utama presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (tanpa prompt per scene)**, panduan editing assembly, daftar periksa *quality control*, serta naskah **Voice Over** siap salin di bagian paling akhir.
+Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.3)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep ringkas tanpa pengulangan, storyboard utama presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (tanpa prompt per scene)**, panduan editing assembly, daftar periksa *quality control*, serta naskah **Voice Over** siap salin di bagian paling akhir.
 
 **Input Argumen:** `$ARGUMENTS` (berisi kata kunci varian opsional `clear` atau `hype`, slug kampanye, nama produk, foto/screenshot listing, deskripsi, atau tautan yang diberikan pengguna). Jika argumen kosong, cek kampanye aktif di `./campaigns/` atau minta pengguna mengirimkan foto/deskripsi produk.
 
@@ -36,6 +36,7 @@ Baca modul bersama berikut seperlunya tanpa menduplikasi aturan:
 - [Konsistensi Visual](../shared/visual-consistency.md) & [Rekayasa Video](../shared/video-engineering.md)
 - [Copywriting Konversi](../shared/conversion-copywriting.md) & [Optimasi Platform](../shared/platform-optimization.md)
 - [Dialogue Engine](../shared/dialogue-engine.md)
+- [Conversion Engine — Strategi Penjualan](../shared/conversion-engine.md) **(wajib dibaca untuk setiap /fast)**
 
 ---
 
@@ -313,13 +314,14 @@ Bagian `## Voice Over` wajib berada **paling akhir** setelah `Editing & Final As
 Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali maksimal `2` baris pembuka (varian + jumlah panel terpilih, serta tautan ke file `rapid-10s/`), lalu mengikuti urutan baku **1–8** berikut:
 
 1. `## Analisis Produk & Selling Point` *(tabel 9 aspek, 1 kalimat per sel + tag fakta)*
-2. `## Konsep Video` *(maks. 6 butir, tanpa naskah VO)*
-3. `## Storyboard Utama` *(blok ringkas satu kali per panel, 1 kalimat per butir)*
-4. `## Prompt Gambar Storyboard` *(`1` lembar tunggal siap salin)*
-5. `## Master Prompt Video (10 Detik)` *(`1` master prompt siap salin, tanpa prompt per scene)*
-6. `## Editing & Final Assembly` *(termasuk timestamp segmen VO untuk editor)*
-7. `## Quality Control Checklist` *(beserta penjumlahan durasi nyata `= 10` detik)*
-8. `## Voice Over` *(bagian paling akhir)*
+2. `## Strategi Pembeli & Konversi` *(target, pemicu, objection, proof, proposisi, creative angle)*
+3. `## Konsep Video` *(maks. 6 butir, tanpa naskah VO)*
+4. `## Storyboard Utama` *(blok ringkas satu kali per panel, 1 kalimat per butir)*
+5. `## Prompt Gambar Storyboard` *(`1` lembar tunggal siap salin)*
+6. `## Master Prompt Video (10 Detik)` *(`1` master prompt siap salin, tanpa prompt per scene)*
+7. `## Editing & Final Assembly` *(termasuk timestamp segmen VO untuk editor)*
+8. `## Quality Control Checklist` *(durasi tepat 10 detik + conversion critique gate)*
+9. `## Voice Over` *(bagian paling akhir)*
 
 **Dilarang Keras Menampilkan di Jawaban Pengguna:**
 - Tabel ringkasan babak dan durasi terpisah.
@@ -327,3 +329,65 @@ Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali m
 - Penjelasan panjang yang tidak membantu proses produksi.
 - Beberapa versi atau alternatif VO tanpa diminta.
 - Tabel internal `_vo-timing.md`.
+
+
+---
+
+## 17. Conversion-First Upgrade v1.3 — Aturan Otoritatif
+
+Bagian ini merupakan aturan operasional terbaru dan **menggantikan aturan lama yang bertentangan** pada bagian 2–5, 10–13, dan 14. Tujuan utama /fast adalah menghasilkan video affiliate yang jelas, meyakinkan, jujur, dan layak diproduksi — bukan sekadar video yang terlihat premium.
+
+### 17.1 Urutan Strategi Wajib
+
+Baca dan ikuti seluruh Conversion Engine sebelum menyusun konsep atau storyboard. Urutan wajib: Product Truth → Buyer Hypothesis → Problem/Desire → Objection → Proof Opportunity → Single-minded Proposition → Creative Route → CTA.
+
+Tambahkan ringkasan strategi ke output:
+- **Target Pembeli Primer**
+- **Situasi Pemicu / Masalah atau Desire**
+- **Keberatan Utama**
+- **Bukti Visual yang Akan Menjawabnya**
+- **Proposisi Utama**
+- **Alasan Memilih Angle**
+
+Tandai hipotesis audiens sebagai [ASUMSI]; jangan menyajikannya sebagai data riset.
+
+### 17.2 Struktur Cerita Adaptif
+
+Durasi Rapid tetap tepat 10 detik, tetapi struktur 4 babak bukan urutan shot yang kaku. Pilih alur paling efektif dari problem-solution, result-first, demo-first, objection-answer, comparison, unboxing/value, atau aesthetic/desire. Keempat fungsi cerita tetap harus hadir secara logis: perhatian, pemahaman produk, bukti/manfaat, dan tindakan berikutnya. Fungsi dapat digabung dalam satu panel.
+
+### 17.3 Alokasi Waktu Adaptif
+
+Aturan lama yang mengunci Hook 1 detik, Demo 2–3 detik, dan Hero + CTA 2 detik tidak lagi mutlak. Gunakan budget adaptif pada Conversion Engine. Total harus tepat 10 detik dan setiap aksi penting harus selesai terbaca. Jika demo yang benar dan aman membutuhkan waktu lebih panjang, jangan dipadatkan secara menyesatkan; sarankan workflow storyboard standar berdurasi lebih panjang.
+
+Jumlah panel adalah alat bantu, bukan sasaran. Clear biasanya 4–6 panel. Hype biasanya 5–8 panel hanya jika setiap cut menambah nilai; gunakan lebih sedikit panel bila aksi atau produk membutuhkan waktu untuk dipahami.
+
+### 17.4 Komposisi Tidak Boleh Mengorbankan Cerita
+
+Product identity lock tetap prioritas tertinggi. Namun, aturan lama "produk selalu di zona tengah pada setiap panel" diganti menjadi **produk dan bukti utama harus berada di area yang paling terbaca dan tidak tertutup UI**. Komposisi boleh berubah untuk memperlihatkan masalah, skala, mekanisme, hasil, atau konteks. Continuity anchors dipertahankan pada rangkaian yang sama; perubahan lokasi/sudut diperbolehkan bila beralasan.
+
+### 17.5 Demonstrasi dan Bukti Wajib
+
+Setiap klaim manfaat di VO atau overlay harus dipetakan ke bukti visual yang sesuai. Demo harus memperlihatkan urutan awal → mekanisme → hasil sejauh durasi memungkinkan. Jangan memotong mekanisme inti sebelum hasilnya terlihat. Jangan melakukan uji keselamatan atau stress test berbahaya, dan jangan mengarang performa produk.
+
+### 17.6 Self-Critique Gate
+
+Sebelum output, jalankan Self-Critique Gate dari Conversion Engine. Buyer Clarity, Proof Strength, dan AI Producibility masing-masing harus minimal 4/5. Revisi jika ada yang di bawah ambang. Nilai tersebut adalah penilaian editorial internal, bukan hasil pengujian pasar atau jaminan conversion rate.
+
+### 17.7 CTA Berbasis Alasan
+
+CTA tetap singkat dan sesuai platform, tetapi harus mengikuti alasan yang baru saja dibuktikan. Jangan memakai urgensi, kelangkaan, diskon, atau klaim nilai yang tidak didukung data. Hero shot hanya dipertahankan jika membantu pengenalan produk atau keputusan pembelian; jangan mengorbankan waktu bukti demi glamour shot.
+
+### 17.8 Quality Control Tambahan
+
+Tambahkan checklist berikut ke QC:
+- [ ] Satu target pembeli primer dan satu proposisi utama telah ditentukan.
+- [ ] Angle kreatif dipilih berdasarkan kebutuhan pembeli dan bukti, bukan hanya estetika.
+- [ ] Setiap klaim utama memiliki bukti visual atau dihapus.
+- [ ] Demo memperlihatkan mekanisme dan hasil tanpa melanggar cara penggunaan.
+- [ ] Komposisi tidak memaksa produk selalu di tengah jika itu mengurangi kejelasan.
+- [ ] Buyer Clarity, Proof Strength, dan AI Producibility masing-masing minimal 4/5.
+- [ ] CTA menyambung dengan manfaat yang dibuktikan dan tidak memakai urgensi palsu.
+
+### 17.9 Pembelajaran dari Performa
+
+Jika pengguna memberikan data performa setelah publikasi, analisis metrik funnel sesuai Conversion Engine. Jangan mengklaim video pasti menghasilkan penjualan. Rekomendasikan eksperimen berikutnya dengan satu variabel utama yang diubah agar hasilnya dapat dipelajari.
