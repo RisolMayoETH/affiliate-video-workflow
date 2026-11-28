@@ -4,7 +4,7 @@ description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tep
 license: MIT
 metadata:
   author: RisolMayoETH
-  version: "1.2.0"
+  version: "1.3.0"
   project: affiliate-video-director
   mode: rapid-affiliate-review
 ---
@@ -36,6 +36,7 @@ Baca modul bersama berikut seperlunya tanpa menduplikasi aturan:
 - [Konsistensi Visual](../shared/visual-consistency.md) & [Rekayasa Video](../shared/video-engineering.md)
 - [Copywriting Konversi](../shared/conversion-copywriting.md) & [Optimasi Platform](../shared/platform-optimization.md)
 - [Dialogue Engine](../shared/dialogue-engine.md)
+- [Conversion Engine — Strategi Penjualan](../shared/conversion-engine.md) **(wajib dibaca untuk setiap /fast)**
 
 ---
 
@@ -327,3 +328,65 @@ Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali m
 - Penjelasan panjang yang tidak membantu proses produksi.
 - Beberapa versi atau alternatif VO tanpa diminta.
 - Tabel internal `_vo-timing.md`.
+
+
+---
+
+## 17. Conversion-First Upgrade v1.3 — Aturan Otoritatif
+
+Bagian ini merupakan aturan operasional terbaru dan **menggantikan aturan lama yang bertentangan** pada bagian 2–5, 10–13, dan 14. Tujuan utama /fast adalah menghasilkan video affiliate yang jelas, meyakinkan, jujur, dan layak diproduksi — bukan sekadar video yang terlihat premium.
+
+### 17.1 Urutan Strategi Wajib
+
+Baca dan ikuti seluruh Conversion Engine sebelum menyusun konsep atau storyboard. Urutan wajib: Product Truth → Buyer Hypothesis → Problem/Desire → Objection → Proof Opportunity → Single-minded Proposition → Creative Route → CTA.
+
+Tambahkan ringkasan strategi ke output:
+- **Target Pembeli Primer**
+- **Situasi Pemicu / Masalah atau Desire**
+- **Keberatan Utama**
+- **Bukti Visual yang Akan Menjawabnya**
+- **Proposisi Utama**
+- **Alasan Memilih Angle**
+
+Tandai hipotesis audiens sebagai [ASUMSI]; jangan menyajikannya sebagai data riset.
+
+### 17.2 Struktur Cerita Adaptif
+
+Durasi Rapid tetap tepat 10 detik, tetapi struktur 4 babak bukan urutan shot yang kaku. Pilih alur paling efektif dari problem-solution, result-first, demo-first, objection-answer, comparison, unboxing/value, atau aesthetic/desire. Keempat fungsi cerita tetap harus hadir secara logis: perhatian, pemahaman produk, bukti/manfaat, dan tindakan berikutnya. Fungsi dapat digabung dalam satu panel.
+
+### 17.3 Alokasi Waktu Adaptif
+
+Aturan lama yang mengunci Hook 1 detik, Demo 2–3 detik, dan Hero + CTA 2 detik tidak lagi mutlak. Gunakan budget adaptif pada Conversion Engine. Total harus tepat 10 detik dan setiap aksi penting harus selesai terbaca. Jika demo yang benar dan aman membutuhkan waktu lebih panjang, jangan dipadatkan secara menyesatkan; sarankan workflow storyboard standar berdurasi lebih panjang.
+
+Jumlah panel adalah alat bantu, bukan sasaran. Clear biasanya 4–6 panel. Hype biasanya 5–8 panel hanya jika setiap cut menambah nilai; gunakan lebih sedikit panel bila aksi atau produk membutuhkan waktu untuk dipahami.
+
+### 17.4 Komposisi Tidak Boleh Mengorbankan Cerita
+
+Product identity lock tetap prioritas tertinggi. Namun, aturan lama "produk selalu di zona tengah pada setiap panel" diganti menjadi **produk dan bukti utama harus berada di area yang paling terbaca dan tidak tertutup UI**. Komposisi boleh berubah untuk memperlihatkan masalah, skala, mekanisme, hasil, atau konteks. Continuity anchors dipertahankan pada rangkaian yang sama; perubahan lokasi/sudut diperbolehkan bila beralasan.
+
+### 17.5 Demonstrasi dan Bukti Wajib
+
+Setiap klaim manfaat di VO atau overlay harus dipetakan ke bukti visual yang sesuai. Demo harus memperlihatkan urutan awal → mekanisme → hasil sejauh durasi memungkinkan. Jangan memotong mekanisme inti sebelum hasilnya terlihat. Jangan melakukan uji keselamatan atau stress test berbahaya, dan jangan mengarang performa produk.
+
+### 17.6 Self-Critique Gate
+
+Sebelum output, jalankan Self-Critique Gate dari Conversion Engine. Buyer Clarity, Proof Strength, dan AI Producibility masing-masing harus minimal 4/5. Revisi jika ada yang di bawah ambang. Nilai tersebut adalah penilaian editorial internal, bukan hasil pengujian pasar atau jaminan conversion rate.
+
+### 17.7 CTA Berbasis Alasan
+
+CTA tetap singkat dan sesuai platform, tetapi harus mengikuti alasan yang baru saja dibuktikan. Jangan memakai urgensi, kelangkaan, diskon, atau klaim nilai yang tidak didukung data. Hero shot hanya dipertahankan jika membantu pengenalan produk atau keputusan pembelian; jangan mengorbankan waktu bukti demi glamour shot.
+
+### 17.8 Quality Control Tambahan
+
+Tambahkan checklist berikut ke QC:
+- [ ] Satu target pembeli primer dan satu proposisi utama telah ditentukan.
+- [ ] Angle kreatif dipilih berdasarkan kebutuhan pembeli dan bukti, bukan hanya estetika.
+- [ ] Setiap klaim utama memiliki bukti visual atau dihapus.
+- [ ] Demo memperlihatkan mekanisme dan hasil tanpa melanggar cara penggunaan.
+- [ ] Komposisi tidak memaksa produk selalu di tengah jika itu mengurangi kejelasan.
+- [ ] Buyer Clarity, Proof Strength, dan AI Producibility masing-masing minimal 4/5.
+- [ ] CTA menyambung dengan manfaat yang dibuktikan dan tidak memakai urgensi palsu.
+
+### 17.9 Pembelajaran dari Performa
+
+Jika pengguna memberikan data performa setelah publikasi, analisis metrik funnel sesuai Conversion Engine. Jangan mengklaim video pasti menghasilkan penjualan. Rekomendasikan eksperimen berikutnya dengan satu variabel utama yang diubah agar hasilnya dapat dipelajari.
