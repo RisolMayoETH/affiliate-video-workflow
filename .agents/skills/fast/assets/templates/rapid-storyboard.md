@@ -46,9 +46,9 @@
 ## 3. Konsep Video
 
 - **Selling Point Utama:** `<1 keunggulan utama yang paling jelas dibuktikan dalam 10 detik>`
-- **Alur 4 Babak (`10` Detik):** `Hook (...) → Demo (≥ 2 dtk utuh: ...) → Hasil/Manfaat (...) → Hero + CTA (≥ 2 dtk ditahan: ...)`
+- **Alur 4 Babak (`10` Detik):** `<creative route adaptif yang dipilih: problem-solution / result-first / demo-first / objection-answer / comparison / unboxing-value / aesthetic-desire>`
 - **Product Identity Lock:** `<Bentuk, proporsi, warna, material, tekstur, logo, jumlah komponen dari Otoritas #1>`
-- **Continuity Anchors:** `<Tangan/lengan baju yang sama, latar ruangan sama, cahaya konsisten, produk selalu di zona tengah layar>`
+- **Continuity Anchors:** `<Tangan/lengan baju, latar, dan cahaya konsisten saat adegan berlanjut; komposisi produk mengikuti kebutuhan bukti dan safe zone>`
 - **Arahan BGM & SFX:** `<Karakter musik latar + titik SFX sinkron pergantian shot; tanpa naskah VO di bagian ini>`
 - **Rencana Overlay & CTA (Maks. `2` Pergantian):** `<Teks 1 manfaat utama di zona aman + Teks 2 CTA jujur sesuai platform>`
 
@@ -56,9 +56,9 @@
 
 ## 4. Storyboard Utama
 
-> *Tampilkan setiap panel **1 kali saja** dengan detik bilangan bulat (`≥ 1` dtk), `Demo ≥ 2` dtk, `Hero + CTA ≥ 2` dtk, total tepat `10` dtk (`Clear`: `4–6` panel; `Hype`: `7–8` panel).*
+> *Tampilkan setiap panel **1 kali saja** dengan detik bilangan bulat (`≥ 1` dtk), demo cukup untuk memperlihatkan mekanisme dan hasil; CTA cukup terbaca, total tepat `10` dtk (`Clear`: `4–6` panel; `Hype`: `7–8` panel).*
 
-**PANEL 01 · `00:00–00:01` · 1 dtk · Hook**
+**PANEL 01 · `<timestamp adaptif>` · `<durasi>` · `<fungsi cerita>`**
 - **Visual:** `<Adegan hook + komposisi yang memperjelas masalah/produk; tidak wajib selalu di tengah>`
 - **Kamera:** `<Sudut kamera>` • `<Gerakan kamera>` • **Cahaya:** `<Pencahayaan>`
 - **Aksi:** `<Aksi fisik produk/tangan>` • **Transisi:** `<Transisi ke panel berikutnya>`
@@ -76,7 +76,7 @@
 Create a clean single-sheet <N>-panel vertical commercial storyboard (<grid: 2x3 for Clear 5-6 panels, 1x4 or 2x2 for Clear 4 panels, 2x4 for Hype 7-8 panels>, each panel in 9:16 portrait proportion) for <product>.
 [PRODUCT IDENTITY LOCK]: Strictly match exact shape, proportions, colors, materials, textures, logos, and component count from the attached original product reference photo. Zero marketplace UI or watermarks.
 [CONTINUITY ANCHORS]: Keep the exact same Indonesian adult hand/sleeve, consistent clean room background, consistent natural lighting, and place the product and key proof in the clearest unobstructed area; do not force identical centered composition when a problem, scale, mechanism, or result shot needs different framing.
-PANEL 01 (00:00–00:01): ...
+PANEL 01 (<adaptive timestamp>): ...
 ...
 Style: Realistic commercial film storyboard frames, sharp focus, authentic lighting, tiny clean panel numbers (1..<N>) in top-left corners only, minimal directional arrows, no speech bubbles, no text clutter.
 ```
