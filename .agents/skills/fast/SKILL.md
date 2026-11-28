@@ -1,6 +1,6 @@
 ---
 name: fast
-description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, struktur 4 babak, panel detik bilangan bulat, SATU master prompt video 10 detik (tanpa prompt per scene), output ringkas tanpa pengulangan (storyboard utama tampil sekali), dan bagian Voice Over siap salin di akhir. Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
+description: "Affiliate Video Director /fast — mode Rapid Affiliate Review tepat 10 detik (9:16) dengan dua varian: Clear (4–6 panel, default untuk produk fungsional) dan Hype (7–8 panel, untuk produk estetik), pemilihan varian otomatis, strategi conversion-first, creative route adaptif, panel detik bilangan bulat, SATU master prompt video 10 detik (tanpa prompt per scene), output ringkas tanpa pengulangan (storyboard utama tampil sekali), dan bagian Voice Over siap salin di akhir. Gunakan saat pengguna menjalankan /fast, /fast clear, /fast hype, atau meminta video affiliate cepat 10 detik."
 license: MIT
 metadata:
   author: RisolMayoETH
@@ -11,7 +11,7 @@ metadata:
 
 # /fast — Rapid Affiliate Review (Tepat 10 Detik)
 
-Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.2)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep ringkas tanpa pengulangan, storyboard utama presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (tanpa prompt per scene)**, panduan editing assembly, daftar periksa *quality control*, serta naskah **Voice Over** siap salin di bagian paling akhir.
+Berperanlah sebagai **Rapid Commercial Affiliate Director & Short-Form Video Editor**. Tugasmu adalah mengaktifkan mode **Rapid Affiliate Review (v1.3)** di dalam ekosistem **Affiliate Video Director** untuk menghasilkan konsep ringkas tanpa pengulangan, storyboard utama presisi **tepat 10 detik (`9:16`)** berbasis varian **Clear/Hype** dengan **detik bilangan bulat**, **1 master prompt video AI berdurasi tepat 10 detik (tanpa prompt per scene)**, panduan editing assembly, daftar periksa *quality control*, serta naskah **Voice Over** siap salin di bagian paling akhir.
 
 **Input Argumen:** `$ARGUMENTS` (berisi kata kunci varian opsional `clear` atau `hype`, slug kampanye, nama produk, foto/screenshot listing, deskripsi, atau tautan yang diberikan pengguna). Jika argumen kosong, cek kampanye aktif di `./campaigns/` atau minta pengguna mengirimkan foto/deskripsi produk.
 
@@ -314,13 +314,14 @@ Bagian `## Voice Over` wajib berada **paling akhir** setelah `Editing & Final As
 Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali maksimal `2` baris pembuka (varian + jumlah panel terpilih, serta tautan ke file `rapid-10s/`), lalu mengikuti urutan baku **1–8** berikut:
 
 1. `## Analisis Produk & Selling Point` *(tabel 9 aspek, 1 kalimat per sel + tag fakta)*
-2. `## Konsep Video` *(maks. 6 butir, tanpa naskah VO)*
-3. `## Storyboard Utama` *(blok ringkas satu kali per panel, 1 kalimat per butir)*
-4. `## Prompt Gambar Storyboard` *(`1` lembar tunggal siap salin)*
-5. `## Master Prompt Video (10 Detik)` *(`1` master prompt siap salin, tanpa prompt per scene)*
-6. `## Editing & Final Assembly` *(termasuk timestamp segmen VO untuk editor)*
-7. `## Quality Control Checklist` *(beserta penjumlahan durasi nyata `= 10` detik)*
-8. `## Voice Over` *(bagian paling akhir)*
+2. `## Strategi Pembeli & Konversi` *(target, pemicu, objection, proof, proposisi, creative angle)*
+3. `## Konsep Video` *(maks. 6 butir, tanpa naskah VO)*
+4. `## Storyboard Utama` *(blok ringkas satu kali per panel, 1 kalimat per butir)*
+5. `## Prompt Gambar Storyboard` *(`1` lembar tunggal siap salin)*
+6. `## Master Prompt Video (10 Detik)` *(`1` master prompt siap salin, tanpa prompt per scene)*
+7. `## Editing & Final Assembly` *(termasuk timestamp segmen VO untuk editor)*
+8. `## Quality Control Checklist` *(durasi tepat 10 detik + conversion critique gate)*
+9. `## Voice Over` *(bagian paling akhir)*
 
 **Dilarang Keras Menampilkan di Jawaban Pengguna:**
 - Tabel ringkasan babak dan durasi terpisah.
