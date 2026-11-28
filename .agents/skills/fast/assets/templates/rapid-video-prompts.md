@@ -26,11 +26,11 @@ Strictly preserve the exact physical design, shape, proportions, colors, materia
 Maintain continuity across all shots: the exact same Indonesian adult hand (sawo matang skin, clean natural nails, consistent neutral sleeve), the exact same clean everyday Indonesian room background, consistent soft natural daylight, and place the product, hands, and proof action in the clearest unobstructed composition for each shot; do not force identical centered framing when the story requires problem context, scale, mechanism, or result.
 
 [SHOT TIMELINE (0s–10s)]
-- Shot 1 (0s–1s, Hook): ...
-- Shot 2 (1s–4s, Demo): ...
-- Shot 3 (4s–6s, Result/Benefit): ...
-- Shot 4 (6s–8s, Detail/Benefit): ...
-- Final Shot (8s–10s, Hero + CTA): Clean, steady product hero showcase held for 2 seconds, leaving the bottom 28% of the frame completely clean and unobstructed for CTA overlay.
+- Shot 1 (<start–end>, <hook / context>): ...
+- Shot 2 (<start–end>, <product reveal / setup if needed>): ...
+- Shot 3 (<start–end>, <complete demonstration + proof>): ...
+- Shot 4 (<start–end>, <benefit / objection answer>): ...
+- Final Shot (<start–10s>, <CTA / product hold>): ... Keep platform CTA safe zone unobstructed; duration must follow the approved storyboard.
 
 [CAMERA & TRANSITION STYLE]
 Purposeful commercial cinematography combining tight close-ups, steady POV demonstration, and smooth push-in/tracking movements connected by clean cuts and natural action transitions. Attention-grabbing opening, uninterrupted proof action long enough to understand, and a CTA hold only as long as needed for legibility.
@@ -54,7 +54,7 @@ No product morphing or color shift, no missing or invented parts, no logo distor
 4. **Penempatan Voice Over (`## Voice Over`):** Tempatkan rekaman/TTS VO tepat pada rentang waktu segmen yang tervalidasi di `_vo-timing.md` (mis. `00:00–00:04`, `00:04–00:08`, `00:08–00:10`) agar tidak menabrak pergantian visual; atur VO sekitar **`-6 dBFS`** dan turunkan BGM ke sekitar **`-22 dBFS`**. *(Lewati jika VO tidak digunakan.)*
 5. **Penempatan Text Overlay & CTA (Maks. `2` Pergantian):**
    - Teks singkat manfaat utama (`1` kali tampil): zona aman `20%–32%` atau `60%–70%` tinggi layar tanpa menutupi produk.
-   - CTA akhir (`00:08–00:10`, di atas zona `28%` bawah layar): gunakan kalimat singkat jujur (`"Cek di keranjang kuning!"` untuk TikTok atau `"Cek link di bio!"` untuk Reels) tanpa klaim kelangkaan/diskon palsu.
+   - CTA akhir (mengikuti timestamp storyboard, di atas zona `28%` bawah layar): gunakan kalimat singkat jujur (`"Cek di keranjang kuning!"` untuk TikTok atau `"Cek link di bio!"` untuk Reels) tanpa klaim kelangkaan/diskon palsu.
 
 ---
 
@@ -85,9 +85,20 @@ No product morphing or color shift, no missing or invented parts, no logo distor
 - [ ] Urutan output tepat `1–8` dengan `## Voice Over` paling akhir.
 
 **Voice Over**
-- [ ] Hanya ada `1` versi VO terbaik (atau dinyatakan tidak digunakan dengan alasan singkat), selaras 4 babak, tanpa mengulang teks layar kata per kata.
+- [ ] Hanya ada `1` versi VO terbaik (atau dinyatakan tidak digunakan dengan alasan singkat), selaras creative route, tanpa mengulang teks layar kata per kata.
 - [ ] Bahasa Indonesia lisan natural, seluruh angka ditulis dengan huruf/kata (tanpa digit), dan tanpa klaim yang tidak terverifikasi.
 - [ ] File internal `_vo-timing.md` lolos validasi `dialogue_timing.py` *(atau `N/A` bila VO tidak digunakan)*.
+
+---
+
+## Conversion Review Gate
+
+- **Buyer Clarity:** <skor 1–5 dan alasan; minimal 4>
+- **Proof Strength:** <skor 1–5 dan alasan; minimal 4>
+- **AI Producibility:** <skor 1–5 dan alasan; minimal 4>
+- **Status:** <LULUS / REVISI>
+
+Jangan menyatakan hasil conversion rate dari penilaian editorial. Jika ada analytics pascapublikasi, analisis metrik funnel secara terpisah dan usulkan A/B test satu variabel utama.
 
 ---
 
@@ -106,15 +117,3 @@ No product morphing or color shift, no missing or invented parts, no logo distor
 - **Speaking rate:** ± 5 suku kata/detik (`<N>` suku kata dalam 10 detik; `dialogue_timing.py`: LOLOS)
 
 *(Jika HCE menilai VO tidak diperlukan, ganti blok di atas dengan `**VOICE OVER — TIDAK DIGUNAKAN**` dan 1–2 kalimat alasan singkat.)*
-
-
----
-
-## Conversion Review Gate
-
-- **Buyer Clarity:** <skor 1–5 dan alasan; minimal 4>
-- **Proof Strength:** <skor 1–5 dan alasan; minimal 4>
-- **AI Producibility:** <skor 1–5 dan alasan; minimal 4>
-- **Status:** <LULUS / REVISI>
-
-Jangan menyatakan hasil conversion rate dari penilaian editorial. Jika ada analytics pascapublikasi, analisis metrik funnel secara terpisah dan usulkan A/B test satu variabel utama.
