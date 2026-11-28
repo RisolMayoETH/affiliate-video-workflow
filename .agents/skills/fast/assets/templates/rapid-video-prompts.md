@@ -82,7 +82,7 @@ No product morphing or color shift, no missing or invented parts, no logo distor
 
 **Output**
 - [ ] Tidak ada tabel ringkasan babak & durasi terpisah; setiap panel hanya tampil satu kali.
-- [ ] Urutan output tepat `1–8` dengan `## Voice Over` paling akhir.
+- [ ] Urutan output tepat `1–9` dengan `## Voice Over` paling akhir.
 
 **Voice Over**
 - [ ] Hanya ada `1` versi VO terbaik (atau dinyatakan tidak digunakan dengan alasan singkat), selaras creative route, tanpa mengulang teks layar kata per kata.
