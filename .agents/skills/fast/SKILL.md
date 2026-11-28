@@ -311,7 +311,7 @@ Bagian `## Voice Over` wajib berada **paling akhir** setelah `Editing & Final As
 
 ## 16. Format Jawaban ke Pengguna
 
-Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali maksimal `2` baris pembuka (varian + jumlah panel terpilih, serta tautan ke file `rapid-10s/`), lalu mengikuti urutan baku **1–8** berikut:
+Jawaban ke pengguna wajib ringkas, langsung siap pakai untuk produksi, diawali maksimal `2` baris pembuka (varian + jumlah panel terpilih, serta tautan ke file `rapid-10s/`), lalu mengikuti urutan baku **1–9** berikut:
 
 1. `## Analisis Produk & Selling Point` *(tabel 9 aspek, 1 kalimat per sel + tag fakta)*
 2. `## Strategi Pembeli & Konversi` *(target, pemicu, objection, proof, proposisi, creative angle)*
